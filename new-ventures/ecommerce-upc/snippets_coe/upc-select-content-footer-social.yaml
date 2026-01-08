@@ -1,0 +1,7 @@
+{
+  "event"       : "select_content",                # String: Evento Estándar
+  "content_type": "social_media_logo",             # String: Qué tipo de elemento es
+  "item_id"     : "btn-click-logo_social_media",   # String: Identificador del botón
+  "section"     : "footer",                        # String: Identificador de la seccion en el portal
+  "item_name"   : SOCIAL_MEDIA_NAME,               # String: Nombre de la red social que ha seleccionado
+}

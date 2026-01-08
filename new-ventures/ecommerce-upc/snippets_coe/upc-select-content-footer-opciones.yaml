@@ -1,0 +1,7 @@
+{
+  "event"       : "select_content",            # String: Evento Estándar
+  "content_type": "btn_footer",                # String: Qué tipo de elemento es
+  "item_id"     : "btn-click-footer_option",   # String: Identificador del botón
+  "section"     : "footer",                    # String: Identificador de la seccion en el portal
+  "item_name"   : OPTION_VALUE,                # String: Texto de la opcion seleccionado
+}

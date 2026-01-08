@@ -1,0 +1,7 @@
+{
+  "event"       : "select_content",   # String: Evento Estándar
+  "content_type": "faq",              # String: Qué tipo de elemento es
+  "item_id"     : "btn-click-faq",    # String: Identificador del botón
+  "section"     : "body",             # String: Identificador de la seccion en el portal
+  "item_name"   : QUESTION_VALUE,     # String: texto de la pregunta la cual deplegó
+}

@@ -1,0 +1,9 @@
+{
+  "event"      : "faq_open",
+  "category"   : "home",
+  "subcategory": "-",
+  "action"     : "open",
+  "label"      : "texto_de_la_pregunta_abierta",              # << DATO DINÁMICO titulo de la faq
+  "section"    : "/",
+  "description": "educacioncontinua.upc.edu.pe/instagram ",   # << DATO DINÁMICO (página destino)
+}

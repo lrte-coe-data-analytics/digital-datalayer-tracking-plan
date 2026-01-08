@@ -2,5 +2,6 @@
   "event"           : "select_content",                        # String: Evento Estándar
   "content_type"    : "logo",                                  # String: Qué tipo de elemento es
   "item_id"         : "btn-click-logo",                        # String: Identificador del botón
+  "section"         : "banner",                                # String: Identificador de la seccion en el portal
   "link_url_destino": "https://educacioncontinua.upc.edu.pe/"  # String: direccion destino (custom)
 }

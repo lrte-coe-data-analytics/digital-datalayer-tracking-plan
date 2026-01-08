@@ -1,0 +1,9 @@
+{
+  "event"      : "click_cintillo",
+  "category"   : "home",
+  "subcategory": "-",
+  "action"     : "click",
+  "label"      : "cintillo_superior",
+  "section"    : "/",                               # << DATO DINÁMICO (página desde donde se hace clic)
+  "description": "educacioncontinua.upc.edu.pe/",   # << DATO DINÁMICO (página destino)
+}

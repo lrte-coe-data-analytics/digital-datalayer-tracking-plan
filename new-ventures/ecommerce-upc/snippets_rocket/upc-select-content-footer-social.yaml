@@ -1,0 +1,9 @@
+{
+  "event"      : "social_media_click",
+  "category"   : "home",
+  "subcategory": "-",
+  "action"     : "click",
+  "label"      : "nombre_de_la_red_social",         # << DATO DINÁMICO (ej: instagram, linkedin)
+  "section"    : "/",                               # << DATO DINÁMICO (página desde donde se hace clic)
+  "description": "educacioncontinua.upc.edu.pe/",   # << DATO DINÁMICO (página destino)
+}

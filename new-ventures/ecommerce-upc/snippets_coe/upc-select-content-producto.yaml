@@ -1,0 +1,8 @@
+{
+  "event"           : "select_content",                        # String: Evento Estándar
+  "content_type"    : "menu",                                  # String: Qué tipo de elemento es
+  "item_id"         : "btn-click-menu",                        # String: Identificador del botón
+  "section"         : "banner",                                # String: Identificador de la seccion en el portal
+  "item_name"       : PRODUCT_NAME,                            # String: Identificador del boton del menu: Coursera, Cursos de especializacion o Programas especializados
+  "link_url_destino": "https://educacioncontinua.upc.edu.pe/"  # String: direccion destino (custom)
+}

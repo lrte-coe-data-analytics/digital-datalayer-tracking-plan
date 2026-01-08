@@ -1,0 +1,9 @@
+{
+  "event"      : "footer",
+  "category"   : "home",
+  "subcategory": "-",
+  "action"     : "click",
+  "label"      : "politicas_de_privacidad",                            # << DATO DINÁMICO (sección en la que hace clic)
+  "section"    : "/",                                                  # << DATO DINÁMICO (página desde donde se hace clic)
+  "description": "educacioncontinua.upc.edu.pe/politica-privacidad",   # << DATO DINÁMICO (página destino)
+}
