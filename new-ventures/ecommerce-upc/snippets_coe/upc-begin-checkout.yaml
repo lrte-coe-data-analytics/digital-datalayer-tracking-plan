@@ -12,7 +12,7 @@
     "value"   : TOTAL_AMOUNT,     # Number: Suma total (Precio * Cantidad) de todos los items. OBLIGATORIO.
     "items"   : [
       {
-        "item_id"       : ID_ITEM,             # String: ID único del producto.
+        "item_id"       : ITEM_ID,             # String: ID único del producto.
         "item_name"     : NOMBRE_PRODUCTO,     # String: Nombre real del producto.
         "item_category" : TIPO_PRODUCTO,       # String: Coursera, Cursos de especializacion ó Programas especializados.
         "item_category2": FORMATO_CLASES,      # String: Formato de clases (virtual, presencial).

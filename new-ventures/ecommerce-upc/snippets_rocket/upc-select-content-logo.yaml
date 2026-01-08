@@ -1,0 +1,9 @@
+{
+  "event"      : "logo",
+  "category"   : "home",
+  "subcategory": "-",
+  "action"     : "click",
+  "label"      : "logo_principal",
+  "section"    : "/",                              # << DATO DINÁMICO (página desde donde se hace clic)
+  "description": "educacioncontinua.upc.edu.pe",   # << DATO DINÁMICO (página destino)
+}

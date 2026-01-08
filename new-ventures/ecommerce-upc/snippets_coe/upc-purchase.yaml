@@ -1,11 +1,13 @@
 {
-  "event"       : "add_payment_info",   # String: Nombre Estándar GA4
-  "currency"    : CURRENCY_VALUE,       # String: Código ISO de moneda (PEN, USD). Debe ser en mayusculas.
-  "value"       : TOTAL_AMOUNT,         # Number: Monto pagado por los productos. OBLIGATORIO.
-  "payment_type": PAYMENT_TYPE_VALUE,   # String: "Visa", "Yape", "Transferencia", "Tarjeta de credito", etc
-  "coupon"      : COUPON_VALUE,         # String: Valor ingresado en el campo de cupon (en el paso anterior y validado)
-  "ecommerce"   : {
-    "items"   : [
+  "event": "purchase",
+  "ecommerce": {
+    "transaction_id": TRX_ID,            # String: ID ÚNICO de la orden. OBLIGATORIO para deduplicar.
+    "value"         : TOTAL_AMOUNT,      # Number: Monto total cobrado (Inc. impuestos y envío).
+    "currency"      : CURRENCY_VALUE,    # String: Moneda en formato ISO (PEN, USD).
+    "tax"           : TAX_AMOUNT,        # Number: (Opcional) Impuestos totales.
+    "shipping"      : SHIPPING_AMOUNT,   # Number: (Opcional) Costo de envío.
+    "coupon"        : COUPON_VALUE,      # String: (Opcional) Cupón aplicado a toda la orden.
+    "items"         : [
       {
         "item_id"       : ITEM_ID,             # String: ID único del producto.
         "item_name"     : NOMBRE_PRODUCTO,     # String: Nombre real del producto.
@@ -16,8 +18,9 @@
         "price"         : PRECIO_UNITARIO,     # Number: Precio unitario. Usar punto para decimales.
         "discount"      : DESCUENTO,           # Number: Descuento unitario (si aplica). Default 0
         "quantity"      : CANTIDAD             # Integer: Cantidad de unidades.
-      }
+      },
       # ... Repetir objeto por cada producto en el carrito
     ]
-  }
+  },
+  "payment_type"       : PAYMENT_TYPE_VALUE,   # String: "Visa", "Yape", "Transferencia", "Tarjeta de credito", etc
 }

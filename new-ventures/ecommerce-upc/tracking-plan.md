@@ -8,3 +8,5 @@
 | **select_content** | Checkout Error | Click btn regresar | Cuando el pago no se procesó, llega a la página "pago no completado" y hace clic en **regresar**. | [coe-yaml](./snippets_coe/upc-select-content-unhappy-regresar.yaml) | NA | TBD |
 | **select_content** | Checkout Error | Click btn escribenos | Cuando no se pudo verificar el pago y hace clic en **escribenos aqui**. | [coe-yaml](./snippets_coe/upc-select-content-unhappy-regresar.yaml) | NA | TBD |
 | **add_payment_info** | Checkout | Click btn pagar | Cuando el usuario completa datos de pago y le da clic a **pagar**. | [coe-yaml](./snippets_coe/upc-add-payment-info.yaml) | [rocket-yaml](./snippets_rocket/upc-add-payment-info.yaml) | TBD |
+| **purchase** | Checkout | Fin proceso | Cuando se cargue correctamente la **thank you page** y se haya realizado la compra con éxito. | [coe-yaml](./snippets_coe/upc-purchase.yaml) | NA | TBD |
+| **select_content** | * | Click en logo | Cuando el usuario hace clic en el logo. | [coe-yaml](./snippets_coe/upc-select-content-logo.yaml) | [rocket-yaml](./snippets_rocket/upc-select-content-logo.yaml) | TBD |
