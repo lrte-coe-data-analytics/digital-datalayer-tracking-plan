@@ -1,0 +1,29 @@
+# Comentarios generales
+
+# La estructura de JAXA (Event, Category, SubCategory, Action, Label, etc)
+# es una nomenclatura deprecada por el mismo GA4
+# a menos que haya datos que se necesitan capturar deberiamos buscar trabajar con las 
+# variables que maneja GA4 de manera nativa (inclusive si no usamos GA4 para explotar la data)
+
+{
+  "event"    : "begin_checkout",
+  "ecommerce": {
+    "currency": "MONEDA_VALOR",   # String: Código ISO de moneda (PEN, USD). Debe ser en mayusculas.
+    "value"   : VALOR_TOTAL,      # Number: Suma total (Precio * Cantidad) de todos los items. OBLIGATORIO.
+    "coupon"  : "CUPON_VALUE",    # String: (Opcional) Código de cupón global. Null si no hay.
+    "items"   : [
+      {
+        "item_id"       : "ID_ITEM",             # String: ID único del producto.
+        "item_name"     : "NOMBRE_PRODUCTO",     # String: Nombre real del producto.
+        "item_category" : "Coursera",            # String: Siempre Coursera.
+        "item_category2": "FORMATO_CLASES",      # String: Formato de clases.
+        "item_category3": "NOMBRE_DOCENTE",      # String: Nombre del docente del curso.
+        "item_variant"  : "VARIANTE_PRODUCTO",   # String: Duracion del producto.
+        "price"         : PRECIO_UNITARIO,       # Number: Precio unitario. Usar punto para decimales.
+        "discount"      : DESCUENTO,             # Number: Descuento unitario (si aplica). Default 0
+        "quantity"      : CANTIDAD               # Integer: Cantidad de unidades.
+      }
+      # ... Repetir objeto por cada producto en el carrito
+    ]
+  }
+}

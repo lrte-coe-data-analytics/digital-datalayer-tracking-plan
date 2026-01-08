@@ -1,0 +1,52 @@
+{
+"event"      : "begin_checkout",
+"category"   : "info",
+"subcategory": "datos",
+"action"     : "checkout",
+"label"      : "datos",
+"section"    : "checkout.cibertec.edu.pe/info?curso=",   # << DATO DINÁMICO (página desde donde se da la interacción)
+"description": "checkout.cibertec.edu.pe/info?curso=",   # << DATO DINÁMICO (página destino)
+
+"ecommerce": {
+    "currency": "pen",
+    "items": [
+        {
+            "item_id"       : "90050069",
+            "item_name"     : "curso de excel intermedio office 365",
+            "item_category" : "cursos cortos",
+            "item_category2": "virtual en vivo",
+            "item_category3": "",
+            "item_category4": "office",
+            "item_variant": "3 semanas 36 hrs",
+            "price": 675,
+            "quantity": 1,
+            "area_interes": "cursos cortos"
+        }
+    ],
+
+    # Campos personalizados mantenidos en el objeto ecommerce
+    "fecha_inicio": "",
+    "horario": "",
+    "duracion": "",
+    "cta": "quiero_comprar",
+
+    # Objeto de TikTok (MANTENIDO)
+    "tiktok_data": {
+        "content_ids": ["90050069"],
+        "value": 540,
+        "currency": "pen",
+        "content_type": "product",
+        "discount": 135,
+        "contents": [
+            {
+                "content_id": "90050069",
+                "content_name": "curso de excel intermedio office 365",
+                "content_category": "cursos cortos",
+                "price": 675,
+                "quantity": 1,
+                "decription": "aprende excel a un nivel intermedio para mejorar tu productividad y precision en datos"
+            }
+        ]
+    }
+}
+}
