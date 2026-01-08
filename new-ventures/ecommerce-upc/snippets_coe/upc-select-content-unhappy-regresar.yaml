@@ -1,0 +1,7 @@
+{
+  "event"       : "select_content",             # String: Evento Estándar
+  "content_type": "button",                     # String: Qué tipo de elemento es
+  "item_id"     : "btn-click-error-regresar",   # String: Identificador del botón
+  "section"     : "checkout_step_3",            # String: Contexto extra (custom)
+  "error_msg"   : ERROR_MSG                     # String: Mensaje del error
+}

@@ -1,0 +1,9 @@
+{
+  "event"      : "validar_coupon",
+  "category"   : "datos",
+  "subcategory": "info",
+  "action"     : "click",
+  "label"      : "validar",                     # Codigo del cupon
+  "section"    : "datos",
+  "description": "checkout.upc.edu.pe/payment"  # << DATO DINÁMICO (página destino)
+}

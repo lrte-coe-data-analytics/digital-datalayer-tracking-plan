@@ -1,3 +1,10 @@
-| Evento | Institucion | Descripción | Snippet-Coe | Snippet-Rocket | Implementación |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **begin_checkout** | UPC | Cuando el usuario llega al primer step del checkout donde debe rellenar los campos. | [[coe-yaml]](./snippets_coe/upc-begin-checkout.yaml) | [[rocket-yaml]](./snippets_rocket/upc-begin-checkout.yaml) | TBD |
+## UPC
+
+| Evento | Sección | Acción | Descripción | Snippet&nbsp;Coe | Snippet&nbsp;Rocket | Implementación |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **begin_checkout** | Checkout | Carga formulario | Cuando el usuario llega al primer step del checkout donde debe rellenar los campos. | [coe-yaml](./snippets_coe/upc-begin-checkout.yaml) | [rocket-yaml](./snippets_rocket/upc-begin-checkout.yaml) | TBD |
+| **select_content** | Checkout | Click btn aceptar | Cuando el usuario rellena todo el form, y hace clic en **Continuar** | [coe-yaml](./snippets_coe/upc-select-content-checkout.yaml) | [rocket-yaml](./snippets_rocket/upc-select-content-checkout.yaml) | TBD |
+| **select_content** | Checkout | Click btn validar cupon | Cuando el usuario hace clic en el botón **validar** | [coe-yaml](./snippets_coe/upc-select-content-cupon.yaml) | [rocket-yaml](./snippets_rocket/upc-select-content-cupon.yaml) | TBD |
+| **select_content** | Checkout Error | Click btn regresar | Cuando el pago no se procesó, llega a la página "pago no completado" y hace clic en **regresar**. | [coe-yaml](./snippets_coe/upc-select-content-unhappy-regresar.yaml) | NA | TBD |
+| **select_content** | Checkout Error | Click btn escribenos | Cuando no se pudo verificar el pago y hace clic en **escribenos aqui**. | [coe-yaml](./snippets_coe/upc-select-content-unhappy-regresar.yaml) | NA | TBD |
+| **add_payment_info** | Checkout | Click btn pagar | Cuando el usuario completa datos de pago y le da clic a **pagar**. | [coe-yaml](./snippets_coe/upc-add-payment-info.yaml) | [rocket-yaml](./snippets_rocket/upc-add-payment-info.yaml) | TBD |

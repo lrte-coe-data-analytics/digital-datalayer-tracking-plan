@@ -1,0 +1,11 @@
+# Seguimos el estandar vigente.
+# No es necesario capturar la URL ya que se envia siempre por defecto.
+# Category, Subcategory, action y label son parte del estandar GA3 que ya se encuentra deprecado.
+
+{
+  "event"       : "select_content",        # String: Evento Estándar
+  "content_type": "button",                # String: Qué tipo de elemento es
+  "item_id"     : "btn-click-continuar",   # String: Identificador del botón
+  "form_id"     : FORM_ID,                 # String: Tu ID de formulario (custom)
+  "section"     : "checkout_step_2"        # String: Contexto extra (custom)
+}

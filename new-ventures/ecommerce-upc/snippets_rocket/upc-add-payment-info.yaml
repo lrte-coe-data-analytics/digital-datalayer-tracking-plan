@@ -1,0 +1,29 @@
+{
+  "event"      : "add_payment_info",
+  "category"   : "info",
+  "subcategory": "pago",
+  "action"     : "checkout",
+  "label"      : "datos",
+  "section"    : "checkout.upc.edu.pe/payment",  # << DATO DINÁMICO (página desde donde se da la interacción)
+  "description": "checkout.upc.edu.pe/purchase", # << DATO DINÁMICO (página destino)
+
+  # Objeto de Ecommerce (MANTENIDO)
+  "ecommerce": {
+  "currency": "pen",
+  "items"   : [
+      {
+      item_id       : "21B60015",
+      item_name     : "trade marketing",
+      item_category : "cursos de especializacion",
+      item_category2: "virtual en vivo",
+      item_category3: "carlos muente",
+      item_category4: "virtual en vivo",
+      item_variant  : "6 semanas 24 hrs",
+      price         : 1330,
+      discount      : 0,
+      quantity      : 1,
+      area_interes  : "marketing y gestion comercial"
+      }
+    ]
+  }
+}

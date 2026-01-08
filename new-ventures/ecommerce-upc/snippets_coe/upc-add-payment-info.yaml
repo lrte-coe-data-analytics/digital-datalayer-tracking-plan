@@ -1,15 +1,10 @@
-# Comentarios generales
-
-# La estructura de JAXA (Event, Category, SubCategory, Action, Label, etc)
-# es una nomenclatura deprecada por el mismo GA4
-# a menos que haya datos que se necesitan capturar deberiamos buscar trabajar con las 
-# variables que maneja GA4 de manera nativa (inclusive si no usamos GA4 para explotar la data)
-
 {
-  "event"    : "begin_checkout",
-  "ecommerce": {
-    "currency": CURRENCY_VALUE,   # String: Código ISO de moneda (PEN, USD). Debe ser en mayusculas.
-    "value"   : TOTAL_AMOUNT,     # Number: Suma total (Precio * Cantidad) de todos los items. OBLIGATORIO.
+  "event"       : "add_payment_info",   # String: Nombre Estándar GA4
+  "currency"    : CURRENCY_VALUE,       # String: Código ISO de moneda (PEN, USD). Debe ser en mayusculas.
+  "value"       : TOTAL_AMOUNT,         # Number: Monto pagado por los productos. OBLIGATORIO.
+  "payment_type": PAYMENT_TYPE_VALUE,   # String: "Visa", "Yape", "Transferencia", "Tarjeta de credito", etc
+  "coupon"      : COUPON_VALUE,         # String: Valor ingresado en el campo de cupon (en el paso anterior y validado)
+  "ecommerce"   : {
     "items"   : [
       {
         "item_id"       : ID_ITEM,             # String: ID único del producto.
