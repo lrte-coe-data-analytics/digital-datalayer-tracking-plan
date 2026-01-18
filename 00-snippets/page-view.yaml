@@ -1,0 +1,88 @@
+# ==============================================================================
+# MASTER DATA DICTIONARY: EVENTO view_screen (Page View)
+# ==============================================================================
+# Este archivo define la taxonomía para el evento de carga de contenido.
+# Define el CONTEXTO ("Dónde estoy") frente a la INTERACCIÓN ("Qué hago").
+#
+# Trigger: Al cargar una URL (Web) o montar una Pantalla (App).
+# Mapeo GA4: Se envía como 'page_view' (Web) o 'screen_view' (App).
+# ==============================================================================
+
+{
+  "event"         : "page_view | screen_view",   # Nombre unificado del evento
+  "screen_name"   : "{{titulo}}",                # Nombre legible (Ej: "Home", "Zona cachimbos")
+  "screen_type"   : "{{plantilla}}",             # Tipo técnico de la pantalla
+  "screen_section": "{{grupo}}",                 # Agrupación temática macro (Content Group)
+  "entity_id"     : "{{id}}",                    # (Opcional) ID del producto/post/item
+  "entity_name"   : "{{nombre_obj}}"             # (Opcional) Nombre de la entidad principal
+}
+
+# ----------------------------------------------------------------------------
+# SCREEN_TYPE: ¿QUÉ TIPO de pantalla es? (La Plantilla)
+# Define la función técnica/estructural de la página. Vital para medir
+# rendimiento por tipo de plantilla (ej: ¿Los listados cargan más lento?).
+# ----------------------------------------------------------------------------
+screen_type:
+  # --- Estructurales ---
+  - "home"            # Página de inicio / Portada principal.
+  - "static"          # Páginas de contenido fijo (Quiénes somos, Términos).
+  - "error"           # Páginas de error (404, 500, Sin conexión).
+
+  # --- Descubrimiento y Navegación ---
+  - "listing"         # Listado de items (Categoría de productos, Blog feed).
+  - "search_results"  # Página específica de resultados de búsqueda.
+  - "filter_view"     # Vista exclusiva de filtros (común en Apps móviles).
+
+  # --- Detalle y Profundidad ---
+  - "detail"          # Vista final de un ítem (Ficha de producto, Artículo de blog).
+  - "landing_page"    # Página de aterrizaje promocional (sin navegación clásica).
+
+  # --- Transaccional y Formularios ---
+  - "cart"            # Vista del carrito de compras.
+  - "checkout"        # Pasos del proceso de pago/compra.
+  - "form"            # Páginas dedicadas a input (Login, Registro, Contacto).
+  - "success"         # Página de confirmación ("Gracias por su compra").
+
+  # --- Usuario y Privado ---
+  - "dashboard"       # Panel principal del usuario logueado.
+  - "profile"         # Configuración de perfil o cuenta.
+  - "library"         # "Mis cursos", "Mis pedidos", "Guardados".
+
+# ----------------------------------------------------------------------------
+# SCREEN_SECTION: ¿A QUÉ GRUPO pertenece? (El Silo)
+# Define la temática macro. Permite separar el tráfico por "negocio".
+# Equivalente a 'Content Group' en GA4.
+# ----------------------------------------------------------------------------
+screen_section:
+  # --- Negocio Principal ---
+  - "shop"            # Todo lo relacionado al E-commerce / Catálogo.
+  - "blog"            # Todo lo editorial / Noticias.
+  - "services"        # Páginas de oferta de servicios.
+  - "portfolio"       # Casos de éxito o trabajos previos.
+
+  # --- Soporte y Corporativo ---
+  - "support"         # Centro de ayuda, FAQs, Contacto.
+  - "corporate"       # Inversores, Prensa, Acerca de, Legales.
+  - "onboarding"      # Flujos de bienvenida o tutoriales iniciales.
+
+  # --- Área Personal ---
+  - "my_account"      # Gestión de cuenta, seguridad, pagos.
+  - "auth"            # Login, Signup, Recuperar contraseña.
+
+# ==============================================================================
+# NOTAS SOBRE CAMPOS DINÁMICOS
+# Estos campos no tienen lista cerrada (Enum) y dependen del contexto.
+# ==============================================================================
+#
+# screen_name:
+#   Debe ser humano y único.
+#   Ej: "Home", "Resultados: Zapatos Rojos", "Mi Perfil", "Checkout: Paso 2".
+#
+# entity_id (Opcional):
+#   Úsalo solo en screen_type: "detail".
+#   Ej: "SKU-12345", "POST-9988". Ayuda a unir data con tu backend/CRM.
+#
+# entity_name (Opcional):
+#   Nombre limpio de la entidad para lectura rápida sin cruzar IDs.
+#   Ej: "Nike Air Max 90", "Cómo configurar GA4".
+# ==============================================================================

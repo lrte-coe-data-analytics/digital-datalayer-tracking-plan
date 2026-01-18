@@ -1,0 +1,128 @@
+  # ==============================================================================
+  # MASTER DATA DICTIONARY: EVENTO ui_interaction
+  # ==============================================================================
+  # Este archivo define los valores permitidos (Enums) para los parámetros
+  # del evento unificado de interacción.
+  #
+  # Formato: snake_case
+  # Objetivo: Mantener consistencia en GA4/BigQuery.
+  # ==============================================================================
+
+{
+  "event"      : "ui_interaction",   # Nombre fijo del evento
+  "ui_location": "{{seccion}}",      # Dónde está el elemento
+  "ui_element" : "{{tipo}}",         # Qué es el elemento
+  "ui_action"  : "{{accion}}",       # Qué hace (open_modal, navigation, etc.)
+  "ui_label"   : "{{nombre}}"        # Identificador único o texto del elemento
+}
+
+# ----------------------------------------------------------------------------
+# UI_LOCATION: ¿DÓNDE ocurrió la interacción?
+# Representa la región, contenedor o sección macro de la pantalla.
+# ----------------------------------------------------------------------------
+ui_location: 
+  # --- Estructura Global ---
+  - "header"           # Cabecera principal (Nav, Logo, Iconos top).
+  - "footer"           # Pie de página (Links legales, mapa del sitio).
+  - "sidebar"          # Barras laterales (Filtros, menús secundarios).
+  - "banner_section"   # Banner principal o slider superior.
+  - "navigation_menu"  # Menú principal desplegable o hamburguesa.
+  - "sticky_bar"       # Barras flotantes (CTAs, Chat, Avisos de cookies).
+
+  # --- Contenedores de Contenido ---
+  - "content_body"     # El cuerpo principal de un artículo o página.
+  - "grid_view"        # Listados en cuadrícula (Productos, Posts, Galería).
+  - "list_view"        # Listados verticales (Resultados de búsqueda, Foros).
+  - "carousel"         # Sliders de contenido horizontal.
+  - "related_section"  # Sección de "Quizás te interese" o "Relacionados".
+
+  # --- Áreas de Usuario y Estado ---
+  - "modal_window"    # Ventanas emergentes (Popups, Diálogos).
+  - "drawer"          # Paneles laterales deslizables (Carrito, Menú móvil).
+  - "form_container"  # El área específica que envuelve un formulario.
+  - "toast_message"   # Notificaciones flotantes temporales.
+  - "empty_state"     # Pantallas de "No hay resultados" o "Carrito vacío".
+
+# ----------------------------------------------------------------------------
+# UI_ELEMENT: ¿QUÉ elemento fue con el que se interactuó?
+# Describe el componente técnico o visual. No confundir con el texto (Label).
+# ----------------------------------------------------------------------------
+ui_element: 
+  # --- Interactivos Básicos ---
+  - "button"     # Botón con estilo visual de botón (CTA).
+  - "text_link"  # Enlace de texto simple (dentro de párrafos).
+  - "icon"       # Iconos clickeables (Lupa, X, Corazón, Flecha).
+  - "image"      # Imágenes o Banners estáticos.
+  - "logo"       # Logotipo de la marca.
+  - "tags"       # Etiquetas/Tags redondeadas seleccionables.
+
+  # --- Componentes Complejos ---
+  - "card"                # Tarjeta contenedora (Imagen + Título + Descripción).
+  - "modal_window"        # Para modales que se presentan de manera automatica (popups).
+  - "list_item"           # Un renglón o fila dentro de una lista.
+  - "notification_badge"  # El punto rojo o contador sobre un icono.
+  - "accordion_header"    # La barra que se clickea para desplegar texto.
+  - "tab"                 # Pestaña para cambiar vistas.
+  - "carousel"            # Sliders de contenido horizontal.
+
+  # --- Entradas de Datos (Inputs) ---
+  - "input_field"    # Clic para hacer foco en un campo de texto.
+  - "checkbox"       # Casilla de verificación.
+  - "radio_button"   # Opción única circular.
+  - "toggle_switch"  # Interruptor ON/OFF.
+  - "dropdown"       # Lista desplegable (Select).
+  - "slider"         # Barra de rango o control de volumen.
+
+  # --- Multimedia ---
+  - "video_player"  # El reproductor en sí.
+  - "audio_player"  # Reproductor de audio/podcast.
+
+# ----------------------------------------------------------------------------
+# UI_ACTION: ¿QUÉ HACE la interacción? (La intención)
+# Describe la función lógica que se ejecuta tras el clic.
+# ----------------------------------------------------------------------------
+ui_action: 
+  # --- Navegación (Cambio de Contexto) ---
+  - "navigation"   # Lleva a una nueva URL (Interna o Externa).
+  - "go_back"      # Acción de regresar en el historial.
+  - "scroll_to"    # Desplazamiento suave a una ancla (#) en la misma pág.
+  - "load_more"    # Cargar más items (Paginación o Infinite Scroll).
+  - "scroll_next"  # Desplazamiento hacia el siguiente elemento.
+  - "scroll_prev"  # Desplazamiento hacia el elemento previo.
+
+  # --- Modificación de Interfaz (Sin cambio de URL) ---
+  - "open_modal"  # Abre un popup, modal o drawer.
+  - "close"       # Cierra un elemento (X, Cancelar).
+  - "expand"      # Muestra más contenido (Acordeón, Leer más).
+  - "collapse"    # Contrae contenido.
+  - "tab_switch"  # Cambia la vista activa entre pestañas.
+  - "zoom_in"     # Ampliar imagen o mapa.
+
+  # --- Manipulación de Datos y Formularios ---
+  - "submit"        # Envío final de un formulario.
+  - "search"        # Ejecutar una búsqueda.
+  - "filter_apply"  # Aplicar filtros seleccionados.
+  - "filter_clear"  # Limpiar/Resetear filtros.
+  - "sort_change"   # Cambiar el orden (Precio, Fecha, Alfabetico).
+  - "copy_text"     # Copiar al portapapeles.
+
+  # --- Engagement y Social ---
+  - "download"       # Descargar un archivo (PDF, ZIP).
+  - "share"          # Abrir menú de compartir nativo o social.
+  - "like"           # Dar "Me gusta" o votar positivo.
+  - "save_to_list"   # Guardar en favoritos/wishlist.
+  - "rate"           # Puntuar (Estrellas).
+  - "contact_start"  # Iniciar chat (Whatsapp, Messenger).
+
+  # --- Control Multimedia ---
+  - "play"
+  - "pause"
+  - "mute"
+  - "fullscreen"
+
+  # ==============================================================================
+  # NOTA SOBRE ui_label
+  # ui_label no tiene lista predefinida (Enum) porque es dinámico.
+  # Debe contener el identificador único del elemento:
+  # Ej: "contacto_footer", "producto_zapatillas_nike", "filtro_precio".
+  # ==============================================================================
