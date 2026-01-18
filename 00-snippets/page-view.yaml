@@ -13,8 +13,13 @@
   "screen_name"   : "{{titulo}}",                # Nombre legible (Ej: "Home", "Zona cachimbos")
   "screen_type"   : "{{plantilla}}",             # Tipo técnico de la pantalla
   "screen_section": "{{grupo}}",                 # Agrupación temática macro (Content Group)
+  "category_l1"   : "{{tema}}",
+  "category_l2"   : "{{subtema}}",
+  "category_l3"   : "{{subsubtema}}",
   "entity_id"     : "{{id}}",                    # (Opcional) ID del producto/post/item
-  "entity_name"   : "{{nombre_obj}}"             # (Opcional) Nombre de la entidad principal
+  "entity_name"   : "{{nombre_obj}}",            # (Opcional) Nombre de la entidad principal
+  "search_term"   : "{{query}}",                 # (Opcional) Lo que escribió el usuario
+  "result_count"  : "{{int}}"                    # (Opcional) Cantidad de resultados encontrados
 }
 
 # ----------------------------------------------------------------------------
@@ -55,6 +60,7 @@ screen_type:
 # ----------------------------------------------------------------------------
 screen_section:
   # --- Negocio Principal ---
+  - "home"            # Entorno de inicio.
   - "shop"            # Todo lo relacionado al E-commerce / Catálogo.
   - "blog"            # Todo lo editorial / Noticias.
   - "services"        # Páginas de oferta de servicios.
