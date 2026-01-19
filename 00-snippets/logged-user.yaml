@@ -1,0 +1,18 @@
+# ==============================================================================
+# MASTER DATA DICTIONARY: logged-user
+# ==============================================================================
+# Sirve para determinar que datos adicionales vamos a capturar en los eventos
+# que se ejecuten cuando un usuario se encuentra loggeado dentro del app o web
+#
+# Esta definicion deberia agregarse como anexo a cualquier evento trackeado
+# Si los campos no pueden ser accedidos, se mantienen como nulos.
+# Todos los campos deben guardarse en formato STRING o Texto.
+#
+# ==============================================================================
+
+{
+  "user_id"             : "{{id_usuario}}",        # Codigo de usuario (estudiante, docente)
+  "user_ciclo_academico": "{{ciclo_academico}}",   # Ciclo academico del usuario
+  "user_unidad_negocio" : "{{unidad_negocio}}",    # UG, CAD, EPE, etc.
+  "user_producto"       : "{{producto}}"           # Producto o carrera.
+}
