@@ -13,6 +13,7 @@ Pantalla principal del app, aqui se encuentran secciones de interes para navegac
 Esta sección presenta distintos Cards (imagenes + texto) que permiten navegar a ciertas secciones del app.  
 Todos los elementos que pertenecen a esta seccion deben etiquetarse de forma idéntica con una variacion en funcion
 del texto o label que se presenta dentro del card.  
+**Esta seccion se trabajar de la misma manera independientemente del tipo de usuario**.
 
 ⚠️ **Importancia**  
 Estos eventos nos permiten identificar secciones de interes entre los usuarios del app.
@@ -28,8 +29,11 @@ data-ui-hierarchy = "inicio > explora_y_descubre"
 data-ui-url       = "{{url_destino}}"
 ```
 
-Estos atributos permitiran que la estructura de los eventos sea facil de mantener y de programar.
 Se puede visualizar el payload generico del evento dentro del siguiente fichero de [implementacion](./00-home/00-explora-y-descubre/global_event.yaml).
+
+🩻 **Imagenes**  
+Aqui se presentan vistas detalladas de la ubicacion de la seccion dentro del app.
+TBD
 
 Nota:  
 La implementacion de este codigo esa basado en la estructura generica del evento [ui-interaction](../../00-snippets/ui-interaction.yaml) con algunas modificaciones de ser necesario. Todos estos eventos se pueden ver complementados tambien por la estructura de [datos de usuario loggeado](../../00-snippets/logged-user.yaml).
