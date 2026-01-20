@@ -1,12 +1,12 @@
-  # los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
-  # dentro de su codigo.
+# los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
+# dentro de su codigo.
 
-  # parametros a agregar dentro de cada elemento
-  # esto aplica para
-  # data-ui-element   = "card"
-  # data-ui-label     = "{{card_label}}"
-  # data-ui-hierarchy = "inicio > explora_y_descubre"
-  # data-ui-url       = "{{url_destino}}"
+# parametros a agregar dentro de cada elemento
+# esto aplica para
+# data-ui-element   = "card"
+# data-ui-label     = "{{card_label}}"
+# data-ui-hierarchy = "inicio > tu_camino_al_exito"
+# data-ui-url       = "{{url_destino}}"
 
 {
   "event"               : "ui_interaction",          # Nombre fijo del evento
@@ -19,6 +19,5 @@
   "user_id"             : "{{id_usuario}}",          # Codigo de usuario (estudiante, docente)
   "user_ciclo_academico": "{{ciclo_academico}}",     # Ciclo academico del usuario
   "user_unidad_negocio" : "{{unidad_negocio}}",      # UG, CAD, EPE, etc.
-  "user_producto"       : "{{producto}}",            # Producto o carrera.
-  "user_categoria"      : "{{categoria}}"            # Si es estudiante, docente, administrador, etc.
+  "user_producto"       : "{{producto}}"             # Producto o carrera.
 }
