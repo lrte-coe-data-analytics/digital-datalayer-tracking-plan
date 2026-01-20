@@ -1,21 +1,21 @@
-  # ==============================================================================
-  # MASTER DATA DICTIONARY: EVENTO ui_interaction
-  # ==============================================================================
-  # Este archivo define los valores permitidos (Enums) para los parámetros
-  # del evento unificado de interacción.
-  #
-  # Formato: snake_case
-  # Objetivo: Mantener consistencia en GA4/BigQuery.
-  # ==============================================================================
+# ==============================================================================
+# MASTER DATA DICTIONARY: EVENTO ui_interaction
+# ==============================================================================
+# Este archivo define los valores permitidos (Enums) para los parámetros
+# del evento unificado de interacción.
+#
+# Formato: snake_case
+# Objetivo: Mantener consistencia en GA4/BigQuery.
+# ==============================================================================
 
 {
-  "event"          : "ui_interaction",       # Nombre fijo del evento
-  "ui_location"    : "{{seccion}}",          # Dónde está el elemento
-  "ui_element"     : "{{tipo}}",             # Qué es el elemento
-  "ui_action"      : "{{accion}}",           # Qué hace (open_modal, navigation, etc.)
-  "ui_label"       : "{{nombre}}",           # Identificador único o texto del elemento
-  "ui_section_name": "{{titulo_seccion}}",   # Identificador semantico de la seccion donde se ubica.
-  "link_url"       : "{{url_destino}}"       # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+  "event"       : "ui_interaction",   # Nombre fijo del evento
+  "ui_location" : "{{seccion}}",      # Dónde está el elemento
+  "ui_element"  : "{{tipo}}",         # Qué es el elemento
+  "ui_action"   : "{{accion}}",       # Qué hace (open_modal, navigation, etc.)
+  "ui_label"    : "{{nombre}}",       # Identificador único o texto del elemento
+  "ui_hierarchy": "{{hierarchy}}",    # Identificador semantico de la seccion donde se ubica.
+  "link_url"    : "{{url_destino}}"   # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
 }
 
 # ----------------------------------------------------------------------------
