@@ -6,24 +6,24 @@ Fecha ultima actualizacion: Enero 2026
 
 ---
 
-## Inicio
+## ➡️ Inicio
 Pantalla principal del app, aqui se encuentran secciones de interes para navegacion directa. Esta seccion es el punto de partida para cualquier tipo de navegacion dentro del app.
 
-📘 `screen_view`:  
-Este evento se lanza cuando se carga la pantalla de inicio dentro del app. No importa si es la primera o na n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app. Al ser un evento de usuario previamente loggeado, los datos del login se envia junto con el evento como se puede visualizar en su [implementacion](./00-home/screen_view.yaml).
+📘 `screen_view`: [payload](./00-home/screen_view.yaml)  
+Este evento se lanza cuando se carga la pantalla de inicio dentro del app. No importa si es la primera o na n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app. Al ser un evento de usuario previamente loggeado, los datos del login se envia junto con el evento.
 
-📘 `carousel_banner`:  
-Captura la inteaccion del usuario con el `carousel` que se presenta dentro de la pantalla de inicio. Este componente presenta distintos cards (que se pueden presentar como popup en algun momento) para que los estudiantes puedan seleccionar y dirigirse al destino correspondiente. Los datos del login se envia junto con el evento como se puede visualizar en su [implementacion](./00-home/carousel_banner.yaml).
+📘 `carousel_banner`: [payload](./00-home/carousel_banner.yaml)  
+Captura la inteaccion del usuario con el `carousel` que se presenta dentro de la pantalla de inicio. Este componente presenta distintos cards (que se pueden presentar como popup en algun momento) para que los estudiantes puedan seleccionar y dirigirse al destino correspondiente.
 
-📘 `card_cachimbo_upc`:  
-Captura la interacion de **click** del usuario con el card relacionado a **Cachimbo UPC**. Los datos del login se envia junto con el evento como se puede visualizar en su [implementacion](./00-home/card_cachimbo.yaml).
+📘 `card_cachimbo_upc`: [payload](./00-home/card_cachimbo.yaml)  
+Captura la interacion de **click** del usuario con el card relacionado a **Cachimbo UPC**.
 
-📘 `icon_campana`:  
-Cuando el usuario hace click en la campana de notificaciones, permite la captura de un grado de interes del usuario dentro de su formacion academica. Los datos del login se envia junto con el evento como se puede visualizar en su [implementacion](./00-home/icon_campana.yaml).
+📘 `icon_campana`: [payload](./00-home/icon_campana.yaml)  
+Cuando el usuario hace click en la campana de notificaciones, permite la captura de un grado de interes del usuario dentro de su formacion academica.
 
 ---
 
-### ➡️ Explora y descubre
+### Explora y descubre
 Esta sección presenta distintos Cards (imagenes + texto) que permiten navegar a ciertas secciones del app, los eventos hacen referencia a la accion de **click** en cada uno de estos elementos.  
 
 Todos los elementos que pertenecen a esta seccion deben etiquetarse de forma idéntica con una variacion en funcion
@@ -54,7 +54,7 @@ TBD
 
 ---
 
-### ➡️ Tu camino al exito
+### Tu camino al exito
 Seccion del app para los ingresantes (Cachimbos). Aqui se trabajan principalmente con los cards que los dirigen hacia las secciones de interes para este grupo de estudiantes.
 
 ⚠️ **Importancia**  
@@ -78,6 +78,31 @@ Asimismo, se presentan estructuras rigidas que pueden ser usadas en el caso de q
 🩻 **Imagenes**  
 Aqui se presentan vistas detalladas de la ubicacion de la seccion dentro del app.
 TBD
+
+---
+
+## Ayuda
+Seccion Ayuda del super app UPC.  
+
+📘 `screen_view`: [payload](./02-ayuda/screen_view.yaml)  
+Este evento se lanza cuando se carga la pantalla de ayuda dentro del app. No importa si es la primera o la n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app.  
+
+📘 `button_csat_enviar`:  [payload](./02-ayuda/button_csat_enviar.yaml)  
+Evento capturado al momento de hacer click en el boton "enviar" en el apartado de la valoracion CSAT que realiza el usuario.
+
+📘 `card_explora`: [payload](./02-ayuda/card_explora.yaml)  
+Card presente en la pantalla de ayuda (usuario `docente`). El evento busca trackear la accion de click dentro de este elemento.
+
+---
+
+## Perfil
+Seccion Perfil del super app UPC.
+
+📘 `screen_view`: [payload](./03-perfil/screen_view.yaml)  
+Este evento se lanza cuando se carga la pantalla de perfil dentro del app. No importa si es la primera o la n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app.  
+
+📘 `card_acceso_biometrico`:  [payload](./03-perfil/card_acceso_biometrico.yaml)  
+Evento capturado al momento de hacer click en el boton "enviar" en el apartado de la valoracion CSAT que realiza el usuario.
 
 ---
 
