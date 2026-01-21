@@ -9,6 +9,8 @@ Fecha ultima actualizacion: Enero 2026
 ## 🚀 Inicio
 Pantalla principal del app, aqui se encuentran secciones de interes para navegacion directa. Esta seccion es el punto de partida para cualquier tipo de navegacion dentro del app.
 
+### Home inicio
+
 - 📘 `screen_view`: [payload](./00-home/screen_view.yaml)  
 Este evento se lanza cuando se carga la pantalla de inicio dentro del app. No importa si es la primera o na n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app. Al ser un evento de usuario previamente loggeado, los datos del login se envia junto con el evento.
 
@@ -23,6 +25,9 @@ Captura la interacion de **click** del usuario con el card relacionado a **Cachi
 
 - 📘 `icon_campana`: [payload](./00-home/icon_campana.yaml)  
 Cuando el usuario hace click en la campana de notificaciones, permite la captura de un grado de interes del usuario dentro de su formacion academica.
+
+- 📘 `list_item_notification`: [payload](./00-home/01-notificaciones/list_item_notification.yaml)  
+Cada vez que el usuario haga click en algun elemento de la lista de notificaciones que tiene dentro del app. Solo aplica para las acciones dentro del app (no interaccioens con notificacioens del dispositivo donde se encuentra instalado el app).
 
 ### Explora y descubre
 Esta sección presenta distintos Cards (imagenes + texto) que permiten navegar a ciertas secciones del app, los eventos hacen referencia a la accion de **click** en cada uno de estos elementos.  
@@ -43,7 +48,7 @@ estructura a nivel de código:
     data-ui-url       = "{{url_destino}}"
     ```
 
-    Se puede visualizar el payload generico del evento dentro del siguiente fichero de [implementacion](./00-home/00-explora-y-descubre/global_event.yaml).  
+    Se puede visualizar el payload generico del evento dentro del siguiente fichero de [implementacion](./00-home/00-explora-y-descubre/general_event.yaml).
 
     Asimismo, se presentan estructuras rigidas que pueden ser usadas en el caso de que la implementacion parametrica se vea dificultada por algun motivo. Los archivos se pueden encontrar en el siguiente [folder](./00-home/00-explora-y-descubre/).
 
@@ -67,18 +72,20 @@ estructura a nivel de código:
     data-ui-url       = "{{url_destino}}"
     ```
 
-    Se puede visualizar el payload generico del evento dentro del siguiente fichero de [implementacion](./00-home/02-tu-camino-al-exito/global_event.yaml).  
+    Se puede visualizar el payload generico del evento dentro del siguiente fichero de [implementacion](./00-home/02-tu-camino-al-exito/general_event.yaml).  
 
     Asimismo, se presentan estructuras rigidas que pueden ser usadas en el caso de que la implementacion parametrica se vea dificultada por algun motivo. Los archivos se pueden encontrar en el siguiente [folder](./00-home/02-tu-camino-al-exito/).
 
 - 🩻 Imagenes  
 Aqui se presentan vistas detalladas de la ubicacion de la seccion dentro del app.
 
-## Ayuda
+## 🚀 Ayuda
 Seccion Ayuda del super app UPC.  
 
+### Home ayuda
+
 - 📘 `screen_view`: [payload](./02-ayuda/screen_view.yaml)  
-Este evento se lanza cuando se carga la pantalla de ayuda dentro del app. No importa si es la primera o la n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app.  
+Este evento se lanza cuando se carga la pantalla de ayuda dentro del app. No importa si es la primera o la n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app.
 
 - 📘 `button_csat_enviar`:  [payload](./02-ayuda/button_csat_enviar.yaml)  
 Evento capturado al momento de hacer click en el boton "enviar" en el apartado de la valoracion CSAT que realiza el usuario.
@@ -86,14 +93,71 @@ Evento capturado al momento de hacer click en el boton "enviar" en el apartado d
 - 📘 `card_explora`: [payload](./02-ayuda/card_explora.yaml)  
 Card presente en la pantalla de ayuda (usuario `docente`). El evento busca trackear la accion de click dentro de este elemento.
 
-## Perfil
+## 🚀 Perfil
 Seccion Perfil del super app UPC.
 
+### Home perfil
+
 - 📘 `screen_view`: [payload](./03-perfil/screen_view.yaml)  
-Este evento se lanza cuando se carga la pantalla de perfil dentro del app. No importa si es la primera o la n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app.  
+Este evento se lanza cuando se carga la pantalla de perfil dentro del app. No importa si es la primera o la n-ésima llegada a esta pantalla, todas las veces que se muestre se enviara un evento. Esto aplica para todos los tipos de usuarios que se encuentran dentro del app.
 
 - 📘 `card_acceso_biometrico`:  [payload](./03-perfil/card_acceso_biometrico.yaml)  
 Evento capturado al momento de hacer click en el card "Acceso biometrico" en la seccion de ayuda del app.
+
+## 🚀 Cursos
+Seccion del app dedicada exclusivamene a los cursos en los que se encuentra matriculado el usuario al momento de su navegacion por el app. Todos estos eventos solo se lanzan cuando el usuario se encuentra dentro de la seccion de CURSOS (click en el card que dirige hacia esta seccion).
+
+### Home cursos
+
+- 📘 `list_item_curso`:  [payload](./04-cursos/list_item_curso.yaml)  
+Evento que se captura cuando el usuario hace click en cualquier elemento de la lista de cursos que se le presenta dentro de la pantalla principal de cursos. Se capturan algunos datos dinamicos como el nombre del curso.
+
+## 🚀 Finanzas
+Seccion del app dedicado a los temas financieros del usuario. Se accede mediante la interaccion con el card de finanzas.
+
+### Home finanzas
+Pantalla principal al momento de ingresar a la seccion de finanzas.
+
+- ⚠️ Importancia  
+Estos eventos nos permiten identificar secciones de interes entre los usuarios del app.
+
+- ⚙️ Implementacion  
+Todos los elementos dentro de esta sección deben de contar con los siguientes atributos dentro de su
+estructura a nivel de código:
+
+    ```js
+    data-ui-element   = "card"
+    data-ui-label     = "{{card_label}}"
+    data-ui-hierarchy = "inicio > finanzas"
+    data-ui-url       = "{{url_destino}}"
+    ```
+
+    Se puede visualizar el payload generico del evento dentro del siguiente fichero de [implementacion](./05-finanzas/general_event.yaml).
+
+    Asimismo, se presentan estructuras rigidas que pueden ser usadas en el caso de que la implementacion parametrica se vea dificultada por algun motivo. Los archivos se pueden encontrar en el siguiente [folder](./05-finanzas).
+
+- 🩻 Imagenes  
+Aqui se presentan vistas detalladas de la ubicacion de la seccion dentro del app.
+
+### Mis pagos pendientes
+Pantalla principal al momento de dar click al card de Mis cuotas pendientes. Aqui se muestra una serie de cards indicando los pagos que tiene por pagar el usuario.
+
+- 📘 `card_detalle_pago`: [payload](./05-finanzas/00-mis-pagos-pendientes/card_detalle_pago.yaml)  
+Se captura al momento en que el usuario le da click a cualquier card relacionado a sus pagos pendientes (todos los cards denro de la seccion `home > finanzas > mis_pagos_pendientes`). Esto es de vital importancia para la identificacion de features de interes en los modelos analiticos.
+
+- 📘 `link_portal_upc`: [payload](./05-finanzas/00-mis-pagos-pendientes/link_portal_upc.yaml)  
+Cuando se da click al enlace que dirige al portal del estudiante para hacer los pagos correspondientes. De importancia para levantar datos de interes del usuario.
+
+## 🚀 Modals
+Tracking de eventos relacionados a modals que pueden aparecer dentro del app. Un modal se presenta como una pantalla pero sobrepuesta sobre otra pantalla principal. Estas "vistas" no deben ser trackeadas como paginas o pantallas debido a que causan calculos erroneos a nivel de rebote o navegacion.  
+Los modals generalmente suelen ser `popups` o secciones del app que requieran de cierta accion del usuario sin modificar la pantalla o vista principal.
+
+- 📘 `popup_click`: [payload](./99-modals/popup_click.yaml)  
+Cuando se hace click en cualquier elemento del popup. Captura datos sobre que se ha mostrado y permite hacer un tracking a nivel de comunicaciones importantes.
+
+- 📘 `popup_view`: [payload](./99-modals/popup_view.yaml)  
+Permite capturar que elementos popup se han mostrado al estudiante. Con estos datos podemos validar datos de campañas o de intereses de los usuarios cuando usan el app.
+
 
 ---
 
