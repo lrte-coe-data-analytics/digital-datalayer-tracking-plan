@@ -1,0 +1,14 @@
+{
+  "event"               : "ui_interaction",         # Nombre fijo del evento
+  "ui_location"         : "content_body",           # Dónde está el elemento
+  "ui_element"          : "button",                 # Qué es el elemento
+  "ui_action"           : "click",                  # Qué hace (open_modal, navigation, etc.)
+  "ui_label"            : "calificar_en_tiendas",   # Identificador único o texto del elemento
+  "ui_hierarchy"        : "ayuda > csat",           # Identificador semantico de la seccion donde se ubica.
+  "link_url"            : "{{url_destino}}",        # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+  "user_id"             : "{{id_usuario}}",         # Codigo de usuario (estudiante, docente)
+  "user_ciclo_academico": "{{ciclo_academico}}",    # Ciclo academico del usuario
+  "user_unidad_negocio" : "{{unidad_negocio}}",     # UG, CAD, EPE, etc.
+  "user_producto"       : "{{producto}}",           # Producto o carrera.
+  "user_categoria"      : "{{categoria}}"           # Si es estudiante, docente, administrador, etc.
+}

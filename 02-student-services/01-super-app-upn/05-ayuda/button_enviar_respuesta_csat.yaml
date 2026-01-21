@@ -3,8 +3,8 @@
   "ui_location"         : "content_body",          # Dónde está el elemento
   "ui_element"          : "button",                # Qué es el elemento
   "ui_action"           : "click",                 # Qué hace (open_modal, navigation, etc.)
-  "ui_label"            : "aceptar_tyc",           # Identificador único o texto del elemento
-  "ui_hierarchy"        : "login",                 # Identificador semantico de la seccion donde se ubica.
+  "ui_label"            : "enviar_respuesta",      # Identificador único o texto del elemento
+  "ui_hierarchy"        : "ayuda > csat",          # Identificador semantico de la seccion donde se ubica.
   "link_url"            : "{{url_destino}}",       # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
   "user_id"             : "{{id_usuario}}",        # Codigo de usuario (estudiante, docente)
   "user_ciclo_academico": "{{ciclo_academico}}",   # Ciclo academico del usuario

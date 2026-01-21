@@ -94,6 +94,7 @@ ui_action:
 
   # --- Modificación de Interfaz (Sin cambio de URL) ---
   - "open_modal"  # Abre un popup, modal o drawer.
+  - "impression"  # Si ese abre el elmento de forma automatica.
   - "close"       # Cierra un elemento (X, Cancelar).
   - "expand"      # Muestra más contenido (Acordeón, Leer más).
   - "collapse"    # Contrae contenido.

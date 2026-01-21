@@ -1,0 +1,18 @@
+{
+  "event"               : "screen_view",                       # Nombre unificado del evento
+  "screen_name"         : "lista_companeros",                  # Nombre del curso separado por guinos abajo: matematica_aplica_i, estadistica_y_probabilidades
+  "screen_type"         : "dashboard",                         # Tipo técnico de la pantalla
+  "screen_section"      : "academico > cursos",                # Agrupación temática macro (Content Group)
+  "category_l1"         : null,
+  "category_l2"         : null,
+  "category_l3"         : null,
+  "entity_id"           : null,                                # (Opcional) ID del producto/post/item
+  "entity_name"         : null,                                # (Opcional) Nombre de la entidad principal
+  "search_term"         : "{{cod_curso}} > {{curso_label}}",   # (Opcional) Lo que escribió el usuario
+  "result_count"        : null,                                # (Opcional) Cantidad de resultados encontrados
+  "user_id"             : "{{id_usuario}}",                    # Codigo de usuario (estudiante, docente)
+  "user_ciclo_academico": "{{ciclo_academico}}",               # Ciclo academico del usuario
+  "user_unidad_negocio" : "{{unidad_negocio}}",                # UG, CAD, EPE, etc.
+  "user_producto"       : "{{producto}}",                      # Producto o carrera.
+  "user_categoria"      : "{{categoria}}"                      # Si es estudiante, docente, administrador, etc.
+}

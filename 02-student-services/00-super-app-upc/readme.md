@@ -1,10 +1,33 @@
 # Documento de marcación
-Fecha de creacion: Enero 2026  
-Fecha ultima actualizacion: Enero 2026
+Fecha de creacion: 17 Enero 2026  
+Fecha ultima actualizacion: 21 Enero 2026
 
 ## Table of content
+1. [Login](#-login)  
+2. [Inicio](#-inicio)
+    - [Explora y descubre](#explora-y-descubre)  
+    - [Tu camino al exito](#tu-camino-al-exito)  
+
+3. [Ayuda](#-ayuda)  
+4. [Cursos](#-cursos)  
+5. [Finanzas](#-finanzas)  
+6. [Modals](#-modals)  
 
 ---
+
+## 🚀 Login
+Eventos que capturan datos relacionados al login en el app (sign-in y sing-up).
+
+### Eventos generales
+
+- 📘 `button_login`: [payload](./01-login/button_login.yaml)  
+Evento que se envia cuando el proceso de validacion de credenciales es exitoso. Esto dirige al usuario directamente al home pero no se trackea como un screenview debido al evento propio de la seccion. Sin embargo es importante para el seguimiento de usuarios que ingresan al app mediante sus credenciales.
+
+- 📘 `button_tyc`: [payload](./01-login/button_tyc.yaml)  
+Cuando el usuario hace click en el boton de **aceptar** de los terminos y condiciones. Este proceso se levanta al momento del primer ingreso al app.
+
+- 📘 `modal_pwd_error`: [payload](./01-login/modal_pwd_error.yaml)  
+Cuando se le muestra el modal de error al momento de ingresar la contraseña. Nos sirve para tracking de activida del usuario con el app.
 
 ## 🚀 Inicio
 Pantalla principal del app, aqui se encuentran secciones de interes para navegacion directa. Esta seccion es el punto de partida para cualquier tipo de navegacion dentro del app.
@@ -113,7 +136,7 @@ Seccion del app dedicada exclusivamene a los cursos en los que se encuentra matr
 Evento que se captura cuando el usuario hace click en cualquier elemento de la lista de cursos que se le presenta dentro de la pantalla principal de cursos. Se capturan algunos datos dinamicos como el nombre del curso.
 
 ## 🚀 Finanzas
-Seccion del app dedicado a los temas financieros del usuario. Se accede mediante la interaccion con el card de finanzas.
+Seccion del app dedicado a los temas relacionados con los documentos emitidos hacia el usuario. Se accede mediante la interaccion con el card de finanzas.
 
 ### Home finanzas
 Pantalla principal al momento de ingresar a la seccion de finanzas.
@@ -152,10 +175,10 @@ Cuando se da click al enlace que dirige al portal del estudiante para hacer los 
 Tracking de eventos relacionados a modals que pueden aparecer dentro del app. Un modal se presenta como una pantalla pero sobrepuesta sobre otra pantalla principal. Estas "vistas" no deben ser trackeadas como paginas o pantallas debido a que causan calculos erroneos a nivel de rebote o navegacion.  
 Los modals generalmente suelen ser `popups` o secciones del app que requieran de cierta accion del usuario sin modificar la pantalla o vista principal.
 
-- 📘 `popup_click`: [payload](./99-modals/popup_click.yaml)  
+- 📘 `popup_click`: [payload](./06-modals/popup_click.yaml)  
 Cuando se hace click en cualquier elemento del popup. Captura datos sobre que se ha mostrado y permite hacer un tracking a nivel de comunicaciones importantes.
 
-- 📘 `popup_view`: [payload](./99-modals/popup_view.yaml)  
+- 📘 `popup_view`: [payload](./06-modals/popup_view.yaml)  
 Permite capturar que elementos popup se han mostrado al estudiante. Con estos datos podemos validar datos de campañas o de intereses de los usuarios cuando usan el app.
 
 
