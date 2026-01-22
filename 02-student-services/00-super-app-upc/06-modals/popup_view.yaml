@@ -1,14 +1,9 @@
 {
-  "event"               : "ui_interaction",        # Nombre fijo del evento
-  "ui_location"         : "modal_window",          # Dónde está el elemento
-  "ui_element"          : "modal_window",          # Qué es el elemento
-  "ui_action"           : "open_modal",            # Qué hace (open_modal, navigation, etc.)
-  "ui_label"            : "{{modal_label}}",       # Esto debe enviar el texto principal del elemento
-  "ui_hierarchy"        : "inicio",                # Identificador semantico de la seccion donde se ubica.
-  "link_url"            : "{{url_desino}}",        # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
-  "user_id"             : "{{id_usuario}}",        # Codigo de usuario (estudiante, docente)
-  "user_ciclo_academico": "{{ciclo_academico}}",   # Ciclo academico del usuario
-  "user_unidad_negocio" : "{{unidad_negocio}}",    # UG, CAD, EPE, etc.
-  "user_producto"       : "{{producto}}",          # Producto o carrera.
-  "user_categoria"      : "{{categoria}}"          # Si es estudiante, docente, administrador, etc.
+  "event"       : "ui_interaction",    # Nombre fijo del evento
+  "ui_location" : "modal_window",      # Dónde está el elemento
+  "ui_element"  : "modal_window",      # Qué es el elemento
+  "ui_action"   : "open_modal",        # Qué hace (open_modal, navigation, etc.)
+  "ui_label"    : "{{modal_label}}",   # Esto debe enviar el texto principal del elemento
+  "ui_hierarchy": "inicio",            # Identificador semantico de la seccion donde se ubica.
+  "link_url"    : "{{url_desino}}"     # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
 }
