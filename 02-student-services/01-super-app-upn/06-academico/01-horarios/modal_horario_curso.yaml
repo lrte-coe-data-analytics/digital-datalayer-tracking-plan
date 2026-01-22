@@ -1,6 +1,6 @@
 {
   "event"       : "ui_interaction",                    # Nombre fijo del evento
-  "ui_location" : "modal_window",                      # Dónde está el elemento
+  "ui_location" : "academico",                         # Dónde está el elemento
   "ui_element"  : "modal_window",                      # Qué es el elemento
   "ui_action"   : "open_modal",                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"    : "{{cod_curso}} > {{curso_label}}",   # Esto debe enviar el texto principal del elemento

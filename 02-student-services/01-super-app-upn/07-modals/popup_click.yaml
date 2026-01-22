@@ -1,6 +1,6 @@
 {
   "event"       : "ui_interaction",    # Nombre fijo del evento
-  "ui_location" : "modal_window",      # Dónde está el elemento
+  "ui_location" : "home",              # Dónde está el elemento
   "ui_element"  : "modal_window",      # Qué es el elemento
   "ui_action"   : "click",             # Qué hace (open_modal, navigation, etc.)
   "ui_label"    : "{{modal_label}}",   # Esto debe enviar el texto principal del elemento

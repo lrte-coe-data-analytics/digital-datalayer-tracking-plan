@@ -1,12 +1,12 @@
-  # los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
-  # dentro de su codigo.
+# los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
+# dentro de su codigo.
 
-  # parametros a agregar dentro de cada elemento
-  # esto aplica para
-  # data-ui-element   = "card"
-  # data-ui-label     = "{{card_label}}"  -- debe esar separado por "_" ejemplo_de_label
-  # data-ui-hierarchy = "inicio > cachimbo > actividades"
-  # data-ui-url       = "{{url_destino}}"
+# parametros a agregar dentro de cada elemento
+# esto aplica para
+# data-ui-element   = "card"
+# data-ui-label     = "{{card_label}}"  -- debe esar separado por "_" ejemplo_de_label
+# data-ui-hierarchy = "inicio > cachimbo > actividades"
+# data-ui-url       = "{{url_destino}}"
 
 {
   "event"       : "ui_interaction",          # Nombre fijo del evento

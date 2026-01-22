@@ -26,6 +26,9 @@ Eventos que capturan datos relacionados al login en el app (sign-in y sing-up).
 
 ### Eventos generales
 
+- 📘 `login: [payload](./00-login/login.yaml)  
+Evento que se envia cuando el proceso de validacion de credenciales es exitoso. Esto dirige al usuario directamente al home pero no se trackea como un screenview sino que sirve para tracking de credenciales de usuario a lo largo de la sesion.
+
 - 📘 `button_login`: [payload](./00-login/button_login.yaml)  
 Evento que se envia cuando el proceso de validacion de credenciales es exitoso. Esto dirige al usuario directamente al home pero no se trackea como un screenview debido al evento propio de la seccion. Sin embargo es importante para el seguimiento de usuarios que ingresan al app mediante sus credenciales.
 

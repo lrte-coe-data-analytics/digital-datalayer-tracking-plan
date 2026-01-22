@@ -1,13 +1,13 @@
 {
-  "event"         : "screen_view",                       # Nombre unificado del evento
-  "screen_name"   : "detalle_curso",                     # Nombre del curso separado por guinos abajo: matematica_aplica_i, estadistica_y_probabilidades
-  "screen_type"   : "dashboard",                         # Tipo técnico de la pantalla
-  "screen_section": "academico > cursos",                # Agrupación temática macro (Content Group)
+  "event"         : "screen_view",                            # Nombre unificado del evento
+  "screen_name"   : "detalle_curso",                          # Nombre del curso separado por guinos abajo: matematica_aplica_i, estadistica_y_probabilidades
+  "screen_type"   : "dashboard",                              # Tipo técnico de la pantalla
+  "screen_section": "academico > cursos > {{curso_label}}",   # Agrupación temática macro (Content Group)
   "category_l1"   : null,
   "category_l2"   : null,
   "category_l3"   : null,
-  "entity_id"     : null,                                # (Opcional) ID del producto/post/item
-  "entity_name"   : null,                                # (Opcional) Nombre de la entidad principal
-  "search_term"   : "{{cod_curso}} > {{curso_label}}",   # (Opcional) Lo que escribió el usuario
-  "result_count"  : null                                 # (Opcional) Cantidad de resultados encontrados
+  "entity_id"     : null,                                     # (Opcional) ID del producto/post/item
+  "entity_name"   : null,                                     # (Opcional) Nombre de la entidad principal
+  "search_term"   : null,                                     # (Opcional) Lo que escribió el usuario
+  "result_count"  : null                                      # (Opcional) Cantidad de resultados encontrados
 }

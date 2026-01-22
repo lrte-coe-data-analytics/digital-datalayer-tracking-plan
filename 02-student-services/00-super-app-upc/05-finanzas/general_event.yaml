@@ -5,7 +5,7 @@
 # esto aplica para
 # data-ui-element   = "card"
 # data-ui-label     = "{{card_label}}"
-# data-ui-hierarchy = "inicio > finanzas"
+# data-ui-hierarchy = "finanzas"
 # data-ui-url       = "{{url_destino}}"
 
 {
