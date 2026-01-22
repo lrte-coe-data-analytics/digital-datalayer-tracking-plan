@@ -6,9 +6,4 @@
   "ui_label"            : "link_buzon_msj_{{cod_curso}}",   # Esto debe enviar el texto principal del card
   "ui_hierarchy"        : "academico > horarios",           # Identificador semantico de la seccion donde se ubica.
   "link_url"            : "{{url_desino}}",                 # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
-  "user_id"             : "{{id_usuario}}",                 # Codigo de usuario (estudiante, docente)
-  "user_ciclo_academico": "{{ciclo_academico}}",            # Ciclo academico del usuario
-  "user_unidad_negocio" : "{{unidad_negocio}}",             # UG, CAD, EPE, etc.
-  "user_producto"       : "{{producto}}",                   # Producto o carrera.
-  "user_categoria"      : "{{categoria}}"                   # Si es estudiante, docente, administrador, etc.
 }

@@ -1,24 +1,19 @@
-  # los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
-  # dentro de su codigo.
+# los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
+# dentro de su codigo.
 
-  # parametros a agregar dentro de cada elemento
-  # esto aplica para
-  # data-ui-element   = "card"
-  # data-ui-label     = "{{card_label}}"  -- debe esar separado por "_" ejemplo_de_label
-  # data-ui-hierarchy = "inicio > mis_servicios"
-  # data-ui-url       = "{{url_destino}}"
+# parametros a agregar dentro de cada elemento
+# esto aplica para
+# data-ui-element   = "card"
+# data-ui-label     = "{{card_label}}"  -- debe esar separado por "_" ejemplo_de_label
+# data-ui-hierarchy = "inicio > mis_servicios"
+# data-ui-url       = "{{url_destino}}"
 
 {
-  "event"               : "ui_interaction",          # Nombre fijo del evento
-  "ui_location"         : "content_body",            # Dónde está el elemento
-  "ui_element"          : "{{data-ui-element}}",     # Qué es el elemento
-  "ui_action"           : "click",                   # Qué hace (open_modal, navigation, etc.)
-  "ui_label"            : "{{data-ui-label}}",       # Esto debe enviar el texto principal del card
-  "ui_hierarchy"        : "{{data-ui-hierarchy}}",   # Identificador semantico de la seccion donde se ubica.
-  "link_url"            : "{{data-ui-url}}",         # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
-  "user_id"             : "{{id_usuario}}",          # Codigo de usuario (estudiante, docente)
-  "user_ciclo_academico": "{{ciclo_academico}}",     # Ciclo academico del usuario
-  "user_unidad_negocio" : "{{unidad_negocio}}",      # UG, CAD, EPE, etc.
-  "user_producto"       : "{{producto}}",            # Producto o carrera.
-  "user_categoria"      : "{{categoria}}"            # Si es estudiante, docente, administrador, etc.
+  "event"       : "ui_interaction",          # Nombre fijo del evento
+  "ui_location" : "content_body",            # Dónde está el elemento
+  "ui_element"  : "{{data-ui-element}}",     # Qué es el elemento
+  "ui_action"   : "click",                   # Qué hace (open_modal, navigation, etc.)
+  "ui_label"    : "{{data-ui-label}}",       # Esto debe enviar el texto principal del card
+  "ui_hierarchy": "{{data-ui-hierarchy}}",   # Identificador semantico de la seccion donde se ubica.
+  "link_url"    : "{{data-ui-url}}"          # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
 }
