@@ -1,0 +1,72 @@
+# Documento de Marcación: Checkout & Cursos Especializados
+**Fecha de creación:** 29 Enero 2026  
+**Fecha última actualización:** 29 Enero 2026
+
+## Table of content
+1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
+2. [🏠 Home (Navegación)](#-home-navegación)
+3. [🛒 Checkout (Embudo de Ventas)](#-checkout-embudo-de-ventas)
+4. [🎓 Cursos y Especializaciones](#-cursos-y-especializaciones)
+5. [☁️ Coursera](#-coursera)
+
+---
+
+## 🏗️ Arquitectura de Implementación
+
+Para asegurar la medición del rendimiento del sitio y la eficacia de las campañas, se deben seguir estas reglas:
+
+1. **Persistencia de Sesión:** Los eventos deben estar vinculados a un ID de sesión consistente para permitir la reconstrucción del embudo de conversión desde el Home hasta el Purchase.
+2. **Estándar de E-commerce:** Los eventos del módulo `01-checkout` siguen el esquema de objetos de comercio electrónico (GA4). Es vital que el objeto `items` esté presente en todos los eventos del flujo para trackear SKUs, nombres de cursos y categorías.
+
+---
+
+## 🏠 Home (Navegación)
+Eventos capturados en los elementos globales de navegación inicial.
+
+- 📘 `menu_link_producto`: [payload](./00-home/00-menu/menu_link_producto.yaml)  
+    Captura el click en los enlaces de productos dentro del menú. Permite identificar qué categorías generan más interés inicial.
+- 📘 `menu_cintillo_cerrar`: [payload](./00-home/00-menu/menu_cintillo_cerrar.yaml)  
+    Mide la tasa de rechazo o interacción con los banners promocionales superiores.
+
+---
+
+## 🛒 Checkout (Embudo de Ventas)
+Este módulo mide la eficiencia de la pasarela y los estados del proceso de pago.
+
+### Flujo Principal
+- 📗 `begin_checkout`: [payload](./01-checkout/begin_checkout.yaml)  
+    Se dispara cuando el usuario inicia el proceso de pago. Debe incluir el valor total estimado y la lista de productos.
+- 📗 `add_payment_info`: [payload](./01-checkout/add_payment_info.yaml)  
+    Registra el tipo de método de pago seleccionado (TC, Débito, Transferencia).
+- 🏆 `purchase`: [payload](./01-checkout/purchase.yaml)  
+    **Evento de Conversión.** Se dispara tras la confirmación de la pasarela. Parámetros obligatorios: `transaction_id`, `value`, `tax`, y `currency`.
+
+### Estados de Pago y Errores
+- 📘 `page_view_pago_no_verificado`: [payload](./01-checkout/page_view_pago_no_verificado.yaml)  
+    **Estado Pendiente.** Se dispara cuando la transacción entra en proceso de validación (pago pendiente de confirmación técnica o bancaria).
+- 📘 `page_view_pago_no_completado`: [payload](./01-checkout/page_view_pago_no_completado.yaml)  
+    **Estado Fallido.** Identifica fricciones técnicas o rechazos directos de la pasarela/banco en la última etapa.
+- 📘 `button_pago_no_completado`: [payload](./01-checkout/button_pago_no_completado.yaml)  
+    Acción del usuario tras el error (ej. botón para reintentar o cambiar método de pago).
+
+---
+
+## 🎓 Cursos y Especializaciones
+Mapeo de la interacción con el catálogo educativo.
+
+- 📘 `page_view_curso`: [payload](./page_view_curso.yaml)  
+    Equivalente al `view_item`. Registra qué cursos específicos están siendo visualizados.
+
+### ⚙️ Implementación de Listas (Módulos 02 y 04)
+Se utiliza una lógica de eventos genéricos para optimizar el mantenimiento:
+- `list_item_grupo_curso`: Captura el click en el card del curso. Debe enviar la posición del item en la lista para análisis de CTR. [Ver payload](./02-cursos-especializacion/list_item_grupo_curso.yaml).
+- `button_mas_cursos`: Mide la profundidad de navegación en el catálogo (paginación).
+
+---
+
+## ☁️ Coursera
+Módulo `03-coursera`: Reservado para medir la salida (outbound clicks) hacia la plataforma de Coursera y la transición de la experiencia de usuario.
+
+---
+
+**Nota:** Asegúrese de que el evento `page_view_pago_no_verificado` no se duplique con el `purchase` una vez que el pago sea validado; deben ser estados mutuamente excluyentes en la sesión.
