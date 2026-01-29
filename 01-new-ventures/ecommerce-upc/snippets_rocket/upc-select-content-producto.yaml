@@ -1,9 +1,0 @@
-{
-  "event"      : "menu",
-  "category"   : "home",
-  "subcategory": "-",
-  "action"     : "click",
-  "label"      : "programas especializados",
-  "section"    : "/",                                             # << DATO DINÁMICO (página desde donde se hace clic)
-  "description": "educacioncontinua.upc.edu.pe/especializados",   # << DATO DINÁMICO (página destino)
-}

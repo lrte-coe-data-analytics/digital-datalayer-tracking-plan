@@ -50,4 +50,4 @@ Funcionalidad de búsqueda interna del portal.
 ---
 
 Nota:  
-La implementación de este código está basada en la estructura genérica del evento [ui-interaction](../../00-snippets/ui-interaction.yaml). A diferencia de los entornos privados, **no es necesaria** la implementación del snippet `logged-user` para este portal.
+La implementación de este código está basada en la estructura genérica del evento [ui-interaction](../../00-snippets/ui_interaction.yaml). A diferencia de los entornos privados, **no es necesaria** la implementación del snippet `logged-user` para este portal.

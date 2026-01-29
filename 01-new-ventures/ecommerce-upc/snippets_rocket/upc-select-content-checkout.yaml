@@ -1,9 +1,0 @@
-{
-  "event"      : "click_continuar",
-  "category"   : "info",
-  "subcategory": "datos",
-  "action"     : "click",
-  "label"      : "continuar",                   # ID del formulario
-  "section"    : "datos",
-  "description": "checkout.upc.edu.pe/payment"  # << DATO DINÁMICO (página destino)
-}

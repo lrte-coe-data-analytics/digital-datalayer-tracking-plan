@@ -250,4 +250,4 @@ Tracking de eventos relacionados a popups o vistas sobrepuestas.
 Nota:  
 Todos los eventos listados en este documento heredan automáticamente los atributos del usuario si se respeta la **Arquitectura de Implementación** descrita al inicio. Asegúrese de validar que el `user_id` no sea `undefined` antes de disparar eventos de interacción.
 
-Los esquemas base se encuentran en: [ui-interaction](../../00-snippets/ui-interaction.yaml) y [logged-user](../../00-snippets/logged-user.yaml).
+Los esquemas base se encuentran en: [ui-interaction](../../00-snippets/ui_interaction.yaml) y [logged-user](../../00-snippets/logged_user.yaml).
