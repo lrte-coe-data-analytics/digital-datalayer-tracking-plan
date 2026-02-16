@@ -1,0 +1,10 @@
+{
+  "event"              : "ui_interaction",                                      # Nombre fijo del evento
+  "ui_location"        : "content_body",                                        # Dónde está el elemento
+  "ui_element"         : "button",                                              # Qué es el elemento
+  "ui_action"          : "submit",                                               # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "{{numero_de_pregunta}}",                              # Identificador único o texto del elemento, en este caso debe ir el número de la pregunta que se responde. Ejemplo 1,2,3, etc.
+  "ui_hierarchy"       : "home > autoconocimiento > preguntas",                 # Identificador semantico de la seccion donde se ubica.(En este caso es Autoconocimiento > Preguntas)
+  "path_location"      : "{{path_actual_del_evento}}",                          # Path de donde se mide el evento.
+  "data_collected"     : "{{data_recopilada}}",                                 # Aqui debe ir la respuesta de la pregunta.
+}

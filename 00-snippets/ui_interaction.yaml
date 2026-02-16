@@ -9,13 +9,16 @@
 # ==============================================================================
 
 {
-  "event"       : "ui_interaction",   # Nombre fijo del evento
-  "ui_location" : "{{seccion}}",      # Dónde está el elemento
-  "ui_element"  : "{{tipo}}",         # Qué es el elemento
-  "ui_action"   : "{{accion}}",       # Qué hace (open_modal, navigation, etc.)
-  "ui_label"    : "{{nombre}}",       # Identificador único o texto del elemento
-  "ui_hierarchy": "{{hierarchy}}",    # Identificador semantico de la seccion donde se ubica.
-  "link_url"    : "{{url_destino}}"   # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+  "event"           : "ui_interaction",                # Nombre fijo del evento
+  "ui_location"     : "{{seccion}}",                   # Dónde está el elemento
+  "ui_element"      : "{{tipo}}",                      # Qué es el elemento
+  "ui_action"       : "{{accion}}",                    # Qué hace (open_modal, navigation, etc.)
+  "ui_label"        : "{{nombre}}",                    # Identificador único o texto del elemento
+  "ui_hierarchy"    : "{{hierarchy}}",                 # Identificador semantico de la seccion donde se ubica.
+  "link_url"        : "{{url_destino}}",               # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+  "path_location"   : "{{path_actual_del_evento}}",    # URL y/o path de donde se da el evento.
+  "data_collected"  : "{{data_recopilada}}",           # Son los datos recopilados de algunos eventos, como mensajes de error, campos de formularios.  
+  "csat_value"      : "{{valor de csat}}"              # Solo en el caso de que se recopile el CSAT, este debe gurardar el dato de los valores, que va de 0 a 5.
 }
 
 # ----------------------------------------------------------------------------
@@ -30,6 +33,8 @@ ui_location:
   - "banner_section"   # Banner principal o slider superior.
   - "navigation_menu"  # Menú principal desplegable o hamburguesa.
   - "sticky_bar"       # Barras flotantes (CTAs, Chat, Avisos de cookies).
+  - "navigation"       # Navegación del Usuario.
+
 
   # --- Contenedores de Contenido ---
   - "content_body"     # El cuerpo principal de un artículo o página.

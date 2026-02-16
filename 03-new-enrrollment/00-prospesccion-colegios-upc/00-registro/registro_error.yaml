@@ -1,0 +1,12 @@
+{
+  "event"            : "ui_interaction",                    # Nombre fijo del evento
+  "ui_location"      : "screen_view",                       # Dónde está el elemento
+  "ui_element"       : "modal_window",                      # Qué es el elemento
+  "ui_action"        : "impression",                         # Qué hace (open_modal, navigation, etc.)
+  "ui_label"         : "error",                             # Identificador único o texto del elemento. (En este caso es error)
+  "ui_hierarchy"     : "home > registro",                   # Identificador semantico de la seccion donde se ubica.
+  "path_location"    : "{{path_actual_del_evento}}",        # Path de donde se mide el evento.
+  "data_collected"   : "{{data_recopilada}}",               # Mensaje de Error que se muestra en el mensaje.
+}
+
+
