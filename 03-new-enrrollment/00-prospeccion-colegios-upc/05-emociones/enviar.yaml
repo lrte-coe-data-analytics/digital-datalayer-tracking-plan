@@ -1,0 +1,10 @@
+{
+  "event"           : "ui_interaction",                              # Nombre fijo del evento
+  "ui_location"     : "screen_view",                                 # Dónde está el elemento
+  "ui_element"      : "button",                                      # Qué es el elemento
+  "ui_action"       : "submit",                                      # Qué hace (open_modal, navigation, etc.)
+  "ui_label"        : "enviar_emociones",                            # Identificador único o texto del elemento. (En este caso es Enviar Emociones)
+  "ui_hierarchy"    : "home > emociones",                            # Identificador semantico de la seccion donde se ubica.(En este caso se home > emociones)
+  "path_location"   : "/medidor-de-emociones" ,                      # Path de donde se mide el evento.
+  "data_collected"  : "{{data_recopilada}}",                         # Mensaje que sale en el formulario, como estoy interesado, no estoy intersado, etc.
+}

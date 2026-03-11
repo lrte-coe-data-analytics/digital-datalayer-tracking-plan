@@ -1,0 +1,10 @@
+{
+  "event"              : "ui_interaction",                           # Nombre fijo del evento
+  "ui_location"        : "content_body",                             # Dónde está el elemento
+  "ui_element"         : "button",                                   # Qué es el elemento
+  "ui_action"          : "submit",                                   # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "{{nombre_del_boton}}",                     # Identificador único o texto del elemento, depende de la pregunta.
+  "ui_hierarchy"       : "home > nivel1 > Pregunta[1-3]",            # Identificador semantico de la seccion donde se ubica.(En este caso es Nivel 1, acompañado por el número de pregunta que se responde).
+  "path_location"      : "/conocete/encuesta?pregunta=[1-3]",        # Path de donde se mide el evento. En este caso se mide por el número de preguntas, para este caso son 3 Preguntas.
+  "data_collected"     : "{{data_recopilada}}",                      # Se guarda lo que llena el usuario, en las preguntas de autoconocimiento.
+}

@@ -1,9 +1,0 @@
-{
-  "event"              : "ui_interaction",                                      # Nombre fijo del evento
-  "ui_location"        : "modal_window",                                        # Dónde está el elemento
-  "ui_element"         : "button",                                              # Qué es el elemento
-  "ui_action"          : "submit",                                               # Qué hace (open_modal, navigation, etc.)
-  "ui_label"           : "enviar_por_whatssapp",                                # Identificador único o texto del elemento, en este caso es Enviar por WhatsAPP.
-  "ui_hierarchy"       : "home > autoconocimiento",                             # Identificador semantico de la seccion donde se ubica.(En este caso es Autoconocimiento)
-  "path_location"      : "{{path_actual_del_evento}}",                          # Path de donde se mide el evento.
-}
