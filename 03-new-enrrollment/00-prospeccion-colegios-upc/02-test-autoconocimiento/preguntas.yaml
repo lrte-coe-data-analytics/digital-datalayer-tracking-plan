@@ -4,7 +4,7 @@
   "ui_element"         : "button",                                     # Qué es el elemento
   "ui_action"          : "submit",                                     # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "{{numero_de_pregunta}}",                     # Identificador único o texto del elemento, en este caso debe ir el número de la pregunta que se responde. Ejemplo 1,2,3, etc.
-  "ui_hierarchy"       : "home > autoconocimiento > pregunta[1-98]",   # Identificador semántico de la seccion donde se ubica.(En este caso es Autoconocimiento > acompañado por el número de pregunta que coresponda).
-  "path_location"      : "/conocete/encuesta?pregunta=[1-98]",         # Path de donde se mide el evento.En este caso se mide por el número de preguntas, para este caso son 98 Preguntas.
-  "data_collected"     : "{{data_recopilada}}",                        # Se guarda lo que llena el usuario.
+  "ui_hierarchy"       : "home > autoconocimiento > pregunta",         # Identificador semántico de la seccion donde se ubica.
+  "path_location"      : "{{path_actual_del_evento}}",                 # Path de donde se mide el evento.
+  "data_collected"     : "{{data_recopilada}}",                        # Se recomienda guardar un diccionario con nro_pregunta, pregunta y respuesta.
 }

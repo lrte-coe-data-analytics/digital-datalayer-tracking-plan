@@ -6,4 +6,5 @@
   "ui_label"           : "enviar_por_whatssapp",                                   # Identificador único o texto del elemento, (En este caso es Enviar por WhatsAPP).
   "ui_hierarchy"       : "home > autoconocimiento",                                # Identificador semantico de la seccion donde se ubica.(En este caso es Autoconocimiento)
   "path_location"      : "/conocete/test-vocacional/descargar-resultados",         # Path de donde se mide el evento.
+  "data_collected"     : "{{datos_dispositivo_y_flags}}",                          # Capturar datos como nro_dispositivo, flag_autorizo, flag_autorizo_opc.
 }

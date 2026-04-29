@@ -1,4 +1,4 @@
-# Documento de Marcación: Checkout & Cursos Especializados
+# Documento de Marcación: Checkout & Cursos Especializados Cibertec
 **Fecha de creación:** 29 Enero 2026  
 **Fecha última actualización:** 29 Enero 2026
 
@@ -23,9 +23,9 @@ Para asegurar la medición del rendimiento del sitio y la eficacia de las campa�
 ## 🏠 Home (Navegación)
 Eventos capturados en los elementos globales de navegación inicial.
 
-- 📘 `menu_link_producto`: [payload](./00-home/00-menu/menu_link_producto.yaml)  
+- 📘 `menu_link_producto`: [payload](./00-home/00-menu/menu_link_producto.yaml) | [guía visual](./guias_visuales/00-home_00-menu_menu_link_producto.md)  
     Captura el click en los enlaces de productos dentro del menú. Permite identificar qué categorías generan más interés inicial.
-- 📘 `menu_cintillo_cerrar`: [payload](./00-home/00-menu/menu_cintillo_cerrar.yaml)  
+- 📘 `menu_cintillo_cerrar`: [payload](./00-home/00-menu/menu_cintillo_cerrar.yaml) | [guía visual](./guias_visuales/00-home_00-menu_menu_cintillo_cerrar.md)  
     Mide la tasa de rechazo o interacción con los banners promocionales superiores.
 
 ---
@@ -34,19 +34,19 @@ Eventos capturados en los elementos globales de navegación inicial.
 Este módulo mide la eficiencia de la pasarela y los estados del proceso de pago.
 
 ### Flujo Principal
-- 📗 `begin_checkout`: [payload](./01-checkout/begin_checkout.yaml)  
+- 📗 `begin_checkout`: [payload](./01-checkout/begin_checkout.yaml) | [guía visual](./guias_visuales/01-checkout_begin_checkout.md)  
     Se dispara cuando el usuario inicia el proceso de pago. Debe incluir el valor total estimado y la lista de productos.
-- 📗 `add_payment_info`: [payload](./01-checkout/add_payment_info.yaml)  
+- 📗 `add_payment_info`: [payload](./01-checkout/add_payment_info.yaml) | [guía visual](./guias_visuales/01-checkout_add_payment_info.md)  
     Registra el tipo de método de pago seleccionado (TC, Débito, Transferencia).
-- 🏆 `purchase`: [payload](./01-checkout/purchase.yaml)  
+- 🏆 `purchase`: [payload](./01-checkout/purchase.yaml) | [guía visual](./guias_visuales/01-checkout_purchase.md)  
     **Evento de Conversión.** Se dispara tras la confirmación de la pasarela. Parámetros obligatorios: `transaction_id`, `value`, `tax`, y `currency`.
 
 ### Estados de Pago y Errores
-- 📘 `page_view_pago_no_verificado`: [payload](./01-checkout/page_view_pago_no_verificado.yaml)  
+- 📘 `page_view_pago_no_verificado`: [payload](./01-checkout/page_view_pago_no_verificado.yaml) | [guía visual](./guias_visuales/01-checkout_page_view_pago_no_verificado.md)  
     **Estado Pendiente.** Se dispara cuando la transacción entra en proceso de validación (pago pendiente de confirmación técnica o bancaria).
-- 📘 `page_view_pago_no_completado`: [payload](./01-checkout/page_view_pago_no_completado.yaml)  
+- 📘 `page_view_pago_no_completado`: [payload](./01-checkout/page_view_pago_no_completado.yaml) | [guía visual](./guias_visuales/01-checkout_page_view_pago_no_completado.md)  
     **Estado Fallido.** Identifica fricciones técnicas o rechazos directos de la pasarela/banco en la última etapa.
-- 📘 `button_pago_no_completado`: [payload](./01-checkout/button_pago_no_completado.yaml)  
+- 📘 `button_pago_no_completado`: [payload](./01-checkout/button_pago_no_completado.yaml) | [guía visual](./guias_visuales/01-checkout_button_pago_no_completado.md)  
     Acción del usuario tras el error (ej. botón para reintentar o cambiar método de pago).
 
 ---
@@ -54,7 +54,7 @@ Este módulo mide la eficiencia de la pasarela y los estados del proceso de pago
 ## 🎓 Cursos y Especializaciones
 Mapeo de la interacción con el catálogo educativo.
 
-- 📘 `page_view_curso`: [payload](./page_view_curso.yaml)  
+- 📘 `page_view_curso`: [payload](./page_view_curso.yaml) | [guía visual](./guias_visuales/page_view_curso.md)  
     Equivalente al `view_item`. Registra qué cursos específicos están siendo visualizados.
 
 ### ⚙️ Implementación de Listas (Módulos 02 y 04)

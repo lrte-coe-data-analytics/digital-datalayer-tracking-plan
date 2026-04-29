@@ -1,10 +1,10 @@
 {
   "event"              : "ui_interaction",                           # Nombre fijo del evento
-  "ui_location"        : "form_container",                           # Dónde está el elemento
+  "ui_location"        : "chat_window",                              # Dónde está el elemento (se utiliza chat_window para chatbots)
   "ui_element"         : "button",                                   # Qué es el elemento
   "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "ia_chatbot",                               # Identificador único o texto del elemento. (En este caso sería IA Chatbot)
-  "ui_hierarchy"       : "{{Sección donde se da el error}}",         # Identificador semantico de la seccion donde se ubica.(En este caso se home > Nivel2 , home > Nivel3, home > Nivel4)
+  "ui_hierarchy"       : "home > {{seccion}} > chatbot",             # Identificador semantico de la seccion donde se ubica. (ej. home > explora > chatbot)
   "path_location"      : "{{path_actual_del_evento}}",               # Path de donde se mide el evento.
-  "data_collected"     : "{{data_recopilada}}",                      # Mensaje del Chatbot.
+  "data_collected"     : "{{pregunta_y_respuesta}}",                 # Mensaje del Chatbot y pregunta del estudiante.
 }

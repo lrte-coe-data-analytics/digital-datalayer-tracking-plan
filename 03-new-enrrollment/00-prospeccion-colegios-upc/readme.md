@@ -23,17 +23,17 @@ Los eventos de registro comparten parámetros clave para la identificación:
 *   **`data_collected`**: Mensajes de error o respuestas de formulario.
 
 ### Eventos
-- 📘 `login`: [payload](./00-registro/login.yaml)
+- 📘 `login`: [payload](./00-registro/login.yaml) | [guía visual](./guias_visuales/00-registro_login.md)
     Evento de interacción de botón para iniciar sesión (submit).
     **Nota:** Define la identidad del usuario para los eventos subsiguientes.
 
-- 📘 `tus_planes`: [payload](./00-registro/tus_planes.yaml)
+- 📘 `tus_planes`: [payload](./00-registro/tus_planes.yaml) | [guía visual](./guias_visuales/00-registro_tus_planes.md)
     Click en el botón "Continuar" dentro de la sección "Tus Planes". Captura data recopilada del formulario.
 
-- 📘 `registro_exitoso`: [payload](./00-registro/registro_exitoso.yaml)
+- 📘 `registro_exitoso`: [payload](./00-registro/registro_exitoso.yaml) | [guía visual](./guias_visuales/00-registro_registro_exitoso.md)
     Evento de envío exitoso del formulario de registro.
 
-- 📘 `registro_error`: [payload](./00-registro/registro_error.yaml)
+- 📘 `registro_error`: [payload](./00-registro/registro_error.yaml) | [guía visual](./guias_visuales/00-registro_registro_error.md)
     Impresión de un modal de error cuando falla el registro. Contiene el mensaje de error específico.
 
 ## 🎮 Nivel 1 (Preguntas de Autonocimiento)
@@ -46,17 +46,17 @@ Parámetros comunes para el seguimiento del flujo de gamificación:
 *   **`data_collected`**: Captura la respuesta seleccionada por el usuario en las preguntas.
 
 ### Eventos
-- 📘 `inicio`: [payload](./01-nivel1/inicio.yaml)
+- 📘 `inicio`: [payload](./01-nivel1/inicio.yaml) | [guía visual](./guias_visuales/01-nivel1_inicio.md)
     Click en el botón de inicio del Nivel 1.
 
-- 📘 `preguntas`: [payload](./01-nivel1/preguntas.yaml)
+- 📘 `preguntas`: [payload](./01-nivel1/preguntas.yaml) | [guía visual](./guias_visuales/01-nivel1_preguntas.md)
     Evento `submit` al responder preguntas dentro del nivel.
     **Dinámico:** `ui_label` varía según el nombre del botón y `data_collected` contiene la respuesta.
 
-- 📘 `error`: [payload](./01-nivel1/error.yaml)
+- 📘 `error`: [payload](./01-nivel1/error.yaml) | [guía visual](./guias_visuales/01-nivel1_error.md)
     Impresión de modal de error dentro del flujo del Nivel 1.
 
-- 📘 `fin`: [payload](./01-nivel1/fin.yaml)
+- 📘 `fin`: [payload](./01-nivel1/fin.yaml) | [guía visual](./guias_visuales/01-nivel1_fin.md)
     Click en el botón de finalización del Nivel 1.
 
 ## 🧠 Test de Autoconocimiento
@@ -68,20 +68,20 @@ Eventos para la sección de test vocacional o de autoconocimiento.
 *   **`data_collected`**: Almacena la carrera de interés o la respuesta a la pregunta.
 
 ### Eventos
-- 📘 `inicio`: [payload](./02-test-autoconocimiento/inicio.yaml)
+- 📘 `inicio`: [payload](./02-test-autoconocimiento/inicio.yaml) | [guía visual](./guias_visuales/02-test-autoconocimiento_inicio.md)
     Click en el botón para iniciar el test.
 
-- 📘 `preguntas`: [payload](./02-test-autoconocimiento/preguntas.yaml)
+- 📘 `preguntas`: [payload](./02-test-autoconocimiento/preguntas.yaml) | [guía visual](./guias_visuales/02-test-autoconocimiento_preguntas.md)
     Evento `submit` por cada pregunta respondida.
     `ui_label` corresponde al número de pregunta.
 
-- 📘 `valoracion_carreras`: [payload](./02-test-autoconocimiento/valoracion_carreras.yaml)
+- 📘 `valoracion_carreras`: [payload](./02-test-autoconocimiento/valoracion_carreras.yaml) | [guía visual](./guias_visuales/02-test-autoconocimiento_valoracion_carreras.md)
     Interacción (SI/NO) sobre el interés en carreras específicas mostradas.
 
-- 📘 `enviar_por_whatsapp`: [payload](./02-test-autoconocimiento/enviar_por_whatsapp.yaml)
+- 📘 `enviar_por_whatsapp`: [payload](./02-test-autoconocimiento/enviar_por_whatsapp.yaml) | [guía visual](./guias_visuales/02-test-autoconocimiento_enviar_por_whatsapp.md)
     Evento `submit` para enviar los resultados por WhatsApp.
 
-- 📘 `fin`: [payload](./02-test-autoconocimiento/fin.yaml)
+- 📘 `fin`: [payload](./02-test-autoconocimiento/fin.yaml) | [guía visual](./guias_visuales/02-test-autoconocimiento_fin.md)
     Click en el botón para finalizar la sección de autoconocimiento.
 
 ## 🤖 5 Niveles Chatbot (Explora, Visualiza, Imagina, Globalizate, Transforma)
@@ -93,18 +93,18 @@ Interacciones con el asistente virtual (Chatbot) en diferentes niveles.
 *   **`data_collected`**: Puede contener el mensaje del chatbot o datos de la interacción.
 
 ### Eventos
-- 📘 `inicio`: [payload](./03-niveles-chatbot/inicio.yaml)
+- 📘 `inicio`: [payload](./03-niveles-chatbot/inicio.yaml) | [guía visual](./guias_visuales/03-niveles-chatbot_inicio.md)
     Inicio de la interacción con el chatbot.
 
-- 📘 `ia_chatbot`: [payload](./03-niveles-chatbot/chatbot.yaml)
+- 📘 `ia_chatbot`: [payload](./03-niveles-chatbot/chatbot.yaml) | [guía visual](./guias_visuales/03-niveles-chatbot_chatbot.md)
     Click en opciones o interacciones dentro del flujo del chatbot.
 
-- 📘 `descargar` (WhatsApp): [payload](./03-niveles-chatbot/descargar.yaml)
+- 📘 `descargar` (WhatsApp): [payload](./03-niveles-chatbot/descargar.yaml) | [guía visual](./guias_visuales/03-niveles-chatbot_descargar.md)
     Solicitud de descarga o envío de información por WhatsApp desde el chatbot.
     **Ubicación:** Este evento ocurre específicamente en el **Nivel 6 (Transforma)**.
     **Nota:** El archivo se llama `descargar.yaml` pero el `ui_label` es `enviar_por_whatssapp`.
 
-- 📘 `fin`: [payload](./03-niveles-chatbot/fin.yaml)
+- 📘 `fin`: [payload](./03-niveles-chatbot/fin.yaml) | [guía visual](./guias_visuales/03-niveles-chatbot_fin.md)
     Finalización de la interacción con el chatbot.
 
 ## ⭐ CSAT y Emociones
@@ -117,8 +117,8 @@ Parámetros específicos de valoración:
 *   **`ui_hierarchy`**: `home > emociones` (para emociones) o dinámico según contexto.
 
 ### Eventos
-- 📘 `enviar_csat`: [payload](./04-csat/button_csat_enviar.yaml)
+- 📘 `enviar_csat`: [payload](./04-csat/button_csat_enviar.yaml) | [guía visual](./guias_visuales/04-csat_button_csat_enviar.md)
     Envío de la valoración CSAT (1-5 estrellas).
 
-- 📘 `enviar_emociones`: [payload](./05-emociones/enviar.yaml)
+- 📘 `enviar_emociones`: [payload](./05-emociones/enviar.yaml) | [guía visual](./guias_visuales/05-emociones_enviar.md)
     Envío del feedback sobre emociones (interesado, no interesado, etc.).
