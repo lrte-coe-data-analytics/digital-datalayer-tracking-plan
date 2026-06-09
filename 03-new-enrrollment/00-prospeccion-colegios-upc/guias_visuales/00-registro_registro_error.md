@@ -11,13 +11,13 @@
 ```yaml
 {
   "event"            : "ui_interaction",                             
-  "ui_location"      : "screen_view",                                
+  "ui_location"      : "modal_window",                               
   "ui_element"       : "modal_window",                               
   "ui_action"        : "impression",                                 
   "ui_label"         : "error",                                      
-  "ui_hierarchy"     : "home > registro",                            
+  "ui_hierarchy"     : "{{seccion_actual}}",                         
   "path_location"    : "{{path_actual_del_evento}}",           # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",                  # Mensaje de error que se muestra en el mensaje.
+  "data_collected"   : "{{data_recopilada}}"                   # Mensaje de error que se muestra en el mensaje. (Nota: Evento gemelo con error.yaml en 01-nivel-01)
 }
 ```
 
