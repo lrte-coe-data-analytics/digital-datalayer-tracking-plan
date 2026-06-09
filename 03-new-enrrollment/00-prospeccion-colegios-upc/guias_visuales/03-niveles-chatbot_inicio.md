@@ -16,7 +16,7 @@
   "ui_action"          : "click",                                    
   "ui_label"           : "vamos",                       # Identificador único o texto del elemento. (En este caso es "Vamos").
   "ui_hierarchy"       : "home > explora",              # Identificador semántico de la sección donde se ubica. (En este caso es explora)
-  "path_location"      : "/explora",                    # Path de donde se mide el evento.
+  "path_location"      : "/explora"                     # Path de donde se mide el evento.
 }
 ```
 
@@ -35,7 +35,7 @@
   "ui_action"          : "click",                                    
   "ui_label"           : "vamos",                       # Identificador único o texto del elemento. (En este caso es "Vamos").
   "ui_hierarchy"       : "home > visualiza",            # Identificador semántico de la sección donde se ubica. (En este caso es visualiza)
-  "path_location"      : "/visualiza",                  # Path de donde se mide el evento.
+  "path_location"      : "/visualiza"                   # Path de donde se mide el evento.
 }
 ```
 
@@ -54,7 +54,7 @@
   "ui_action"          : "click",                                    
   "ui_label"           : "comencemos",                # Identificador único o texto del elemento. (En este caso es "Comencemos").
   "ui_hierarchy"       : "home > imagina",            # Identificador semántico de la sección donde se ubica. (En este caso es imagina)
-  "path_location"      : "/imagina",                  # Path de donde se mide el evento.
+  "path_location"      : "/imagina"                   # Path de donde se mide el evento.
 }
 ```
 
@@ -73,13 +73,13 @@
   "ui_action"          : "click",                                    
   "ui_label"           : "comencemos",                    # Identificador único o texto del elemento. (En este caso es "Comencemos").
   "ui_hierarchy"       : "home > globalizate",            # Identificador semántico de la sección donde se ubica. (En este caso es globalizate)
-  "path_location"      : "/globalizate",                  # Path de donde se mide el evento.
+  "path_location"      : "/globalizate"                   # Path de donde se mide el evento.
 }
 ```
 
 ---
-## Instancia: transforma_comencemos
-- **Descripción:** Clic al botón de "Comencemos" al Nivel de Transforma.
+## Instancia: transforma_quiero_saber_mas
+- **Descripción:** Clic al botón de "¡Quiero saber más!" al Nivel de Transforma.
 
 ![transforma_comencemos](../assets/transforma_comencemos.png)
 
@@ -92,7 +92,6 @@
   "ui_action"          : "click",                                    
   "ui_label"           : "quiero_saber_mas",             # Identificador único o texto del elemento. (En este caso es "Quiero saber más").
   "ui_hierarchy"       : "home > transforma",            # Identificador semántico de la sección donde se ubica. (En este caso es transforma)
-  "path_location"      : "/transforma",                  # Path de donde se mide el evento.
+  "path_location"      : "/transforma"                   # Path de donde se mide el evento.
 }
 ```
-

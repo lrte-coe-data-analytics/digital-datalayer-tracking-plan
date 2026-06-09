@@ -4,6 +4,6 @@
   "ui_element"         : "button",                                   # Qué es el elemento
   "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "comenzar_la_aventura",                     # Identificador único o texto del elemento. (En este caso es Comenzar la aventura)
-  "ui_hierarchy"       : "home > nivel1",                            # Identificador semantico de la seccion donde se ubica.(En este caso es Nivel 1)
-  "path_location"      : "/conocete",                                # Path de donde se mide el evento.
+  "ui_hierarchy"       : "home > nivel_01",                            # Identificador semantico de la seccion donde se ubica.(En este caso es Nivel 1)
+  "path_location"      : "/conocete"                                 # Path de donde se mide el evento.
 }

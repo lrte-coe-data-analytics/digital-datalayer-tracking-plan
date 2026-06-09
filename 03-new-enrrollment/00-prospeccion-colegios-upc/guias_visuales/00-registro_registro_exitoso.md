@@ -11,7 +11,7 @@
 ```yaml
 {
   "event"          : "ui_interaction",                               
-  "ui_location"    : "screen_view",                                  
+  "ui_location"    : "form_container",                                  
   "ui_element"     : "button",                                       
   "ui_action"      : "submit",                                       
   "ui_label"       : "registro_exitoso",                             

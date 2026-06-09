@@ -16,7 +16,7 @@
   "ui_action"          : "click",                            
   "ui_label"           : "entendido",                        # Identificador único o texto del elemento. (En este caso es "Entendido").
   "ui_hierarchy"       : "home > explora",                   # Identificador semántico de la sección donde se ubica. (En este caso es explora)
-  "path_location"      : "/explora/ganaste-seguridad",       # Path de donde se mide el evento.
+  "path_location"      : "/explora/ganaste-seguridad"        # Path de donde se mide el evento.
 }
 ```
 
@@ -35,7 +35,7 @@
   "ui_action"          : "click",                            
   "ui_label"           : "entendido",                              # Identificador único o texto del elemento. (En este caso es "Entendido").
   "ui_hierarchy"       : "home > visualiza",                       # Identificador semántico de la sección donde se ubica. (En este caso es visualiza)
-  "path_location"      : "/visualiza/ganaste-vision-a-futuro",     # Path de donde se mide el evento.
+  "path_location"      : "/visualiza/ganaste-vision-a-futuro"      # Path de donde se mide el evento.
 }
 ```
 
@@ -54,7 +54,7 @@
   "ui_action"          : "click",                            
   "ui_label"           : "vamos_por_mas",                       # Identificador único o texto del elemento. (En este caso es "Vamos por más").
   "ui_hierarchy"       : "home > imagina",                      # Identificador semántico de la sección donde se ubica. (En este caso es imagina)
-  "path_location"      : "/imagina/ganaste-inspiracion",        # Path de donde se mide el evento.
+  "path_location"      : "/imagina/ganaste-inspiracion"        # Path de donde se mide el evento.
 }
 ```
 
@@ -73,7 +73,7 @@
   "ui_action"          : "click",                            
   "ui_label"           : "vamos_por_mas",                           # Identificador único o texto del elemento. (En este caso es "Vamos por más").
   "ui_hierarchy"       : "home > globalizate",                      # Identificador semántico de la sección donde se ubica. (En este caso es globalizate)
-  "path_location"      : "/globalizate/ganaste-oportunidades",      # Path de donde se mide el evento.
+  "path_location"      : "/globalizate/ganaste-oportunidades"      # Path de donde se mide el evento.
 }
 ```
 
@@ -81,7 +81,7 @@
 ## Instancia: transforma_vamospormas
 - **Descripción:** Clic al botón "Vamos por más", Nivel Transforma
 
-![globalizate_vamospormas](../assets/transforma_vamospormas.png)
+![transforma_vamospormas](../assets/transforma_vamospormas.png)
 
 **Data Layer (Payload):**
 ```yaml
@@ -92,7 +92,6 @@
   "ui_action"          : "click",                            
   "ui_label"           : "vamos_por_mas",                           # Identificador único o texto del elemento. (En este caso es "Vamos por más").
   "ui_hierarchy"       : "home > transforma",                       # Identificador semántico de la sección donde se ubica. (En este caso es transforma)
-  "path_location"      : "/transforma/ganaste-proposito",           # Path de donde se mide el evento.
+  "path_location"      : "/transforma/ganaste-proposito"            # Path de donde se mide el evento.
 }
 ```
-

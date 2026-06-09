@@ -1,5 +1,5 @@
-# Guía Visual: Inicio (01-nivel1)
-**Payload General:** [../01-nivel1/inicio.yaml](../01-nivel1/inicio.yaml)
+# Guía Visual: Inicio (01-nivel-01)
+**Payload General:** [../01-nivel-01/inicio.yaml](../01-nivel-01/inicio.yaml)
 
 ---
 ## Instancia: comenzar_la_aventura
@@ -15,8 +15,7 @@
   "ui_element"         : "button",                                   
   "ui_action"          : "click",                                    
   "ui_label"           : "comenzar_la_aventura",                                   
-  "ui_hierarchy"       : "home > nivel1",                            
-  "path_location"      : "/conocete",                  # Path de donde se mide el evento.     
+  "ui_hierarchy"       : "home > nivel_01",                            
+  "path_location"      : "/conocete"                   # Path de donde se mide el evento.     
 }
 ```
-

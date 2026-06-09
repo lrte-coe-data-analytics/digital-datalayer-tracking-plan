@@ -4,7 +4,7 @@
   "ui_element"     : "button",                                       # Qué es el elemento
   "ui_action"      : "click",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"       : "continuar",                                    # Identificador único o texto del elemento. (En este caso Continuar)
-  "ui_hierarchy"   : "home > registro > tus_planes",                 # Identificador semantico de la seccion donde se ubica. (En este caso es Registro > Tus Planes)
+  "ui_hierarchy"   : "{{seccion_del_paso}}",                         # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > donde_estas_tu o home > registro > tus_planes)
   "path_location"  : "{{path_actual_del_evento}}",                   # Path de donde se mide el evento.
   "data_collected" : "{{data_recopilada}}",                          # Opciones que marca en el formulario, en los pasos de autonocimiento, por ejemplo País donde desea estudiar, si conoce a la UPC.
 }

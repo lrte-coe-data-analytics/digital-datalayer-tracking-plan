@@ -6,5 +6,5 @@
   "ui_label"           : "ia_chatbot",                               # Identificador único o texto del elemento. (En este caso sería IA Chatbot)
   "ui_hierarchy"       : "home > {{seccion}} > chatbot",             # Identificador semantico de la seccion donde se ubica. (ej. home > explora > chatbot)
   "path_location"      : "{{path_actual_del_evento}}",               # Path de donde se mide el evento.
-  "data_collected"     : "{{pregunta_y_respuesta}}",                 # Mensaje del Chatbot y pregunta del estudiante.
+  "data_collected"     : "{{pregunta_y_respuesta}}"                  # Mensaje del Chatbot y pregunta del estudiante.
 }

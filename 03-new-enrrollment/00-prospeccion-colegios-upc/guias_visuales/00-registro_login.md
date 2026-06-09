@@ -11,11 +11,11 @@
 ```yaml
 {
   "event"          : "ui_interaction",                               
-  "ui_location"    : "screen_view",                                  
+  "ui_location"    : "form_container",                                  
   "ui_element"     : "button",                                      
   "ui_action"      : "submit",                                       
   "ui_label"       : "login",                                        
-  "ui_hierarchy"   : "home > login",                              
+  "ui_hierarchy"   : "home > registro",                              
   "path_location"  : "/iniciar-sesion",                   # Path de donde se mide el evento.
   "user_code"      : "{{id_usuario}}"                     # Código de usuario (alumno o prospecto, código de HubSpot)
 }

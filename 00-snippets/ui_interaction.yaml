@@ -49,6 +49,7 @@ ui_location:
   - "form_container"  # El área específica que envuelve un formulario.
   - "toast_message"   # Notificaciones flotantes temporales.
   - "empty_state"     # Pantallas de "No hay resultados" o "Carrito vacío".
+  - "chat_window"     # Ventana de chat o asistente conversacional (IA, chatbot).
 
 # ----------------------------------------------------------------------------
 # UI_ELEMENT: ¿QUÉ elemento fue con el que se interactuó?

@@ -16,7 +16,7 @@
   "ui_action"          : "play",                            
   "ui_label"           : "video_transforma",                   # Identificador único o texto del elemento. (En este caso es "Video transforma").
   "ui_hierarchy"       : "home > transforma > video",          # Identificador semántico de la sección donde se ubica. (En este caso es transforma > video)
-  "path_location"      : "/transforma/video",                  # Path de donde se mide el evento.
+  "path_location"      : "/transforma/video"                   # Path de donde se mide el evento.
 }
 ```
 

@@ -14,9 +14,9 @@
   "ui_location"        : "content_body",                             
   "ui_element"         : "button",                                   
   "ui_action"          : "click",                                    
-  "ui_label"           : "exito",                                    # Identificador único o texto del elemento. (En este caso es "Éxito").
+  "ui_label"           : "vamos_por_mas",                            # Identificador único o texto del elemento. (En este caso es "¡Vamos por más!").
   "ui_hierarchy"       : "home > autoconocimiento",                  # Identificador semántico de la sección donde se ubica. (En este caso es autoconocimiento)
-  "path_location"      : "/conocete/test-vocacional/exito",          # Path de donde se mide el evento.
+  "path_location"      : "/conocete/test-vocacional/exito"           # Path de donde se mide el evento.
 }
 ```
 

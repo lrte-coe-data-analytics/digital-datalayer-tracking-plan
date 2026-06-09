@@ -14,9 +14,10 @@
   "ui_location"        : "modal_window",                             
   "ui_element"         : "button",                                   
   "ui_action"          : "submit",                                   
-  "ui_label"           : "enviar_por_whatssapp",                                 # Identificador único o texto del elemento. (En este caso es "Enviar por WhatsApp").
+  "ui_label"           : "enviar_por_whatsapp",                                  # Identificador único o texto del elemento. (En este caso es "Enviar por WhatsApp").
   "ui_hierarchy"       : "home > autoconocimiento",                              # Identificador semántico de la sección donde se ubica. (En este caso es autoconocimiento)
   "path_location"      : "/conocete/test-vocacional/descargar-resultados",       # Path de donde se mide el evento.
+  "data_collected"     : "{{datos_dispositivo_y_flags}}"                         # Capturar datos como nro_dispositivo, flag_autorizo, flag_autorizo_opc.
 }
 ```
 
