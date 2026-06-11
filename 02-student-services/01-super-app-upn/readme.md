@@ -38,15 +38,15 @@ Eventos que capturan datos relacionados al login en el app (sign-in y sign-up).
 
 ### Eventos generales
 
-- 📘 `login`: [payload](./00-login/login.yaml)  
+- 📘 `login`: [payload](./00-login/login.yaml) | [guía visual](./guias_visuales/00-login_login.md)  
     **⚠️ Evento Crítico de Sesión.** Este evento tiene una doble función:
     1.  **Como evento:** Se envía cuando el proceso de validación de credenciales es exitoso.
     2.  **Como estado (Hydration):** Este payload debe enviarse **siempre** al inicio de cada sesión o recarga de página para "recordarle" al DataLayer quién es el usuario actual. Sin este paso, el resto de eventos en el app saldrán como anónimos.
 
-- 📘 `button_login`: [payload](./00-login/button_login.yaml)  
+- 📘 `button_login`: [payload](./00-login/button_login.yaml) | [guía visual](./guias_visuales/00-login_button_login.md)  
     Evento que se envía cuando el proceso de validación de credenciales es exitoso. Dirige al usuario al home. Importante para medir el embudo de ingreso.
 
-- 📘 `button_tyc`: [payload](./00-login/button_tyc.yaml)  
+- 📘 `button_tyc`: [payload](./00-login/button_tyc.yaml) | [guía visual](./guias_visuales/00-login_button_tyc.md)  
     Cuando el usuario hace click en el botón de **aceptar** de los términos y condiciones. Este proceso se levanta al momento del primer ingreso al app.
 
 ## 🏠 Inicio
@@ -54,23 +54,23 @@ Pantalla principal del app, aquí se encuentran secciones de interés para naveg
 
 ### Eventos generales
 
-- 📘 `screen_view`: [payload](./01-home/screen_view.yaml)  
+- 📘 `screen_view`: [payload](./01-home/screen_view.yaml) | [guía visual](./guias_visuales/01-home_screen_view.md)  
     Este evento se lanza cuando se carga la pantalla de inicio.  
     **Nota de implementación:** Este evento debe esperar a que el payload de `login` (usuario) haya sido procesado para asegurar la atribución correcta.
 
-- 📘 `icon_campana`: [payload](./01-home/icon_campana.yaml)  
+- 📘 `icon_campana`: [payload](./01-home/icon_campana.yaml) | [guía visual](./guias_visuales/01-home_icon_campana.md)  
     Click en la campana de notificaciones. Permite la captura de un grado de interés del usuario dentro de su formación académica.
 
-- 📘 `card_cachimbo_upn`: [payload](./01-home/card_cachimbo.yaml)  
+- 📘 `card_cachimbo_upn`: [payload](./01-home/card_cachimbo.yaml) | [guía visual](./guias_visuales/01-home_card_cachimbo.md)  
     Captura la interacción de **click** del usuario con el card relacionado a **Cachimbo UPN**.
 
-- 📘 `card_brilla`: [payload](./01-home/card_brilla.yaml)  
+- 📘 `card_brilla`: [payload](./01-home/card_brilla.yaml) | [guía visual](./guias_visuales/01-home_card_brilla.md)  
     Captura la interacción de **click** del usuario con el card relacionado a **Brilla UPN**.
 
-- 📘 `card_ava`: [payload](./01-home/card_ava.yaml)  
+- 📘 `card_ava`: [payload](./01-home/card_ava.yaml) | [guía visual](./guias_visuales/01-home_card_ava.md)  
     Captura la interacción de **click** del usuario con el card relacionado a **AVA UPN**.
 
-- 📘 `list_item_notification`: [payload](./01-home/02-notificaciones/list_item_notification.yaml)  
+- 📘 `list_item_notification`: [payload](./01-home/02-notificaciones/list_item_notification.yaml) | [guía visual](./guias_visuales/01-home_02-notificaciones_list_item_notification.md)  
     Cada vez que el usuario haga click en algún elemento de la lista de notificaciones dentro del app.
 
 ### Mis servicios (inicio)
@@ -103,7 +103,7 @@ Sección del app que engloba distintos recursos con los que puede interactuar el
     [Ver payload genérico](./01-home/01-brilla_con-upn/card_general_event.yaml).
 
 - 📗 Otros eventos  
-    - `button_enlace`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml)  
+    - `button_enlace`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml) | [guía visual](./guias_visuales/01-home_01-brilla_con-upn_button_enlace.md)  
     Busca trackear el click de enlaces que se encuentran dentro de cada recurso mostrado dentro de la sección.
 
 ### Cachimbo UPN
@@ -123,10 +123,10 @@ Sección dedicada a cachimbos, muestra actividades y eventos que se dirigen prin
 Esta sección mapea eventos que se pueden realizar desde el menú de inicio (acceso rápido).
 
 - 📗 Eventos  
-    - `button_ver_detalle`: [payload](./01-home/04-mis-cursos/button_ver_detalle.yaml)  
+    - `button_ver_detalle`: [payload](./01-home/04-mis-cursos/button_ver_detalle.yaml) | [guía visual](./guias_visuales/01-home_04-mis-cursos_button_ver_detalle.md)  
     Click en el botón ver detalle del curso desde el home.
 
-    - `button_ver_recomendaciones`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml)  
+    - `button_ver_recomendaciones`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml) | [guía visual](./guias_visuales/01-home_01-brilla_con-upn_button_enlace.md)  
     *(Nota: Revisa si este enlace es correcto, actualmente apunta a la carpeta de Brilla)*.
 
 ## 🧩 Mis servicios (detalle)
@@ -147,13 +147,13 @@ Sección Perfil del super app UPN.
 
 ### Eventos generales
 
-- 📘 `button_cerrar_sesion`: [payload](./03-perfil/button_cerrar_sesion.yaml)  
+- 📘 `button_cerrar_sesion`: [payload](./03-perfil/button_cerrar_sesion.yaml) | [guía visual](./guias_visuales/03-perfil_button_cerrar_sesion.md)  
     *(Corregido typo: carpeta `03-perfil`)* Trackeo de cierre de sesión. Importante para limpiar el estado del usuario en el DataLayer.
 
-- 📘 `card_credencial_virtual`: [payload](./03-perfil/card_credencial_virtual.yaml)  
+- 📘 `card_credencial_virtual`: [payload](./03-perfil/card_credencial_virtual.yaml) | [guía visual](./guias_visuales/03-perfil_card_credencial_virtual.md)  
     Ingreso a visualización de la credencial del estudiante.
 
-- 📘 `card_terminos_y_condiciones`: [payload](./03-perfil/card_terminos_y_condiciones.yaml)  
+- 📘 `card_terminos_y_condiciones`: [payload](./03-perfil/card_terminos_y_condiciones.yaml) | [guía visual](./guias_visuales/03-perfil_card_terminos_y_condiciones.md)  
     Visualización de los términos y condiciones del app.
 
 ## 📰 Informativo
@@ -161,14 +161,14 @@ Sección **Informativo** de la aplicación UPN.
 
 ### Eventos generales
 
-- 📘 `screen_view`: [payload](./04-informativo/screen_view.yaml)  
+- 📘 `screen_view`: [payload](./04-informativo/screen_view.yaml) | [guía visual](./guias_visuales/04-informativo_screen_view.md)  
     Carga de la pantalla informativa.
 
-- 📘 `card_correo`: [payload](./04-informativo/card_correo.yaml)  
+- 📘 `card_correo`: [payload](./04-informativo/card_correo.yaml) | [guía visual](./guias_visuales/04-informativo_card_correo.md)  
 
-- 📘 `card_eventos`: [payload](./04-informativo/card_eventos.yaml)  
+- 📘 `card_eventos`: [payload](./04-informativo/card_eventos.yaml) | [guía visual](./guias_visuales/04-informativo_card_eventos.md)  
 
-- 📘 `card_noticias`: [payload](./04-informativo/card_noticias.yaml)  
+- 📘 `card_noticias`: [payload](./04-informativo/card_noticias.yaml) | [guía visual](./guias_visuales/04-informativo_card_noticias.md)  
 
 Para otros elementos no listados, usar el [evento genérico](./04-informativo/card_general_event.yaml).
 
@@ -177,16 +177,16 @@ Sección **Ayuda** de la aplicación UPN.
 
 ### Eventos generales
 
-- 📘 `screen_view`: [payload](./05-ayuda/screen_view.yaml)  
+- 📘 `screen_view`: [payload](./05-ayuda/screen_view.yaml) | [guía visual](./guias_visuales/05-ayuda_screen_view.md)  
     Carga de la pantalla del menú de ayuda.
 
-- 📘 `button_calificar_tiendas`: [payload](./05-ayuda/button_calificar_tiendas.yaml)  
+- 📘 `button_calificar_tiendas`: [payload](./05-ayuda/button_calificar_tiendas.yaml) | [guía visual](./guias_visuales/05-ayuda_button_calificar_tiendas.md)  
     Enviar calificación del app a las tiendas (Store).
 
-- 📘 `button_enviar_respuesta_csat`: [payload](./05-ayuda/button_enviar_respuesta_csat.yaml)  
+- 📘 `button_enviar_respuesta_csat`: [payload](./05-ayuda/button_enviar_respuesta_csat.yaml) | [guía visual](./guias_visuales/05-ayuda_button_enviar_respuesta_csat.md)  
     Enviar clasificación CSAT que ha brindado el estudiante.
 
-- 📘 `button_llamar`: [payload](./05-ayuda/00-central-telefonica/button_llamar.yaml)  
+- 📘 `button_llamar`: [payload](./05-ayuda/00-central-telefonica/button_llamar.yaml) | [guía visual](./guias_visuales/05-ayuda_00-central-telefonica_button_llamar.md)  
     Seguimiento de los clicks a botones de llamadas telefónicas.
 
 - ⚙️ Implementación (Cards Generales)  
@@ -203,46 +203,46 @@ Sección **Ayuda** de la aplicación UPN.
 
 ### Eventos generales
 
-- 📘 `screen_view`: [payload](./06-academico/screen_view.yaml)  
+- 📘 `screen_view`: [payload](./06-academico/screen_view.yaml) | [guía visual](./guias_visuales/06-academico_screen_view.md)  
     Carga de la sección académica principal.
 
-- 📘 `card_cursos`: [payload](./06-academico/card_cursos.yaml)  
+- 📘 `card_cursos`: [payload](./06-academico/card_cursos.yaml) | [guía visual](./guias_visuales/06-academico_card_cursos.md)  
 
-- 📘 `card_horarios`: [payload](./06-academico/card_horarios.yaml)  
+- 📘 `card_horarios`: [payload](./06-academico/card_horarios.yaml) | [guía visual](./guias_visuales/06-academico_card_horarios.md)  
 
-- 📘 `card_calendario`: [payload](./06-academico/card_calendario.yaml)  
+- 📘 `card_calendario`: [payload](./06-academico/card_calendario.yaml) | [guía visual](./guias_visuales/06-academico_card_calendario.md)  
 
 ### Cursos
 Sección de cursos dentro del menú **Académico**. Este apartado es distinto al acceso rápido del inicio.
 
-- 📘 `screen_view_curso`: [payload](./06-academico/00-cursos/screen_view_curso.yaml)  
+- 📘 `screen_view_curso`: [payload](./06-academico/00-cursos/screen_view_curso.yaml) | [guía visual](./guias_visuales/06-academico_00-cursos_screen_view_curso.md)  
     Vista del detalle del curso.
 
-- 📘 `screen_view_buddy`: [payload](./06-academico/00-cursos/screen_view_buddy.yaml)  
+- 📘 `screen_view_buddy`: [payload](./06-academico/00-cursos/screen_view_buddy.yaml) | [guía visual](./guias_visuales/06-academico_00-cursos_screen_view_buddy.md)  
     Visualización de la lista de compañeros de curso.
 
-- 📘 `screen_view_attendance`: [payload](./06-academico/00-cursos/screen_view_attendance.yaml)  
+- 📘 `screen_view_attendance`: [payload](./06-academico/00-cursos/screen_view_attendance.yaml) | [guía visual](./guias_visuales/06-academico_00-cursos_screen_view_attendance.md)  
     Visualización del seguimiento de asistencias.
 
-- 📘 `modal_info_curso`: [payload](./06-academico/00-cursos/modal_info_curso.yaml)  
+- 📘 `modal_info_curso`: [payload](./06-academico/00-cursos/modal_info_curso.yaml) | [guía visual](./guias_visuales/06-academico_00-cursos_modal_info_curso.md)  
     Interacción con "ver más detalles" del curso.
 
 ### Horarios
 Eventos relacionado a la interacción con datos sobre horarios.
 
-- 📘 `modal_horario_curso`: [payload](./06-academico/01-horarios/modal_horario_curso.yaml)  
+- 📘 `modal_horario_curso`: [payload](./06-academico/01-horarios/modal_horario_curso.yaml) | [guía visual](./guias_visuales/06-academico_01-horarios_modal_horario_curso.md)  
     El usuario visualiza el horario de un curso específico.
 
-- 📘 `link_buzon_msj`: [payload](./06-academico/01-horarios/link_buzon_msj.yaml)  
+- 📘 `link_buzon_msj`: [payload](./06-academico/01-horarios/link_buzon_msj.yaml) | [guía visual](./guias_visuales/06-academico_01-horarios_link_buzon_msj.md)  
     El usuario se dirige al buzón de mensajes del curso.
 
 ## 🪟 Modals
 Tracking de eventos relacionados a popups o vistas sobrepuestas.
 
-- 📘 `popup_click`: [payload](./07-modals/popup_click.yaml)  
+- 📘 `popup_click`: [payload](./07-modals/popup_click.yaml) | [guía visual](./guias_visuales/07-modals_popup_click.md)  
     Cuando se hace click en cualquier elemento del popup.
 
-- 📘 `popup_view`: [payload](./07-modals/popup_view.yaml)  
+- 📘 `popup_view`: [payload](./07-modals/popup_view.yaml) | [guía visual](./guias_visuales/07-modals_popup_view.md)  
     Permite capturar qué elementos popup se han mostrado al estudiante.
 
 ---

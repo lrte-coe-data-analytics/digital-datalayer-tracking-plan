@@ -1,0 +1,10 @@
+{
+  "event"              : "ui_interaction",                           # Nombre fijo del evento
+  "ui_location"        : "modal_window",                             # Dónde está el elemento
+  "ui_element"         : "button",                                   # Qué es el elemento
+  "ui_action"          : "submit",                                   # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "enviar_por_whatsapp",                      # Identificador único o texto del elemento. (En este caso es Enviar por WhatsApp).
+  "ui_hierarchy"       : "home > {{seccion}}",                       # Identificador semantico de la seccion donde se ubica.
+  "path_location"      : "{{path_actual_del_evento}}",               # Path de donde se mide el evento.
+  "data_collected"     : "{{datos_recopilados}}"                     # Captura lo escrito. (Nota: Evento gemelo con enviar_por_whatsapp.yaml en 02-test-autoconocimiento)
+}

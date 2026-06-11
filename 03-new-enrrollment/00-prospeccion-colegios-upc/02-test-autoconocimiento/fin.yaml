@@ -1,0 +1,9 @@
+{
+  "event"              : "ui_interaction",                           # Nombre fijo del evento
+  "ui_location"        : "content_body",                             # Dónde está el elemento
+  "ui_element"         : "button",                                   # Qué es el elemento
+  "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "vamos_por_mas",                            # Identificador único o texto del elemento. (En este caso es "¡Vamos por más!")
+  "ui_hierarchy"       : "home > autoconocimiento",                  # Identificador semantico de la seccion donde se ubica.(En este caso es Autoconocimiento)
+  "path_location"      : "/conocete/test-vocacional/exito"           # Path de donde se mide el evento.
+}

@@ -1,0 +1,10 @@
+{
+  "event"              : "ui_interaction",                                         # Nombre fijo del evento
+  "ui_location"        : "modal_window",                                           # Dónde está el elemento
+  "ui_element"         : "button",                                                 # Qué es el elemento
+  "ui_action"          : "submit",                                                 # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "enviar_por_whatsapp",                                    # Identificador único o texto del elemento. (En este caso es Enviar por WhatsApp).
+  "ui_hierarchy"       : "home > autoconocimiento",                                # Identificador semantico de la seccion donde se ubica.(En este caso es Autoconocimiento)
+  "path_location"      : "/conocete/test-vocacional/descargar-resultados",         # Path de donde se mide el evento.
+  "data_collected"     : "{{datos_dispositivo_y_flags}}"                           # Capturar datos como nro_dispositivo, flag_autorizo, flag_autorizo_opc. (Nota: Evento gemelo con descargar.yaml en 03-niveles-chatbot)
+}
