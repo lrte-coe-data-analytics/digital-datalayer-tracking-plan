@@ -1,3 +1,14 @@
+# Guía Visual: inicio (00-home)
+**Payload General:** [../00-home/inicio.yaml](../00-home/inicio.yaml)
+
+---
+## Instancia: inicia
+- **Descripción:** Cuando el usuario hace clic en el botón "Inicia" de la pantalla principal (Home).
+
+![inicia](../assets/00-home_inicio.png)
+
+**Data Layer (Payload):**
+```yaml
 {
   "event"            : "ui_interaction",                    # Nombre fijo del evento
   "ui_location"      : "form_container",                    # Dónde está el elemento
@@ -8,5 +19,4 @@
   "path_location"    : "/",                                 # Path de donde se mide el evento.
   "user_code"        : "{{id_usuario}}"                     # Codigo de usuario (prospecto, código de Hubspot), para identificación de un usuario.
 }
-
-
+```

@@ -1,0 +1,9 @@
+{
+  "event"              : "ui_interaction",                                # Nombre fijo del evento
+  "ui_location"        : "modal_window",                                  # Dónde está el elemento
+  "ui_element"         : "button",                                        # Qué es el elemento
+  "ui_action"          : "submit",                                        # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "completado",                                    # Identificador único o texto del botón presionado.En este caso es completado".
+  "ui_hierarchy"       : "home > {{Nivel el cuestionario}}",              # Identificador semántico de la sección donde se úbica. 
+  "path_location"      : "{{path_actual_del_evento}}",                    # Path de donde se mide el evento.
+}
