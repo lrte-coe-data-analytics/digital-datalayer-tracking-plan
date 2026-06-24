@@ -3,7 +3,7 @@
 
 ---
 ## Instancia: button_ver_detalle
-- **Descripción:** Click en el botón ver detalle del curso desde el home. - `button_ver_recomendaciones`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml) *(Nota: Revisa si este enlace es correcto, actualmente apunta a la carpeta de Brilla)*.
+- **Descripción:** Click en el botón ver detalle del curso desde el home.
 
 ![button_ver_detalle](../assets/button_ver_detalle.png)
 

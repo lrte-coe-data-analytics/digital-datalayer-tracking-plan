@@ -72,6 +72,7 @@ ui_element:
   - "accordion_header"    # La barra que se clickea para desplegar texto.
   - "tab"                 # Pestaña para cambiar vistas.
   - "carousel"            # Sliders de contenido horizontal.
+  - "widget"              # Widget mini funcionalidad de una plataforma. Ej: Widget de Horarios y cursos en el app.
 
   # --- Entradas de Datos (Inputs) ---
   - "input_field"    # Clic para hacer foco en un campo de texto.

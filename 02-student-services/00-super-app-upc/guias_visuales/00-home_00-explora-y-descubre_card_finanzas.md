@@ -1,9 +1,21 @@
+# Guía Visual: card_finanzas
+**Payload General:** [../00-home/00-explora-y-descubre/card_finanzas.yaml](../00-home/00-explora-y-descubre/card_finanzas.yaml)
+
+---
+## Instancia: card_finanzas
+- **Descripción:** Click en el card Finanzas en la sección Explora y descubre.
+
+![card_finanzas](../assets/card_finanzas.png)
+
+**Data Layer (Payload):**
+```yaml
 {
   "event"       : "ui_interaction",                # Nombre fijo del evento
   "ui_location" : "content_body",                  # Dónde está el elemento
   "ui_element"  : "card",                          # Qué es el elemento
   "ui_action"   : "click",                         # Qué hace (open_modal, navigation, etc.)
-  "ui_label"    : "credencial_virtual",            # Esto debe enviar el texto principal del elemento
+  "ui_label"    : "card_finanzas",                 # Esto debe enviar el texto principal del card
   "ui_hierarchy": "inicio > explora_y_descubre",   # Identificador semantico de la seccion donde se ubica.
   "link_url"    : "{{url_desino}}"                 # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
 }
+```

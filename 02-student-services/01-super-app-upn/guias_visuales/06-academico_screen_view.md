@@ -5,7 +5,7 @@
 ## Instancia: screen_view
 - **Descripción:** Carga de la sección académica principal.
 
-![screen_view](../assets/screen_view.png)
+![screen_view](../assets/academico_screen_view.png)
 
 **Data Layer (Payload):**
 ```yaml

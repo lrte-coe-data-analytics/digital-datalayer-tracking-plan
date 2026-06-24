@@ -3,7 +3,7 @@
 
 ---
 ## Instancia: button_cerrar_sesion
-- **Descripción:** *(Corregido typo: carpeta `03-perfil`)* Trackeo de cierre de sesión. Importante para limpiar el estado del usuario en el DataLayer.
+- **Descripción:**  Trackeo de cierre de sesión. Importante para limpiar el estado del usuario en el DataLayer.
 
 ![button_cerrar_sesion](../assets/button_cerrar_sesion.png)
 

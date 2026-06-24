@@ -5,7 +5,7 @@
 ## Instancia: screen_view
 - **Descripción:** Carga de la pantalla del menú de ayuda.
 
-![screen_view](../assets/screen_view.png)
+![screen_view](../assets/ayuda_screen_view.png)
 
 **Data Layer (Payload):**
 ```yaml
