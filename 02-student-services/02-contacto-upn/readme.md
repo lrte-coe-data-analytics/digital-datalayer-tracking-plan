@@ -24,13 +24,13 @@ Pantalla principal del portal público.
 
 ### Eventos generales
 
-- 📘 `button_pregrado`: [payload](./00-home/button_pregrado.yaml)  
+- 📘 `button_pregrado`: [payload](./00-home/button_pregrado.yaml) | [guía visual](./guias_visuales/00-home_button_pregrado.md)  
     Captura la intención de interés en la oferta académica de pregrado.
 
-- 📘 `button_wa`: [payload](./00-home/button_wa.yaml)  
+- 📘 `button_wa`: [payload](./00-home/button_wa.yaml) | [guía visual](./guias_visuales/00-home_button_wa.md)  
     Click en el botón flotante o enlace de WhatsApp. Mide la intención de contacto directo.
 
-- 📘 `card_general_event`: [payload](./00-home/card_general_event.yaml)  
+- 📘 `card_general_event`: [payload](./00-home/card_general_event.yaml) | [guía visual](./guias_visuales/00-home_card_general_event.md)  
     **Evento Genérico.** Se utiliza para todos los cards informativos presentes en el home que no tengan un evento específico.  
     *Objetivo:* Trackear información sobre temas de interés (Noticias, Blog, Eventos) basado en el título del card.
 
@@ -39,11 +39,11 @@ Funcionalidad de búsqueda interna del portal.
 
 ### Eventos de búsqueda
 
-- 📘 `screen_view`: [payload](./01-search/screen_view.yaml)  
+- 📘 `screen_view`: [payload](./01-search/screen_view.yaml) | [guía visual](./guias_visuales/01-search_screen_view.md)  
     **Seguimiento de Búsquedas.** Se dispara cuando se cargan los resultados de búsqueda.  
     *Dato Crítico:* Debe capturar el término de búsqueda (`search_term`) ingresado por el usuario.
 
-- 📘 `list_item_search`: [payload](./01-search/list_item_search.yaml)  
+- 📘 `list_item_search`: [payload](./01-search/list_item_search.yaml) | [guía visual](./guias_visuales/01-search_list_item_search.md)  
     **Click en Resultado.** Se dispara cuando el usuario selecciona uno de los enlaces resultantes de la búsqueda.  
     *Objetivo:* Capturar el título de la sección seleccionada para determinar la relevancia de los resultados entregados.
 
