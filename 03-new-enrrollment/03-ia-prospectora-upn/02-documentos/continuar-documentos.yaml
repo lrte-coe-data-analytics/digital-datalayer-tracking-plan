@@ -5,7 +5,7 @@
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
   "ui_label"         : "continuar",                         # Identificador único o texto del elemento. (En este caso es "Continuar")
   "ui_hierarchy"     : "home > documentos",                 # Identificador semantico de la seccion donde se ubica. En este caso documentos.
-  "path_location"    : "/documentos",                       # Path de donde se mide el evento.
+  "path_location"    : "/documentos"                        # Path de donde se mide el evento.
 }
 
 

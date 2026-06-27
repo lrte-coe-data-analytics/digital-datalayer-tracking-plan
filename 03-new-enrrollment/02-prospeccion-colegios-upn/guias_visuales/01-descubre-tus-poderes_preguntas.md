@@ -34,8 +34,8 @@
   "ui_element"         : "button",                                                                 # Qué es el elemento
   "ui_action"          : "submit",                                                                 # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "{{nombre_del_boton}}",                                                   # Identificador único o texto del botón presionado.
-  "ui_hierarchy"       : "home > {{Nivel del cuestionario}} > pregunta_{n_pregunta}",              # Identificador semántico de la sección. El n_pregunta debe ir con zero-padding (ej. pregunta_01).
+  "ui_hierarchy"       : "home > {{seccion_actual}} > pregunta_{n_pregunta}",              # Identificador semántico de la sección. El n_pregunta debe ir con zero-padding (ej. pregunta_01).
   "path_location"      : "{{path_actual_del_evento}}",                                             # Path de donde se mide el evento (ej: /personalidad, /intereses, /habilidades).
-  "data_collected"     : "{{pregunta_y_respuesta}}",                                               # Se guarda la pregunta y respuesta (ej. "pregunta: [Pregunta] | respuesta: [Respuesta]").
+  "data_collected"     : "{{pregunta_y_respuesta}}"                                               # Se guarda la pregunta y respuesta (ej. "pregunta: [Pregunta] | respuesta: [Respuesta]").
 }
 ```

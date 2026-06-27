@@ -17,6 +17,6 @@
   "ui_label"         : "continuar",                         # Identificador único o texto del elemento. (En este caso es "continuar")
   "ui_hierarchy"     : "home > registro",                   # Identificador semantico de la seccion donde se ubica. En este caso registro.
   "path_location"    : "/registro",                         # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
 }
 ```

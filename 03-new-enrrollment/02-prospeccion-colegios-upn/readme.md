@@ -48,7 +48,7 @@ Eventos relacionados con el flujo de cuestionarios vocacionales y de autoconocim
     Evento de respuesta a una pregunta del cuestionario.
 
 - 📘 `valoracion_carreras`: [payload](./01-descubre-tus-poderes/valoracion_carreras.yaml) | [guía visual](./guias_visuales/01-descubre-tus-poderes_valoracion_carreras.md)
-    Interacciones sobre la aceptación o rechazo de carreras sugeridas.
+    Navegación del carrusel de carreras sugeridas.
 
 - 📘 `enviar_por_whatsapp`: [payload](./01-descubre-tus-poderes/enviar_por_whatsapp.yaml) | [guía visual](./guias_visuales/01-descubre-tus-poderes_enviar_por_whatsapp.md)
     Envío de resultados al canal de WhatsApp del prospecto.

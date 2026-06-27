@@ -26,7 +26,7 @@ Este evento de interacción se dispara cada vez que el usuario marca o desmarca 
   "ui_label"         : "certificado_estudios",              # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > documentos",                 # Identificador semántico de la sección donde se ubica.
   "path_location"    : "/documentos",                       # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar el estado del checkbox (marcado/desmarcado) de la declaración correspondiente.
 }
 ```
 
@@ -46,6 +46,6 @@ Este evento de interacción se dispara cada vez que el usuario marca o desmarca 
   "ui_label"         : "juramento_experiencia_laboral",     # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > documentos",                 # Identificador semántico de la sección donde se ubica.
   "path_location"    : "/documentos",                       # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar el estado del checkbox (marcado/desmarcado) de la declaración correspondiente.
 }
 ```

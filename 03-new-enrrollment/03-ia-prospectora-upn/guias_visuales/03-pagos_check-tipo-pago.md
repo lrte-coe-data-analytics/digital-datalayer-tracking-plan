@@ -26,7 +26,7 @@ Este evento de interacción se dispara cada vez que el usuario selecciona una de
   "ui_label"         : "matricula_completa",                # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > pagos",                      # Identificador semántico de la sección donde se ubica. En este caso pagos.
   "path_location"    : "/pagos",                            # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como el monto del Pago.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar los datos de la respuesta del Formulario como el monto del Pago.
 }
 ```
 
@@ -46,6 +46,6 @@ Este evento de interacción se dispara cada vez que el usuario selecciona una de
   "ui_label"         : "derecho_de_admision",               # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > pagos",                      # Identificador semántico de la sección donde se ubica. En este caso pagos.
   "path_location"    : "/pagos",                            # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como el monto del Pago.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar los datos de la respuesta del Formulario como el monto del Pago.
 }
 ```

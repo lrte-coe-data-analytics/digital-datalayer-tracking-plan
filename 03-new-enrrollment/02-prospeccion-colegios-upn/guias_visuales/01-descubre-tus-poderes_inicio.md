@@ -11,7 +11,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
 | `inicio_00` | Personalidad | `home > personalidad` | `/personalidad` |
 | `inicio_01` | Intereses | `home > intereses` | `/intereses` |
 | `inicio_02` | Habilidades | `home > habilidades` | `/habilidades` |
-| `inicio_03` | ¡Listo! | `home > ver resultados` | `/ver-resultados` |
+| `inicio_03` | ¡Listo! | `home > ver_resultados` | `/ver-resultados` |
 
 
 ---
@@ -29,7 +29,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "personalidad",                             # Identificador único o texto del elemento. Para este caso puede ser 3 (personalidad, intereses y habilidades)
   "ui_hierarchy"       : "home > personalidad",                      # Identificador semantico de la seccion donde se úbica. Para el nivel del evento son 3 (personalidad, intereses y habilidades)
-  "path_location"      : "/personalidad",                            # Path de donde se mide el evento.
+  "path_location"      : "/personalidad"                             # Path de donde se mide el evento.
 }
 ```
 
@@ -49,7 +49,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "intereses",                                # Identificador único o texto del elemento. Para este caso puede ser 3 (personalidad, intereses y habilidades)
   "ui_hierarchy"       : "home > intereses",                         # Identificador semantico de la seccion donde se úbica. Para el nivel del evento son 3 (personalidad, intereses y habilidades)
-  "path_location"      : "/intereses",                               # Path de donde se mide el evento.
+  "path_location"      : "/intereses"                                # Path de donde se mide el evento.
 }
 ```
 
@@ -70,7 +70,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "habilidades",                              # Identificador único o texto del elemento. Para este caso puede ser 3 (personalidad, intereses y habilidades)
   "ui_hierarchy"       : "home > habilidades",                       # Identificador semantico de la seccion donde se úbica. Para el nivel del evento son 3 (personalidad, intereses y habilidades)
-  "path_location"      : "/habilidades",                             # Path de donde se mide el evento.
+  "path_location"      : "/habilidades"                              # Path de donde se mide el evento.
 }
 ```
 
@@ -89,7 +89,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_element"         : "button",                                   # Qué es el elemento
   "ui_action"          : "click",                                    # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "ver_resultados",                           # Identificador único o texto del elemento. Para este caso puede ser 3 (personalidad, intereses y habilidades)
-  "ui_hierarchy"       : "home > ver resultados",                    # Identificador semantico de la seccion donde se úbica. Para el nivel del evento son 3 (personalidad, intereses y habilidades)
-  "path_location"      : "/ver-resultados",                          # Path de donde se mide el evento.
+  "ui_hierarchy"       : "home > ver_resultados",                    # Identificador semantico de la seccion donde se úbica. Para el nivel del evento son 3 (personalidad, intereses y habilidades)
+  "path_location"      : "/ver-resultados"                           # Path de donde se mide el evento.
 }
 ```

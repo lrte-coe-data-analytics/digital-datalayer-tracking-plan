@@ -64,15 +64,20 @@ Eventos de carga y aceptación de documentos.
     -   **Acción**: `click`
     -   **Etiqueta**: `subir_dni`
 
-- 📘 `subir-record-notas`: [payload](./02-documentos/subir-record-notas.yaml) | [guía visual](./guias_visuales/02-documentos_subir-record-notas.md)
+- 📘 `subir-certificado-estudios`: [payload](./02-documentos/subir-certificado-estudios.yaml) | [guía visual](./guias_visuales/02-documentos_subir-certificado-estudios.md)
     -   **Evento**: `ui_interaction`
     -   **Acción**: `click`
-    -   **Etiqueta**: `subir_record_notas`
+    -   **Etiqueta**: `subir_certificado_estudios`
 
 - 📘 `continuar-documentos`: [payload](./02-documentos/continuar-documentos.yaml) | [guía visual](./guias_visuales/02-documentos_continuar-documentos.md)
     -   **Evento**: `ui_interaction`
     -   **Acción**: `click`
     -   **Etiqueta**: `continuar`
+
+- 📘 `responder-cuestionario`: [payload](./02-documentos/responder-cuestionario.yaml) | [guía visual](./guias_visuales/02-documentos_responder-cuestionario.md)
+    -   **Evento**: `ui_interaction`
+    -   **Acción**: `click`
+    -   **Etiqueta**: `responder_cuestionario`
 
 ---
 
@@ -103,4 +108,4 @@ Modal de error del sistema.
 - 📘 `error`: [payload](./04-error/error.yaml) | [guía visual](./guias_visuales/04-error_error.md)
     -   **Evento**: `ui_interaction`
     -   **Acción**: `click`
-    -   **Etiqueta**: `Ir a WhatsApp`
+    -   **Etiqueta**: `entendido`

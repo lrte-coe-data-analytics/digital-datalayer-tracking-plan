@@ -6,7 +6,7 @@
   "ui_label"         : "error",                                      # Identificador único o texto del elemento. (En este caso es error)
   "ui_hierarchy"     : "{{seccion_actual}}",                         # Identificador semantico de la seccion donde se ubica.
   "path_location"    : "{{path_actual_del_evento}}",                 # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}"                         # Mensaje de Error que se muestra en el mensaje. (Nota: Evento gemelo con error.yaml en 01-nivel-01)
+  "data_collected"   : "{{data_recopilada}}"                         # Mensaje de Error que se muestra en el mensaje. (Nota: Evento gemelo con error.yaml en 01-descubre-tus-poderes)
 }
 
 

@@ -3,9 +3,7 @@
   "ui_location"      : "form_container",                    # Dónde está el elemento
   "ui_element"       : "button",                            # Qué es el elemento
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
-  "ui_label"         : "subir_record_notas",                # Identificador único o texto del elemento. (En este caso es "subir record de notas")
+  "ui_label"         : "responder_cuestionario",            # Identificador único o texto del elemento. (En este caso es "responder cuestionario")
   "ui_hierarchy"     : "home > documentos",                 # Identificador semantico de la seccion donde se ubica. En este caso documentos.
-  "path_location"    : "/documentos",                       # Path de donde se mide el evento.
+  "path_location"    : "/documentos"                        # Path de donde se mide el evento.
 }
-
-

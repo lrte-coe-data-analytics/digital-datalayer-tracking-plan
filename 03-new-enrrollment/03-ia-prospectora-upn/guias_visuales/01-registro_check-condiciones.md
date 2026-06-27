@@ -8,8 +8,8 @@ Este evento de interacción se dispara cada vez que el usuario marca o desmarca 
 | Instancia (asset) | Checkbox | `ui_hierarchy` | `path_location` |
 |---|---|---|---|
 | `check_condiciones_00` | Términos y condiciones | `home > registro` | `/registro` |
-| `check_condiciones_01` | Comunicaciones | `home > registro` | `/registro` |
-| `check_condiciones_02` | Tratamiento de datos | `home > registro` | `/registro` |
+| `check_condiciones_01` | Tratamiento de datos obligatorio | `home > registro` | `/registro` |
+| `check_condiciones_02` | Tratamiento de datos opcional | `home > registro` | `/registro` |
 
 ---
 ## Instancia: terminos_y_condiciones
@@ -27,13 +27,13 @@ Este evento de interacción se dispara cada vez que el usuario marca o desmarca 
   "ui_label"         : "terminos_y_condiciones",            # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > registro",                   # Identificador semántico de la sección donde se ubica.
   "path_location"    : "/registro",                         # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar el estado del checkbox (marcado/desmarcado).
 }
 ```
 
 ---
-## Instancia: comunicaciones
-- **Descripción:** Cuando el usuario marca el checkbox para autorizar el envío de Comunicaciones promocionales.
+## Instancia: tratamiento_datos_obligatorio
+- **Descripción:** Cuando el usuario marca el checkbox para autorizar el tratamiento obligatorio de sus datos personales.
 
 ![check_condiciones_01](../assets/01-registro_check-condiciones_01.png)
 
@@ -44,16 +44,16 @@ Este evento de interacción se dispara cada vez que el usuario marca o desmarca 
   "ui_location"      : "form_container",                    # Dónde está el elemento
   "ui_element"       : "checkbox",                          # Qué es el elemento
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
-  "ui_label"         : "comunicaciones",                    # Identificador único o texto del elemento.
+  "ui_label"         : "tratamiento_datos_obligatorio",     # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > registro",                   # Identificador semántico de la sección donde se ubica.
   "path_location"    : "/registro",                         # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar el estado del checkbox (marcado/desmarcado).
 }
 ```
 
 ---
-## Instancia: tratamiento_datos
-- **Descripción:** Cuando el usuario marca el checkbox para autorizar el Tratamiento de Datos Personales.
+## Instancia: tratamiento_datos_opcional
+- **Descripción:** Cuando el usuario marca el checkbox para autorizar el tratamiento opcional de sus datos personales para finalidades comerciales y promocionales.
 
 ![check_condiciones_02](../assets/01-registro_check-condiciones_02.png)
 
@@ -64,9 +64,9 @@ Este evento de interacción se dispara cada vez que el usuario marca o desmarca 
   "ui_location"      : "form_container",                    # Dónde está el elemento
   "ui_element"       : "checkbox",                          # Qué es el elemento
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
-  "ui_label"         : "tratamiento_datos",                 # Identificador único o texto del elemento.
+  "ui_label"         : "tratamiento_datos_opcional",        # Identificador único o texto del elemento.
   "ui_hierarchy"     : "home > registro",                   # Identificador semántico de la sección donde se ubica.
   "path_location"    : "/registro",                         # Path de donde se mide el evento.
-  "data_collected"   : "{{data_recopilada}}",               # Se recomienda guardar los datos de la respuesta del Formulario como: Carrera, Modalidad, Horario, Campus, Periodo.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar el estado del checkbox (marcado/desmarcado).
 }
 ```

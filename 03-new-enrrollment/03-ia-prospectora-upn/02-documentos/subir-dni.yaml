@@ -6,6 +6,7 @@
   "ui_label"         : "subir_dni",                         # Identificador único o texto del elemento. (En este caso es "subir dni")
   "ui_hierarchy"     : "home > documentos",                 # Identificador semantico de la seccion donde se ubica. En este caso documentos.
   "path_location"    : "/documentos",                       # Path de donde se mide el evento.
+  "data_collected"   : "{{nombre_y_formato_archivo}}"       # Nombre y formato/extensión del archivo subido.
 }
 
 

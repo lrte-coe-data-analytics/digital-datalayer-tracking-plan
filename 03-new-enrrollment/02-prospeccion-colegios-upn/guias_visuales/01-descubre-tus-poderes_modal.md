@@ -26,7 +26,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_action"          : "submit",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "completado",                                    # Identificador único o texto del botón presionado. En este caso es "completado".
   "ui_hierarchy"       : "home > personalidad",                           # Identificador semántico de la sección donde se ubica. 
-  "path_location"      : "/personalidad",                                 # Path de donde se mide el evento.
+  "path_location"      : "/personalidad"                                 # Path de donde se mide el evento.
 }
 ```
 
@@ -45,7 +45,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_action"          : "submit",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "completado",                                    # Identificador único o texto del botón presionado. En este caso es "completado".
   "ui_hierarchy"       : "home > intereses",                              # Identificador semántico de la sección donde se ubica. 
-  "path_location"      : "/intereses",                                    # Path de donde se mide el evento.
+  "path_location"      : "/intereses"                                    # Path de donde se mide el evento.
 }
 ```
 
@@ -64,6 +64,6 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_action"          : "submit",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "completado",                                    # Identificador único o texto del botón presionado. En este caso es "completado".
   "ui_hierarchy"       : "home > habilidades",                            # Identificador semántico de la sección donde se ubica. 
-  "path_location"      : "/habilidades",                                  # Path de donde se mide el evento.
+  "path_location"      : "/habilidades"                                  # Path de donde se mide el evento.
 }
 ```

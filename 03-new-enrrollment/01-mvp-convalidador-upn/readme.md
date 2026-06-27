@@ -18,7 +18,7 @@ Eventos iniciales para comenzar el flujo de convalidación.
 *   **`path_location`**: `/`
 
 ### Eventos
-- 📘 `paso-inicial`: [payload](./00-Inicio/paso-inicial.yaml) | [guía visual](./guias_visuales/00-Inicio_paso-inicial.md)
+- 📘 `paso-inicial`: [payload](./00-inicio/paso-inicial.yaml) | [guía visual](./guias_visuales/00-inicio_paso-inicial.md)
     -   **Evento**: `ui_interaction`
     -   **Acción**: `click`
     -   **Etiqueta**: `generar_simulacion`
@@ -61,7 +61,7 @@ Eventos relacionados con la finalización del flujo y descarga oficial.
 - 📘 `descarga-convalidacion-oficial`: [payload](./02-convalidacion-completa/descarga-convalidacion-oficial.yaml) | [guía visual](./guias_visuales/02-convalidacion-completa_descarga-convalidacion-oficial.md)
     -   **Evento**: `ui_interaction`
     -   **Acción**: `click`
-    -   **Etiqueta**: `descargar_convalidacion_oficial`
+    -   **Etiqueta**: `descargar_resultados`
 
 ---
 

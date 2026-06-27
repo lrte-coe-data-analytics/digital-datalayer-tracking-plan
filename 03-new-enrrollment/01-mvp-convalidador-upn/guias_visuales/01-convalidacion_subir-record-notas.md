@@ -17,5 +17,6 @@
   "ui_label"         : "subir_record_notas",                # Identificador único o texto del elemento. (En este caso es "subir record de notas")
   "ui_hierarchy"     : "home > convalidacion",              # Identificador semantico de la seccion donde se ubica. En este caso convalidación.
   "path_location"    : "/convalidacion",                    # Path de donde se mide el evento.
+  "data_collected"   : "{{nombre_y_formato_archivo}}"       # Nombre y formato/extensión del archivo de récord de notas subido.
 }
 ```

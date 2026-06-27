@@ -17,7 +17,7 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
 
 ---
 ## Instancia: enviar_solicitud_00 — ¿En qué universidades y/o institutos estás interesado?
-- **Descripción:** Este evento se envía cuando el usuario hace clic en el botón "Continuar" dentro del paso "¿Qué tal vas con el tema de la universidad?" del formulario de registro.
+- **Descripción:** Este evento se envía cuando el usuario hace clic en el botón "Continuar" dentro del paso "¿En qué universidades y/o institutos estás interesado?" del formulario de registro.
 
 ![enviar_solicitud_00](../assets/00-enviar-solicitud--00.png)
 
@@ -29,9 +29,9 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_element"     : "button",                                       # Qué es el elemento
   "ui_action"      : "click",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"       : "continuar",                                    # Identificador único o texto del elemento. (En este caso Continuar)
-  "ui_hierarchy"   : "home > registro > institucion",                # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > donde_estas_tu o home > registro > tus_planes)
+  "ui_hierarchy"   : "home > registro > institucion",                # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > institucion, home > registro > tutor, home > registro > futuro, home > registro > importante)
   "path_location"  : "/registro/institucion",                        # Path de donde se mide el evento.
-  "data_collected" : "Ni idea que estudiar",                         # Opciones que marca en el formulario, en los pasos de autonocimiento, por ejemplo País donde desea estudiar, si conoce a la UPC.
+  "data_collected" : "Ni idea que estudiar"                          # Opciones que marca en el formulario, en los pasos de autoconocimiento, por ejemplo institución de interés, si desea incluir a un tutor, qué valora de la universidad.
 }
 ```
 
@@ -49,9 +49,9 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_element"     : "button",                                       # Qué es el elemento
   "ui_action"      : "click",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"       : "continuar",                                    # Identificador único o texto del elemento. (En este caso Continuar)
-  "ui_hierarchy"   : "home > registro > tutor",                      # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > donde_estas_tu o home > registro > tus_planes)
+  "ui_hierarchy"   : "home > registro > tutor",                      # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > institucion, home > registro > tutor, home > registro > futuro, home > registro > importante)
   "path_location"  : "/registro/tutor",                              # Path de donde se mide el evento.
-  "data_collected" : "Si claro",                                     # Opciones que marca en el formulario, en los pasos de autonocimiento, por ejemplo País donde desea estudiar, si conoce a la UPC.
+  "data_collected" : "Si claro"                                     # Opciones que marca en el formulario, en los pasos de autoconocimiento, por ejemplo institución de interés, si desea incluir a un tutor, qué valora de la universidad.
 }
 ```
 
@@ -69,9 +69,9 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_element"     : "button",                                       # Qué es el elemento
   "ui_action"      : "click",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"       : "continuar",                                    # Identificador único o texto del elemento. (En este caso Continuar)
-  "ui_hierarchy"   : "home > registro > futuro",                     # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > donde_estas_tu o home > registro > tus_planes)
+  "ui_hierarchy"   : "home > registro > futuro",                     # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > institucion, home > registro > tutor, home > registro > futuro, home > registro > importante)
   "path_location"  : "/registro/futuro",                             # Path de donde se mide el evento.
-  "data_collected" : "Hacer algo que me apasione",                   # Opciones que marca en el formulario, en los pasos de autonocimiento, por ejemplo País donde desea estudiar, si conoce a la UPC.
+  "data_collected" : "Hacer algo que me apasione"                   # Opciones que marca en el formulario, en los pasos de autoconocimiento, por ejemplo institución de interés, si desea incluir a un tutor, qué valora de la universidad.
 }
 ```
 
@@ -90,8 +90,8 @@ Este evento de interacción se dispara cada vez que el usuario hace clic en el b
   "ui_element"     : "button",                                       # Qué es el elemento
   "ui_action"      : "click",                                        # Qué hace (open_modal, navigation, etc.)
   "ui_label"       : "continuar",                                    # Identificador único o texto del elemento. (En este caso Continuar)
-  "ui_hierarchy"   : "home > registro > importante",                 # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > donde_estas_tu o home > registro > tus_planes)
+  "ui_hierarchy"   : "home > registro > importante",                 # Identificador semantico de la seccion donde se ubica. Dinamico por paso (ej: home > registro > institucion, home > registro > tutor, home > registro > futuro, home > registro > importante)
   "path_location"  : "/registro/importante",                         # Path de donde se mide el evento.
-  "data_collected" : "Infraestructura moderna",                      # Opciones que marca en el formulario, en los pasos de autonocimiento, por ejemplo País donde desea estudiar, si conoce a la UPC.
+  "data_collected" : "Infraestructura moderna"                      # Opciones que marca en el formulario, en los pasos de autoconocimiento, por ejemplo institución de interés, si desea incluir a un tutor, qué valora de la universidad.
 }
 ```

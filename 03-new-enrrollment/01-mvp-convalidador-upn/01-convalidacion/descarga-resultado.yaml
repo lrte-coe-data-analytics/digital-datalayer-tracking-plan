@@ -1,11 +1,11 @@
 {
   "event"            : "ui_interaction",                    # Nombre fijo del evento
-  "ui_location"      : "banner_section",                    # Dónde está el elemento
+  "ui_location"      : "content_body",                      # Dónde está el elemento
   "ui_element"       : "button",                            # Qué es el elemento
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
   "ui_label"         : "descargar_simulacion",              # Identificador único o texto del elemento. (En este caso es "descargar simulación")
   "ui_hierarchy"     : "home > convalidacion",              # Identificador semantico de la seccion donde se ubica. En este caso convalidación.
-  "path_location"    : "/convalidacion",                    # Path de donde se mide el evento.
+  "path_location"    : "/convalidacion"                     # Path de donde se mide el evento.
 }
 
 

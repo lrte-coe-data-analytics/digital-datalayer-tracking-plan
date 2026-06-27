@@ -16,6 +16,6 @@
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
   "ui_label"         : "continuar",                         # Identificador único o texto del elemento. (En este caso es "Continuar")
   "ui_hierarchy"     : "home > pagos",                      # Identificador semantico de la seccion donde se ubica. En este caso pagos.
-  "path_location"    : "/pagos",                            # Path de donde se mide el evento.
+  "path_location"    : "/pagos"                             # Path de donde se mide el evento.
 }
 ```
