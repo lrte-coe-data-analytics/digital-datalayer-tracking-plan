@@ -1,0 +1,12 @@
+{
+  "event"            : "ui_interaction",                    # Nombre fijo del evento
+  "ui_location"      : "form_container",                    # Dónde está el elemento
+  "ui_element"       : "checkbox",                          # Qué es el elemento
+  "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
+  "ui_label"         : "{{campo_a_autorizar}}",             # Identificador único o texto del elemento. (En este caso puede ser certificado_estudios y juramento_experiencia_laboral)
+  "ui_hierarchy"     : "home > documentos",                 # Identificador semantico de la seccion donde se ubica. En este caso documentos.
+  "path_location"    : "/documentos",                       # Path de donde se mide el evento.
+  "data_collected"   : "{{data_recopilada}}"                # Se recomienda guardar el estado del checkbox (marcado/desmarcado) de la declaración correspondiente.
+}
+
+

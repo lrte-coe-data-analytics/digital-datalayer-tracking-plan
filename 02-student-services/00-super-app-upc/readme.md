@@ -7,7 +7,8 @@ Fecha ultima actualizacion: 22 Enero 2026
 2. [🔐 Login](#-login)  
 3. [🏠 Inicio](#-inicio)
     - [Explora y descubre](#explora-y-descubre)  
-    - [Tu camino al exito](#tu-camino-al-exito)  
+    - [Cachimbo](#cachimbo)  
+    - [Dashboard](#dashboard)  
 4. [🛟 Ayuda](#-ayuda)  
 5. [👤 Perfil](#-perfil)  
 6. [📚 Cursos](#-cursos)  
@@ -84,18 +85,48 @@ Esta sección presenta distintos Cards que permiten navegar a ciertas secciones 
     ```
     [Ver payload genérico](./00-home/00-explora-y-descubre/general_event.yaml).
 
-### Tu camino al exito
-Seccion del app para los ingresantes (Cachimbos).
+- 📘 `card_cursos`: [payload](./00-home/00-explora-y-descubre/card_cursos.yaml) | [guía visual](./guias_visuales/00-home_00-explora-y-descubre_card_cursos.md)  
+    Click en el card Cursos en la sección Explora y descubre.
+
+- 📘 `card_finanzas`: [payload](./00-home/00-explora-y-descubre/card_finanzas.yaml) | [guía visual](./guias_visuales/00-home_00-explora-y-descubre_card_finanzas.md)  
+    Click en el card Finanzas en la sección Explora y descubre.
+
+- 📘 `card_informativo`: [payload](./00-home/00-explora-y-descubre/card_informativo.yaml) | [guía visual](./guias_visuales/00-home_00-explora-y-descubre_card_informativo.md)  
+    Click en el card Informativo en la sección Explora y descubre.
+
+- 📘 `card_noticias`: [payload](./00-home/00-explora-y-descubre/card_noticias.yaml) | [guía visual](./guias_visuales/00-home_00-explora-y-descubre_card_noticias.md)  
+    Click en el card Noticias en la sección Explora y descubre.
+
+- 📘 `card_reservas`: [payload](./00-home/00-explora-y-descubre/card_reservas.yaml) | [guía visual](./guias_visuales/00-home_00-explora-y-descubre_card_reservas.md)  
+    Click en el card Reservas en la sección Explora y descubre.
+
+### Cachimbo
+Sección del app para los ingresantes (Cachimbos).
 
 - ⚙️ Implementacion  
     Estructura requerida:
     ```js
     data-ui-element   = "card"
     data-ui-label     = "{{card_label}}"
-    data-ui-hierarchy = "inicio > tu_camino_al_exito"
+    data-ui-hierarchy = "inicio > cachimbo"
     data-ui-url       = "{{url_destino}}"
     ```
-    [Ver payload genérico](./00-home/02-tu-camino-al-exito/general_event.yaml).
+    [Ver payload genérico](./00-home/02-cachimbo/general_event.yaml).
+
+- 📘 `card_descubre_upc`: [payload](./00-home/02-cachimbo/card_descubre_upc.yaml) | [guía visual](./guias_visuales/00-home_02-cachimbo_card_descubre_upc.md)  
+    Click en el card Descubre UPC en la sección Cachimbo.
+
+- 📘 `card_queremos_conocerte`: [payload](./00-home/02-cachimbo/card_queremos_conocerte.yaml) | [guía visual](./guias_visuales/00-home_02-cachimbo_card_queremos_conocerte.md)  
+    Click en el card Queremos Conocerte en la sección Cachimbo.
+
+### Dashboard
+Sección principal que consolida información de cursos y horarios.
+
+- 📘 `widget_cursos`: [payload](./00-home/03-dashboard/widget_cursos.yaml) | [guía visual](./guias_visuales/00-home_03-dashboard_widget_cursos.md)  
+    Click en el widget Cursos en la sección Dashboard.
+
+- 📘 `widget_horarios`: [payload](./00-home/03-dashboard/widget_horarios.yaml) | [guía visual](./guias_visuales/00-home_03-dashboard_widget_horarios.md)  
+    Click en el widget Horarios en la sección Dashboard.
 
 ## 🛟 Ayuda
 Seccion Ayuda del super app UPC.  
@@ -143,6 +174,15 @@ Seccion relacionada a documentos y pagos.
     data-ui-url       = "{{url_destino}}"
     ```
     [Ver payload genérico](./05-finanzas/general_event.yaml).
+
+- 📘 `card_consulta_comprobantes`: [payload](./05-finanzas/card_consulta_comprobantes.yaml) | [guía visual](./guias_visuales/05-finanzas_card_consulta_comprobantes.md)  
+    Click en el card de Consulta de Comprobantes.
+
+- 📘 `card_facturacion`: [payload](./05-finanzas/card_facturacion.yaml) | [guía visual](./guias_visuales/05-finanzas_card_facturacion.md)  
+    Click en el card de Facturación.
+
+- 📘 `card_pagos_pendientes`: [payload](./05-finanzas/card_pagos_pendientes.yaml) | [guía visual](./guias_visuales/05-finanzas_card_pagos_pendientes.md)  
+    Click en el card de Mis Pagos Pendientes.
 
 ### Mis pagos pendientes
 

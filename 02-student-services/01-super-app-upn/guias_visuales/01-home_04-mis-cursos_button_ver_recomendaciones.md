@@ -1,0 +1,21 @@
+# Guía Visual: button_ver_recomendaciones
+**Payload General:** [../01-home/04-mis-cursos/button_ver_recomendaciones.yaml](../01-home/04-mis-cursos/button_ver_recomendaciones.yaml)
+
+---
+## Instancia: button_ver_recomendaciones
+- **Descripción:** Click en el botón ver recomendaciones del curso desde el home.
+
+![button_ver_recomendaciones](../assets/button_ver_recomendaciones.png)
+
+**Data Layer (Payload):**
+```yaml
+{
+  "event"       : "ui_interaction",                            # Nombre fijo del evento
+  "ui_location" : "content_body",                              # Dónde está el elemento
+  "ui_element"  : "button",                                    # Qué es el elemento
+  "ui_action"   : "click",                                     # Qué hace (open_modal, navigation, etc.)
+  "ui_label"    : "ver_recomendaciones",                       # Identificador único o texto del elemento
+  "ui_hierarchy": "inicio > mis_cursos > {{recurso_label}}",   # Identificador semantico de la seccion donde se ubica.
+  "link_url"    : "{{url_destino}}"                            # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+}
+```

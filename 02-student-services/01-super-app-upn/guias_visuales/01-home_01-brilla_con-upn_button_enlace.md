@@ -3,9 +3,9 @@
 
 ---
 ## Instancia: button_enlace
-- **Descripción:** *(Nota: Revisa si este enlace es correcto, actualmente apunta a la carpeta de Brilla)*.
+- **Descripción:** Busca trackear el click de enlaces que se encuentran dentro de cada recurso mostrado dentro de la sección.
 
-![button_enlace](../assets/button_enlace.png)
+![button_enlace](../assets/brilla_button_enlace.png)
 
 **Data Layer (Payload):**
 ```yaml

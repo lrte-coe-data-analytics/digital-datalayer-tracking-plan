@@ -5,7 +5,7 @@
 ## Instancia: screen_view
 - **Descripción:** Carga de la pantalla informativa.
 
-![screen_view](../assets/screen_view.png)
+![screen_view](../assets/informativo-screen_view.png)
 
 **Data Layer (Payload):**
 ```yaml

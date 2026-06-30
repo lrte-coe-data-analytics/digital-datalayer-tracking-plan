@@ -5,7 +5,7 @@
 ## Instancia: screen_view
 - **Descripción:** Carga de la pantalla de perfil. Requiere identificación de usuario previa.
 
-![screen_view](../assets/screen_view.png)
+![screen_view](../assets/screen_view_perfil.png)
 
 **Data Layer (Payload):**
 ```yaml

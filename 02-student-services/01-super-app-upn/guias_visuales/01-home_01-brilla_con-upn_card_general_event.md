@@ -1,0 +1,31 @@
+# Guía Visual: card_general_event (Brilla con UPN)
+**Payload General:** [../01-home/01-brilla_con-upn/card_general_event.yaml](../01-home/01-brilla_con-upn/card_general_event.yaml)
+
+---
+## Instancia: card_general_event
+- **Descripción:** Captura la interacción de **click** del usuario con cualquiera de los cards presentados dentro de la sección **Brilla con UPN** para redirigir a las vistas de detalle.
+
+![button_enlace](../assets/brilla_button_enlace.png)
+
+**Data Layer (Payload):**
+```yaml
+# los elementos (CARDS) que se encuentran en esta seccion deben tener los siguientes atributos
+# dentro de su codigo.
+
+# parametros a agregar dentro de cada elemento
+# esto aplica para
+# data-ui-element   = "card"
+# data-ui-label     = "{{card_label}}"  -- debe esar separado por "_" ejemplo_de_label
+# data-ui-hierarchy = "inicio > brilla_con_upn"
+# data-ui-url       = "{{url_destino}}"
+
+{
+  "event"       : "ui_interaction",          # Nombre fijo del evento
+  "ui_location" : "content_body",            # Dónde está el elemento
+  "ui_element"  : "{{data-ui-element}}",     # Qué es el elemento
+  "ui_action"   : "click",                   # Qué hace (open_modal, navigation, etc.)
+  "ui_label"    : "{{data-ui-label}}",       # Esto debe enviar el texto principal del card
+  "ui_hierarchy": "{{data-ui-hierarchy}}",   # Identificador semantico de la seccion donde se ubica.
+  "link_url"    : "{{data-ui-url}}"          # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+}
+```

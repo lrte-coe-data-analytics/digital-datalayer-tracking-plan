@@ -89,6 +89,21 @@ Esta sección presenta distintos Cards (imágenes + texto) que permiten navegar 
     ```
     [Ver payload genérico](./01-home/00-mis-servicios/card_general_event.yaml).
 
+- 📘 `card_aula_virtual`: [payload](./01-home/00-mis-servicios/card_aula_virtual.yaml) | [guía visual](./guias_visuales/01-home_00-mis-servicios_card_aula_virtual.md)  
+    Click en el card Aula Virtual en la sección Mis servicios del inicio.
+
+- 📘 `card_biblioteca_virtual`: [payload](./01-home/00-mis-servicios/card_biblioteca_virtual.yaml) | [guía visual](./guias_visuales/01-home_00-mis-servicios_card_biblioteca_virtual.md)  
+    Click en el card Biblioteca Virtual en la sección Mis servicios del inicio.
+
+- 📘 `card_matricula_en_linea`: [payload](./01-home/00-mis-servicios/card_matricula_en_linea.yaml) | [guía visual](./guias_visuales/01-home_00-mis-servicios_card_matricula_en_linea.md)  
+    Click en el card Matrícula en línea en la sección Mis servicios del inicio.
+
+- 📘 `card_pagos_en_linea`: [payload](./01-home/00-mis-servicios/card_pagos_en_linea.yaml) | [guía visual](./guias_visuales/01-home_00-mis-servicios_card_pagos_en_linea.md)  
+    Click en el card Pagos en línea en la sección Mis servicios del inicio.
+
+- 📘 `card_tutoria_virtual`: [payload](./01-home/00-mis-servicios/card_tutoria_virtual.yaml) | [guía visual](./guias_visuales/01-home_00-mis-servicios_card_tutoria_virtual.md)  
+    Click en el card Tutoría Virtual en la sección Mis servicios del inicio.
+
 ### Brilla con UPN
 Sección del app que engloba distintos recursos con los que puede interactuar el usuario. En esta se presenta una lista de cards que redirigen a otras secciones que muestran mayor detalle.
 
@@ -100,7 +115,7 @@ Sección del app que engloba distintos recursos con los que puede interactuar el
     data-ui-hierarchy = "inicio > brilla_con_upn"
     data-ui-url       = "{{url_destino}}"
     ```
-    [Ver payload genérico](./01-home/01-brilla_con-upn/card_general_event.yaml).
+    [Ver payload genérico](./01-home/01-brilla_con-upn/card_general_event.yaml) | [Ver guía visual](./guias_visuales/01-home_01-brilla_con-upn_card_general_event.md).
 
 - 📗 Otros eventos  
     - `button_enlace`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml) | [guía visual](./guias_visuales/01-home_01-brilla_con-upn_button_enlace.md)  
@@ -126,8 +141,8 @@ Esta sección mapea eventos que se pueden realizar desde el menú de inicio (acc
     - `button_ver_detalle`: [payload](./01-home/04-mis-cursos/button_ver_detalle.yaml) | [guía visual](./guias_visuales/01-home_04-mis-cursos_button_ver_detalle.md)  
     Click en el botón ver detalle del curso desde el home.
 
-    - `button_ver_recomendaciones`: [payload](./01-home/01-brilla_con-upn/button_enlace.yaml) | [guía visual](./guias_visuales/01-home_01-brilla_con-upn_button_enlace.md)  
-    *(Nota: Revisa si este enlace es correcto, actualmente apunta a la carpeta de Brilla)*.
+    - `button_ver_recomendaciones`: [payload](./01-home/04-mis-cursos/button_ver_recomendaciones.yaml) | [guía visual](./guias_visuales/01-home_04-mis-cursos_button_ver_recomendaciones.md)  
+    Click en el botón ver recomendaciones del curso desde el home.
 
 ## 🧩 Mis servicios (detalle)
 Esta sección **no es la misma** que la sección _mis servicios_ del inicio. Aquí se mapean todos los posibles servicios a los que el estudiante puede acceder.
@@ -145,10 +160,20 @@ Esta sección **no es la misma** que la sección _mis servicios_ del inicio. Aqu
 ## 👤 Perfil
 Sección Perfil del super app UPN.
 
+- ⚙️ Implementación (Cards Generales)  
+    Para otros elementos de perfil usar:
+    ```js
+    data-ui-element   = "card"
+    data-ui-label     = "{{card_label}}"
+    data-ui-hierarchy = "perfil"
+    data-ui-url       = "{{url_destino}}"
+    ```
+    [Ver payload genérico](./03-perfil/card_general_event.yaml).
+
 ### Eventos generales
 
 - 📘 `button_cerrar_sesion`: [payload](./03-perfil/button_cerrar_sesion.yaml) | [guía visual](./guias_visuales/03-perfil_button_cerrar_sesion.md)  
-    *(Corregido typo: carpeta `03-perfil`)* Trackeo de cierre de sesión. Importante para limpiar el estado del usuario en el DataLayer.
+    Trackeo de cierre de sesión. Importante para limpiar el estado del usuario en el DataLayer.
 
 - 📘 `card_credencial_virtual`: [payload](./03-perfil/card_credencial_virtual.yaml) | [guía visual](./guias_visuales/03-perfil_card_credencial_virtual.md)  
     Ingreso a visualización de la credencial del estudiante.
@@ -200,6 +225,16 @@ Sección **Ayuda** de la aplicación UPN.
     [Ver payload genérico](./05-ayuda/card_general_event.yaml).
 
 ## 🎓 Academico
+
+- ⚙️ Implementación (Cards Generales)  
+    Para otros elementos de la sección académica usar:
+    ```js
+    data-ui-element   = "card"
+    data-ui-label     = "{{card_label}}"
+    data-ui-hierarchy = "academico"
+    data-ui-url       = "{{url_destino}}"
+    ```
+    [Ver payload genérico](./06-academico/card_general_event.yaml).
 
 ### Eventos generales
 

@@ -1,0 +1,10 @@
+{
+  "event"              : "ui_interaction",                           # Nombre fijo del evento
+  "ui_location"        : "modal_window",                             # Dónde está el elemento
+  "ui_element"         : "modal_window",                             # Qué es el elemento
+  "ui_action"          : "impression",                               # Qué hace (open_modal, navigation, etc.)
+  "ui_label"           : "error",                                    # Identificador único o texto del elemento. (En este caso es Error)
+  "ui_hierarchy"       : "{{seccion_actual}}",                       # Identificador semantico de la seccion donde se ubica.
+  "path_location"      : "{{path_actual_del_evento}}",               # Path de donde se mide el evento.
+  "data_collected"     : "{{data_recopilada}}"                       # Error que se muestra en el mensaje. (Nota: Evento gemelo con registro_error.yaml en 00-registro)
+}

@@ -1,51 +1,79 @@
 # Documento de marcación - MVP Convalidador UPN
-Fecha de creacion: 11 de febreo 2026  
-Fecha ultima actualizacion: 11 Febrero 2026
+Fecha de creación: 11 de Febrero 2026  
+Fecha última actualización: 16 de Junio 2026
 
 ## Tabla de contenido
-1. [🚀 Flujo Express](#-flujo-express)
-2. [📋 Flujo Completo](#-flujo-completo)
+1. [🏠 Inicio](#-inicio)
+2. [📋 Convalidación](#-convalidación)
+3. [✅ Convalidación Completa](#-convalidación-completa)
+4. [⚠️ Error](#-error)
 
 ---
 
-## 🚀 Flujo Express
-Eventos relacionados con el proceso de validación rápida (respuesta "No").
+## 🏠 Inicio
+Eventos iniciales para comenzar el flujo de convalidación.
 
 ### ⚙️ Estructura de Datos
-*   **`ui_hierarchy`**: `home > flujo_express`
+*   **`ui_hierarchy`**: `home`
 *   **`path_location`**: `/`
 
 ### Eventos
-- 📘 `pasos`: [payload](./00-flujo-express/pasos.yaml)
+- 📘 `paso-inicial`: [payload](./00-inicio/paso-inicial.yaml) | [guía visual](./guias_visuales/00-inicio_paso-inicial.md)
     -   **Evento**: `ui_interaction`
-    -   **Acción**: `click` en botón "No".
-    -   **Etiqueta**: `no`
+    -   **Acción**: `click`
+    -   **Etiqueta**: `generar_simulacion`
 
-- 📘 `resultado`: [payload](./00-flujo-express/resultado.yaml)
-    -   **Evento**: `ui_interaction`
-    -   **Acción**: `impression` de la ventana modal de resultado.
-    -   **Etiqueta**: `resultado`
+---
 
-## 📋 Flujo Completo
-Eventos relacionados con el proceso de validación completa (respuesta "Sí").
+## 📋 Convalidación
+Eventos que ocurren durante el proceso de análisis y carga de notas.
 
 ### ⚙️ Estructura de Datos
-*   **`ui_hierarchy`**: `home > flujo_completo`
-*   **`path_location`**: `/`
+*   **`ui_hierarchy`**: `home > convalidacion`
+*   **`path_location`**: `/convalidacion`
 
 ### Eventos
-- 📘 `paso-inicial`: [payload](./01-flujo-completo/paso-inicial.yaml)
+- 📘 `subir-record-notas`: [payload](./01-convalidacion/subir-record-notas.yaml) | [guía visual](./guias_visuales/01-convalidacion_subir-record-notas.md)
     -   **Evento**: `ui_interaction`
-    -   **Acción**: `click` en botón "Sí".
-    -   **Etiqueta**: `si`
+    -   **Acción**: `click`
+    -   **Etiqueta**: `subir_record_notas`
 
-- 📘 `pasos`: [payload](./01-flujo-completo/pasos.yaml)
+- 📘 `empezar-analisis`: [payload](./01-convalidacion/empezar-analisis.yaml) | [guía visual](./guias_visuales/01-convalidacion_empezar-analisis.md)
     -   **Evento**: `ui_interaction`
-    -   **Acción**: `click` en botones del formulario (ej. subir sílabus, empezar análisis).
-    -   **Etiqueta**: Dinámica `{{text formulario}}`
+    -   **Acción**: `click`
+    -   **Etiqueta**: `empezar_analisis`
 
-- 📘 `resultado`: [payload](./01-flujo-completo/resultado.yaml)
+- 📘 `descarga-resultado`: [payload](./01-convalidacion/descarga-resultado.yaml) | [guía visual](./guias_visuales/01-convalidacion_descarga-resultado.md)
     -   **Evento**: `ui_interaction`
-    -   **Acción**: `impression` de la ventana modal de resultado.
-    -   **Etiqueta**: `resultado`
-    -   **Nota**: En el archivo original la jerarquía aparece como `flujo_express` (posible error), aquí se documenta como parte del `flujo_completo`.
+    -   **Acción**: `click`
+    -   **Etiqueta**: `descargar_simulacion`
+
+---
+
+## ✅ Convalidación Completa
+Eventos relacionados con la finalización del flujo y descarga oficial.
+
+### ⚙️ Estructura de Datos
+*   **`ui_hierarchy`**: `home > convalidacion > completa`
+*   **`path_location`**: `/convalidacion-completa`
+
+### Eventos
+- 📘 `descarga-convalidacion-oficial`: [payload](./02-convalidacion-completa/descarga-convalidacion-oficial.yaml) | [guía visual](./guias_visuales/02-convalidacion-completa_descarga-convalidacion-oficial.md)
+    -   **Evento**: `ui_interaction`
+    -   **Acción**: `click`
+    -   **Etiqueta**: `descargar_resultados`
+
+---
+
+## ⚠️ Error
+Mensajes de error del sistema.
+
+### ⚙️ Estructura de Datos
+*   **`ui_location`**: `modal_window`
+*   **`ui_element`**: `modal_window`
+
+### Eventos
+- 📘 `error`: [payload](./03-error/error.yaml) | [guía visual](./guias_visuales/03-error_error.md)
+    -   **Evento**: `ui_interaction`
+    -   **Acción**: `click`
+    -   **Etiqueta**: `entendido`

@@ -5,7 +5,7 @@
 ## Instancia: card_explora
 - **Descripción:** Card presente en la pantalla de ayuda (usuario `docente`).
 
-![card_explora](../assets/card_explora.png)
+![card_explora](../assets/ayuda_card_explora.png)
 
 **Data Layer (Payload):**
 ```yaml

@@ -1,0 +1,22 @@
+# Guía Visual: registro_exitoso (00-registro)
+**Payload General:** [../00-registro/registro_exitoso.yaml](../00-registro/registro_exitoso.yaml)
+
+---
+## Instancia: registro_exitoso
+- **Descripción:** Cuando el usuario envía exitosamente el formulario de registro.
+
+![registro_exitoso](../assets/00-registro_registro_exitoso.png)
+
+**Data Layer (Payload):**
+```yaml
+{
+  "event"          : "ui_interaction",                               # Nombre fijo del evento
+  "ui_location"    : "form_container",                               # Dónde está el elemento
+  "ui_element"     : "button",                                       # Qué es el elemento
+  "ui_action"      : "submit",                                       # Qué hace (open_modal, navigation, etc.)
+  "ui_label"       : "registro_exitoso",                             # Identificador único o texto del elemento. (En este caso Registro Exitoso)
+  "ui_hierarchy"   : "home > registro",                              # Identificador semantico de la seccion donde se ubica. (En este caso es Registro)
+  "path_location"  : "/registro/datos-personales",                   # Path de donde se mide el evento.
+  "user_code"      : "{{id_usuario}}"                                # Codigo de usuario (alumno o prospecto, código de Hubspot)
+}
+```
