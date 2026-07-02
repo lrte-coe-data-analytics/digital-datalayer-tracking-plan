@@ -1,0 +1,23 @@
+# Guía Visual: Search-MisServicios
+**Payload General:** [search_misservicios.yaml](../04-servicios/search_misservicios.yaml)
+
+---
+## Instancia: Search-MisServicios
+- **Descripción:** Este evento mide el uso del buscador en la sección de Mis Servicios.
+
+![search_misservicios](../assets/search_misservicios.png)
+
+**Data Layer (Payload):**
+```yaml
+{
+  "event"           : "ui_interaction",                # Nombre fijo del evento
+  "ui_location"     : "content_body",                      # Dónde está el elemento (content_body)
+  "ui_element"      : "input_field",                       # Qué es el elemento (input_field)
+  "ui_action"       : "search",                      # Qué hace (search)
+  "ui_label"        : "search_misservicios",                      # Identificador único del elemento (search_misservicios)
+  "ui_hierarchy"    : "portal_cib > mis_servicios",                     # Identificador semántico de la sección
+  "link_url"        : null,                        # Si dirige a otro sitio o abre un modal (URL destino o null)
+  "path_location"   : "{{path_actual_del_evento}}",    # URL y/o path de donde se da el evento
+  "data_collected"  : null                            # Datos recopilados (mensajes de error, etc.)
+}
+```

@@ -24,6 +24,11 @@ A continuación se detallan los squads y proyectos incluidos en este plan de mar
 *   [02-prospeccion-colegios-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/03-new-enrrollment/02-prospeccion-colegios-upn) — Prospección de colegios UPN.
 *   [03-ia-prospectora-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/03-new-enrrollment/03-ia-prospectora-upn) — IA Prospectora de matrícula UPN.
 
+### 🌐 4. Digital Products (`04-digital-products/`)
+*   [00-portal-estudiante-upc](file:///c:/Users/Walter/digital-datalayer-tracking-plan/04-digital-products/00-portal-estudiante-upc) — Portal del estudiante UPC.
+*   [01-portal-estudiante-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/04-digital-products/01-portal-estudiante-upn) — Portal del estudiante UPN.
+*   [02-portal-estudiante-cib](file:///c:/Users/Walter/digital-datalayer-tracking-plan/04-digital-products/02-portal-estudiante-cib) — Portal del estudiante CIB (Cibertec).
+
 ---
 
 ## 📸 Guía para Subir Fotos y Actualizar Guías Visuales
