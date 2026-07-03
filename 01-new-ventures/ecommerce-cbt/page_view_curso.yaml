@@ -1,7 +1,7 @@
 {
   "event"         : "screen_view",                         # Nombre unificado del evento
   "screen_name"   : "pagina_curso > {{producto_label}}",   # Nombre legible (Ej: "Home", "Zona cachimbos")
-  "screen_type"   : "dashboard",                           # Tipo técnico de la pantalla
+  "screen_type": "detail",                           # Tipo técnico de la pantalla
   "screen_section": "{{referer_section}}",                 # Agrupación temática macro (Content Group)
   "category_l1"   : null,
   "category_l2"   : null,

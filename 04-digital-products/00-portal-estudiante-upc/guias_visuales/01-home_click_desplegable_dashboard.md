@@ -3,8 +3,8 @@
 
 ---
 ## Instancia: Click/Desplegable-Dashboard
-- **Descripción:** Este evento mide el icono de agrandar (Levantar el Pop Up), dentro de la lista de Notas.
-
+- **Descripción:** Este evento mide el icono de agrandar (Levantar el Pop Up),dentro de los card del Dashboard.
+ 
 ![click_desplegable_dashboard](../assets/click_desplegable_dashboard.png)
 
 **Data Layer (Payload):**

@@ -5,7 +5,7 @@
 ## Instancia: Search/buscador-Documentos
 - **Descripción:** Este evento mide el uso del buscador en la sección de Documentos.
 
-![search_documentos](../assets/search_documentos.png)
+![search_documentos](../assets/search_documentos.jpg)
 
 **Data Layer (Payload):**
 ```yaml
