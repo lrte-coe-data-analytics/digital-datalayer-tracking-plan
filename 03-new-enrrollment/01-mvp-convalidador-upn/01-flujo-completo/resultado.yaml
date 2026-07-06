@@ -5,7 +5,6 @@
   "ui_action"          : "impression",                       # Qué hace (open_modal, navigation, etc.)
   "ui_label"           : "resultado",                        # Identificador único o texto del elemento. En este caso es "resultado".
   "ui_hierarchy"       : "home > flujo_express",             # Identificador semantico de la seccion donde se ubica.
-  "path_location"      : "/",                                # Path de donde se mide el evento.
+  "path_location"      : "/"                                # Path de donde se mide el evento.
 }
-
 

@@ -6,5 +6,5 @@
   "ui_label"           : "{{nombre_del_boton}}",                     # Identificador único o texto del botón presionado.
   "ui_hierarchy"       : "home > nivel_01 > pregunta_{n_pregunta}",   # Identificador semantico de la seccion donde se ubica. El evento es idéntico en cada vista de pregunta, n_pregunta debe ir con zero-padding (ej. pregunta_01).
   "path_location"      : "{{path_actual_del_evento}}",               # Path de donde se mide el evento.
-  "data_collected"     : "{{pregunta_y_respuesta}}",                 # Se guarda la pregunta y respuesta (ej. "pregunta: [Pregunta] | respuesta: [Respuesta]").
+  "data_collected"     : "{{pregunta_y_respuesta}}"                 # Se guarda la pregunta y respuesta (ej. "pregunta: [Pregunta] | respuesta: [Respuesta]").
 }

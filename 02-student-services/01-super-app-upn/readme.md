@@ -44,7 +44,7 @@ Eventos que capturan datos relacionados al login en el app (sign-in y sign-up).
     2.  **Como estado (Hydration):** Este payload debe enviarse **siempre** al inicio de cada sesión o recarga de página para "recordarle" al DataLayer quién es el usuario actual. Sin este paso, el resto de eventos en el app saldrán como anónimos.
 
 - 📘 `button_login`: [payload](./00-login/button_login.yaml) | [guía visual](./guias_visuales/00-login_button_login.md)  
-    Evento que se envía cuando el proceso de validación de credenciales es exitoso. Dirige al usuario al home. Importante para medir el embudo de ingreso.
+    Click en el botón "Iniciar sesión". Captura la intención de acceso **antes** de la validación de credenciales. Importante para medir el embudo de ingreso.
 
 - 📘 `button_tyc`: [payload](./00-login/button_tyc.yaml) | [guía visual](./guias_visuales/00-login_button_tyc.md)  
     Cuando el usuario hace click en el botón de **aceptar** de los términos y condiciones. Este proceso se levanta al momento del primer ingreso al app.

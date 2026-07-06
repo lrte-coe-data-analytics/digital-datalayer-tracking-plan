@@ -5,7 +5,6 @@
   "ui_action"        : "click",                             # Qué hace (open_modal, navigation, etc.)
   "ui_label"         : "{{text formulario}}",               # Identificador único o texto del elemento. (En este caso puede ser subir silabus, empezar analisis)
   "ui_hierarchy"     : "home > flujo_completo",             # Identificador semantico de la seccion donde se ubica. En este caso flujo express.
-  "path_location"    : "/",                                 # Path de donde se mide el evento.
+  "path_location"    : "/"                                 # Path de donde se mide el evento.
 }
-
 
