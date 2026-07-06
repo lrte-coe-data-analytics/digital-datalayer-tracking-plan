@@ -1,6 +1,6 @@
-# Documento de marcación
+# Documento de Marcación: Super App UPC
 Fecha de creacion: 17 Enero 2026  
-Fecha ultima actualizacion: 22 Enero 2026
+Fecha ultima actualizacion: Julio 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)

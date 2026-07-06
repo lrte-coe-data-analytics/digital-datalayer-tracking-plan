@@ -19,7 +19,7 @@
   "category_l3"   : null,
   "entity_id"     : null,                    # (Opcional) ID del producto/post/item
   "entity_name"   : null,                    # (Opcional) Nombre de la entidad principal
-  "search_term"   : "{{search_keywords}}",   # (Opcional) Lo que escribió el usuario
-  "result_count"  : null
-# (Opcional) Cantidad de resultados encontrados}
+  "search_term"   : "{{search_keywords}}",       # (Opcional) Lo que escribió el usuario
+  "result_count"  : "{{cantidad_resultados}}"    # Cantidad de resultados devueltos por la búsqueda.
+}
 ```

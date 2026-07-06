@@ -31,6 +31,19 @@ A continuación se detallan los squads y proyectos incluidos en este plan de mar
 
 ---
 
+## 🧩 Diccionarios Maestros (`00-snippets/`)
+
+Esquemas base que definen los parámetros estándar de todos los eventos del repositorio. **Cualquier nuevo evento debe respetar estos esquemas.**
+
+*   [ui_interaction](./00-snippets/ui_interaction.yaml) — Evento estándar de interacción de UI (clicks, impresiones, modales, etc.)
+*   [page_view](./00-snippets/page_view.yaml) — Evento de carga de página o pantalla (web y app).
+*   [logged_user](./00-snippets/logged_user.yaml) — Objeto de usuario logueado (para apps privadas con autenticación).
+*   [purchase](./00-snippets/purchase.yaml) — Evento de compra GA4 (e-commerce).
+*   [begin_checkout](./00-snippets/begin_checkout.yaml) — Inicio del flujo de pago GA4.
+*   [add_payment_info](./00-snippets/add_payment_info.yaml) — Método de pago seleccionado GA4.
+
+---
+
 ## 📸 Guía para Subir Fotos y Actualizar Guías Visuales
 
 Para mantener el tracking plan con documentación visual interactiva (pantallazos o capturas de flujo), sigue estos pasos:

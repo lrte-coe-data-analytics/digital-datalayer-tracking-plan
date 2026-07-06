@@ -42,7 +42,7 @@ Eventos para el flujo del primer nivel de interacción.
 ### ⚙️ Estructura de Datos
 Parámetros comunes para el seguimiento del flujo de gamificación:
 *   **`ui_hierarchy`**: `home > nivel_01`.
-*   **`ui_label`**: Identifica la acción específica (ej. 'inicio', 'fin') o el texto del botón dinámico.
+*   **`ui_label`**: Texto visible del botón, normalizado a `snake_case` sin tildes ni puntuación. Valores para esta sección: `"comenzar_la_aventura"` → evento `inicio` | `"excelente"` → evento `fin` | `"error"` → evento `error` | Para `preguntas`: valor dinámico según el texto del botón (ej. `"vamos_por_mas"`).
 *   **`data_collected`**: Captura la respuesta seleccionada por el usuario en las preguntas.
 
 ### Eventos
@@ -66,6 +66,8 @@ Eventos para la sección de test vocacional o de autoconocimiento.
 *   **`ui_hierarchy`**: `home > autoconocimiento`.
 *   **`ui_label`**: Utilizado para numerar preguntas (`01`, `02`...) o identificar la valoración (`si`, `no_mucho`).
 *   **`data_collected`**: Almacena la carrera de interés o la respuesta a la pregunta.
+
+> **Criterio `ui_action`:** Usar `"submit"` cuando hay un botón de envío separado que confirma una acción de formulario (ej. "Siguiente" en las preguntas); usar `"click"` para selecciones directas sin formulario (ej. `valoracion_carreras`).
 
 ### Eventos
 - 📘 `inicio`: [payload](./02-test-autoconocimiento/inicio.yaml) | [guía visual](./guias_visuales/02-test-autoconocimiento_inicio.md)

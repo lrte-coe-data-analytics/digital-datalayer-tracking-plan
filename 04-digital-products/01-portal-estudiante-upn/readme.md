@@ -23,6 +23,9 @@ Fecha última actualización: 27 Junio 2026
 17. [📂 Todas](#todas)
 18. [📂 Tramites](#tramites)
 
+
+3.  **Convención `ui_label`:** En este proyecto, `ui_label` contiene el identificador del evento (nombre del archivo sin extensión, ej. `"click_dashboard"`). Esta convención facilita el mapeo directo entre el data layer y el archivo de especificación.
+
 ---
 
 ## 🏗️ Arquitectura de Implementación

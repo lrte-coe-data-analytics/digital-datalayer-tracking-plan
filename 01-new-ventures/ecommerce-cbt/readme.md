@@ -1,13 +1,14 @@
 # Documento de Marcación: Checkout & Cursos Especializados Cibertec
 **Fecha de creación:** 29 Enero 2026  
-**Fecha última actualización:** 29 Enero 2026
+**Fecha última actualización:** Julio 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
 2. [🏠 Home (Navegación)](#-home-navegación)
 3. [🛒 Checkout (Embudo de Ventas)](#-checkout-embudo-de-ventas)
 4. [🎓 Cursos y Especializaciones](#-cursos-y-especializaciones)
-5. [☁️ Coursera](#-coursera)
+5. [🔍 Buscador](#-buscador)
+6. [☁️ Coursera](#-coursera-pendiente-de-implementación)
 
 ---
 
@@ -36,6 +37,10 @@ Este módulo mide la eficiencia de la pasarela y los estados del proceso de pago
 ### Flujo Principal
 - 📗 `begin_checkout`: [payload](./01-checkout/begin_checkout.yaml) | [guía visual](./guias_visuales/01-checkout_begin_checkout.md)  
     Se dispara cuando el usuario inicia el proceso de pago. Debe incluir el valor total estimado y la lista de productos.
+- 📘 `button_continuar`: [payload](./01-checkout/button_continuar.yaml) | [guía visual](./guias_visuales/01-checkout_button_continuar.md)  
+    Cuando el usuario completa el formulario y hace clic en Continuar.
+- 📘 `button_validar_coupon`: [payload](./01-checkout/button_validar_coupon.yaml) | [guía visual](./guias_visuales/01-checkout_button_validar_coupon.md)  
+    Cuando el usuario hace clic en el botón validar cupón.
 - 📗 `add_payment_info`: [payload](./01-checkout/add_payment_info.yaml) | [guía visual](./guias_visuales/01-checkout_add_payment_info.md)  
     Registra el tipo de método de pago seleccionado (TC, Débito, Transferencia).
 - 🏆 `purchase`: [payload](./01-checkout/purchase.yaml) | [guía visual](./guias_visuales/01-checkout_purchase.md)  
@@ -46,8 +51,7 @@ Este módulo mide la eficiencia de la pasarela y los estados del proceso de pago
     **Estado Pendiente.** Se dispara cuando la transacción entra en proceso de validación (pago pendiente de confirmación técnica o bancaria).
 - 📘 `page_view_pago_no_completado`: [payload](./01-checkout/page_view_pago_no_completado.yaml) | [guía visual](./guias_visuales/01-checkout_page_view_pago_no_completado.md)  
     **Estado Fallido.** Identifica fricciones técnicas o rechazos directos de la pasarela/banco en la última etapa.
-- 📘 `button_pago_no_completado`: [payload](./01-checkout/button_pago_no_completado.yaml) | [guía visual](./guias_visuales/01-checkout_button_pago_no_completado.md)  
-    Acción del usuario tras el error (ej. botón para reintentar o cambiar método de pago).
+- 📘 `button_pago_no_completado`: _(solo disponible en ecommerce-upc, no en CBT)_
 
 ---
 
@@ -64,8 +68,14 @@ Se utiliza una lógica de eventos genéricos para optimizar el mantenimiento:
 
 ---
 
-## ☁️ Coursera
-Módulo `03-coursera`: Reservado para medir la salida (outbound clicks) hacia la plataforma de Coursera y la transición de la experiencia de usuario.
+## 🔍 Buscador
+- 📘 `screen_view`: [payload](./08-search/screen_view.yaml) | [guía visual](./guias_visuales/08-search_screen_view.md)  
+    Captura la visualización de la pantalla de búsqueda interna.
+
+---
+
+## ☁️ Coursera _(Pendiente de implementación)_
+> ⚠️ Los archivos de esta sección aún no han sido creados. Reservado para el tracking de salida (outbound clicks) hacia Coursera.
 
 ---
 
