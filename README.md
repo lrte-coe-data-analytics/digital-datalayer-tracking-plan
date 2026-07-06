@@ -9,25 +9,25 @@
 A continuación se detallan los squads y proyectos incluidos en este plan de marcación:
 
 ### 🛍️ 1. New Ventures (`01-new-ventures/`)
-*   [ecommerce-cbt](file:///c:/Users/Walter/digital-datalayer-tracking-plan/01-new-ventures/ecommerce-cbt) — Canal de E-commerce CBT.
-*   [ecommerce-upc](file:///c:/Users/Walter/digital-datalayer-tracking-plan/01-new-ventures/ecommerce-upc) — Canal de E-commerce UPC.
-*   [ecommerce-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/01-new-ventures/ecommerce-upn) — Canal de E-commerce UPN.
+*   [ecommerce-cbt](./01-new-ventures/ecommerce-cbt/readme.md) — Canal de E-commerce Cibertec (CBT): checkout, cursos cortos, programas y certificaciones.
+*   [ecommerce-upc](./01-new-ventures/ecommerce-upc/readme.md) — Canal de E-commerce UPC: checkout y cursos de especialización.
+*   [ecommerce-upn](./01-new-ventures/ecommerce-upn/readme.md) — Canal de E-commerce UPN: checkout y búsqueda de cursos.
 
 ### 🎓 2. Student Services (`02-student-services/`)
-*   [00-super-app-upc](file:///c:/Users/Walter/digital-datalayer-tracking-plan/02-student-services/00-super-app-upc) — Super App UPC para alumnos.
-*   [01-super-app-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/02-student-services/01-super-app-upn) — Super App UPN para alumnos.
-*   [02-contacto-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/02-student-services/02-contacto-upn) — Formularios y canales de contacto UPN.
+*   [00-super-app-upc](./02-student-services/00-super-app-upc/readme.md) — Super App UPC: aplicación para alumnos activos (home, login, cursos, finanzas, perfil).
+*   [01-super-app-upn](./02-student-services/01-super-app-upn/readme.md) — Super App UPN: aplicación para alumnos activos (home, académico, ayuda, trámites, CAD 2.0).
+*   [02-contacto-upn](./02-student-services/02-contacto-upn/readme.md) — Portal público de contacto UPN: buscador y canales de atención (sin autenticación).
 
 ### 📝 3. New Enrollment (`03-new-enrrollment/`)
-*   [00-prospeccion-colegios-upc](file:///c:/Users/Walter/digital-datalayer-tracking-plan/03-new-enrrollment/00-prospeccion-colegios-upc) — Prospección de colegios UPC.
-*   [01-mvp-convalidador-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/03-new-enrrollment/01-mvp-convalidador-upn) — MVP del Convalidador Académico UPN.
-*   [02-prospeccion-colegios-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/03-new-enrrollment/02-prospeccion-colegios-upn) — Prospección de colegios UPN.
-*   [03-ia-prospectora-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/03-new-enrrollment/03-ia-prospectora-upn) — IA Prospectora de matrícula UPN.
+*   [00-prospeccion-colegios-upc](./03-new-enrrollment/00-prospeccion-colegios-upc/readme.md) — Prospección de colegios UPC: registro, gamificación, test vocacional y chatbot.
+*   [01-mvp-convalidador-upn](./03-new-enrrollment/01-mvp-convalidador-upn/readme.md) — MVP del Convalidador Académico UPN.
+*   [02-prospeccion-colegios-upn](./03-new-enrrollment/02-prospeccion-colegios-upn/readme.md) — Prospección de colegios UPN: registro y test "Descubre tus poderes".
+*   [03-ia-prospectora-upn](./03-new-enrrollment/03-ia-prospectora-upn/readme.md) — IA Prospectora UPN: formulario de registro, documentos y pagos.
 
 ### 🌐 4. Digital Products (`04-digital-products/`)
-*   [00-portal-estudiante-upc](file:///c:/Users/Walter/digital-datalayer-tracking-plan/04-digital-products/00-portal-estudiante-upc) — Portal del estudiante UPC.
-*   [01-portal-estudiante-upn](file:///c:/Users/Walter/digital-datalayer-tracking-plan/04-digital-products/01-portal-estudiante-upn) — Portal del estudiante UPN.
-*   [02-portal-estudiante-cib](file:///c:/Users/Walter/digital-datalayer-tracking-plan/04-digital-products/02-portal-estudiante-cib) — Portal del estudiante CIB (Cibertec).
+*   [00-portal-estudiante-upc](./04-digital-products/00-portal-estudiante-upc/readme.md) — Portal del Estudiante UPC: dashboard, cursos, finanzas, documentos y perfil.
+*   [01-portal-estudiante-upn](./04-digital-products/01-portal-estudiante-upn/readme.md) — Portal del Estudiante UPN: incluye módulos exclusivos de CAD 2.0 y Trámites académicos.
+*   [02-portal-estudiante-cib](./04-digital-products/02-portal-estudiante-cib/readme.md) — Portal del Estudiante CIB (Cibertec).
 
 ---
 
