@@ -10,7 +10,7 @@
 **Data Layer (Payload):**
 ```yaml
 {
-  "user_code"             : "{{id_usuario}}",        # Codigo de usuario (estudiante, docente)
+  "user_id"             : "{{id_usuario}}",        # Codigo de usuario (estudiante, docente)
   "user_ciclo_academico": "{{ciclo_academico}}",   # Ciclo academico del usuario
   "user_unidad_negocio" : "{{unidad_negocio}}",    # UG, CAD, EPE, etc.
   "user_producto"       : "{{producto}}",          # Producto o carrera.

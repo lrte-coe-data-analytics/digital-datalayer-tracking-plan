@@ -5,7 +5,7 @@
 ## Instancia: Click-VerMasDetalles
 - **Descripción:** Este evento mide el clic en el icono de ver más detalle por cada obligación de Obligaciones por Pagar.
 
-![click_vermasdetalles](../assets/click_vermasdetalles.png)
+![click_vermasdetalles](../assets/click_vermasdetalles_2.png)
 
 **Data Layer (Payload):**
 ```yaml

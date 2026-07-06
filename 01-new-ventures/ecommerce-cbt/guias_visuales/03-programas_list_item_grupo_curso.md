@@ -16,6 +16,6 @@
   "ui_action"   : "click",                          # Qué hace (open_modal, navigation, etc.)
   "ui_label"    : "{{grupo_curso_label}}",          # Esto debe enviar el texto principal del elemento
   "ui_hierarchy": "programas > vuelvete_experto",   # Identificador semantico de la seccion donde se ubica.
-  "link_url"    : "{{url_desino}}"                  # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
+  "link_url"    : "{{url_destino}}"                  # Si te dirige hacia algun otro lugar, abre algun modal o cambia de vista o pagina web.
 }
 ```

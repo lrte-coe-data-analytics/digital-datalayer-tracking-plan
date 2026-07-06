@@ -2,7 +2,7 @@
   "event"         : "screen_view",      # Nombre unificado del evento
   "screen_name"   : "menu_academico",   # Nombre legible (Ej: "Home", "Zona cachimbos")
   "screen_type"   : "dashboard",        # Tipo técnico de la pantalla
-  "screen_section": "academico",        # Agrupación temática macro (Content Group)
+  "screen_section": "library",        # Agrupación temática macro (Content Group)
   "category_l1"   : null,
   "category_l2"   : null,
   "category_l3"   : null,

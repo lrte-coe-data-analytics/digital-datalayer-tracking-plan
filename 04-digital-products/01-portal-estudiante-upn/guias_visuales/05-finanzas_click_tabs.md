@@ -5,7 +5,7 @@
 ## Instancia: Click-Tabs
 - **Descripción:** Este evento mide el clic en los tabs de Obligaciones por Pagar y Pagados.
 
-![click_tabs](../assets/click_tabs.png)
+![click_tabs](../assets/click_tabs_2.png)
 
 **Data Layer (Payload):**
 ```yaml

@@ -13,7 +13,7 @@
   "event"         : "screen_view",   # Nombre unificado del evento
   "screen_name"   : "menu_inicio",   # Nombre legible (Ej: "Home", "Zona cachimbos")
   "screen_type"   : "dashboard",     # Tipo técnico de la pantalla
-  "screen_section": "inicio",        # Agrupación temática macro (Content Group)
+  "screen_section": "home",        # Agrupación temática macro (Content Group)
   "category_l1"   : null,
   "category_l2"   : null,
   "category_l3"   : null,

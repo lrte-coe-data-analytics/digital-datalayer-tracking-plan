@@ -5,7 +5,7 @@
 ## Instancia: Click/popup_cur_home_cad
 - **Descripción:** Este evento mide el clic al levantar el Pop UP de Cursos en la Home de CAD 2.0
 
-![click_popup_cur_home_cad](../assets/click_popup_cur_home_cad.png)
+![click_popup_cur_home_cad](../assets/click_popup_cur_home_cad.jpg)
 
 **Data Layer (Payload):**
 ```yaml

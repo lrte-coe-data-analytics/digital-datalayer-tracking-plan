@@ -21,3 +21,5 @@
   "data_collected"  : null                            # Datos recopilados (mensajes de error, etc.)
 }
 ```
+
+ 
