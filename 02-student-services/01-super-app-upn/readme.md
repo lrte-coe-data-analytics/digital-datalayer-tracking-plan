@@ -214,6 +214,18 @@ Sección **Ayuda** de la aplicación UPN.
 - 📘 `button_llamar`: [payload](./05-ayuda/00-central-telefonica/button_llamar.yaml) | [guía visual](./guias_visuales/05-ayuda_00-central-telefonica_button_llamar.md)  
     Seguimiento de los clicks a botones de llamadas telefónicas.
 
+- 📘 `card_atencion_campus`: [payload](./05-ayuda/card_atencion_campus.yaml) | [guía visual](./guias_visuales/05-ayuda_card_atencion_campus.md)  
+    Click en el card de Atención en Campus en la sección Ayuda.
+
+- 📘 `card_central_telefonica`: [payload](./05-ayuda/card_central_telefonica.yaml) | [guía visual](./guias_visuales/05-ayuda_card_central_telefonica.md)  
+    Click en el card de Central Telefónica en la sección Ayuda.
+
+- 📘 `card_contacto_upn`: [payload](./05-ayuda/card_contacto_upn.yaml) | [guía visual](./guias_visuales/05-ayuda_card_contacto_upn.md)  
+    Click en el card de Contacto UPN en la sección Ayuda.
+
+- 📘 `card_whatsapp`: [payload](./05-ayuda/card_whatsapp.yaml) | [guía visual](./guias_visuales/05-ayuda_card_whatsapp.md)  
+    Click en el card de WhatsApp en la sección Ayuda.
+
 - ⚙️ Implementación (Cards Generales)  
     Para el resto de opciones de ayuda usar:
     ```js
