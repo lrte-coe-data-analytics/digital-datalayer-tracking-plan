@@ -1,6 +1,6 @@
 # Documento de Marcación: Portal de Contacto UPN
 Fecha de creacion: 17 Enero 2026  
-Fecha ultima actualizacion: Julio 2026
+Fecha ultima actualizacion: Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
@@ -10,6 +10,15 @@ Fecha ultima actualizacion: Julio 2026
 ---
 
 ## 🏗️ Arquitectura de Implementación
+
+### 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+- **Sitio web (Producción):** https://contacto.upn.edu.pe/
+- **CERTI (Validación de eventos):** pendiente
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el sitio de producción de Contacto UPN. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
 
 Al ser un portal de acceso público que **no requiere autenticación**, la estrategia de medición cambia respecto a los aplicativos privados:
 
@@ -28,7 +37,7 @@ Pantalla principal del portal público.
     Captura la intención de interés en la oferta académica de pregrado.
 
 - 📘 `button_wa`: [payload](./00-home/button_wa.yaml) | [guía visual](./guias_visuales/00-home_button_wa.md)  
-    Click en el botón flotante o enlace de WhatsApp. Mide la intención de contacto directo.
+    Captura la intención de interés en la oferta académica de working adult (WA - Working Adult).
 
 - 📘 `card_general_event`: [payload](./00-home/card_general_event.yaml) | [guía visual](./guias_visuales/00-home_card_general_event.md)  
     **Evento Genérico.** Se utiliza para todos los cards informativos presentes en el home que no tengan un evento específico.  
