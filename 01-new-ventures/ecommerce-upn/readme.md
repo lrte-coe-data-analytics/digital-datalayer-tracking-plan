@@ -1,6 +1,6 @@
 # Documento de Marcación: Checkout & E-commerce (UPN)
 **Fecha de creación:** 29 Enero 2026
-**Fecha última actualización:** 01 Agosto 2026
+**Fecha última actualización:** Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)

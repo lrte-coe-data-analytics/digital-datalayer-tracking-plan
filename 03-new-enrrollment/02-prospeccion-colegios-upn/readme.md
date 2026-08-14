@@ -1,11 +1,25 @@
 # Documento de marcación - Prospección Colegios UPN
 Fecha de creación: 17 Enero 2026  
-Fecha última actualización: 16 de Junio 2026
+Fecha última actualización: Agosto 2026
 
 ## Tabla de contenido
-1. [📝 Registro](#-registro)
-2. [🎮 Descubre tus Poderes](#-descubre-tus-poderes)
-3. [⭐ CSAT](#-csat)
+1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
+2. [📝 Registro](#-registro)
+3. [🎮 Descubre tus Poderes](#-descubre-tus-poderes)
+4. [⭐ CSAT](#-csat)
+
+---
+
+## 🏗️ Arquitectura de Implementación
+
+### 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+- **CERTI:** `https://colegios-prospeccion-fe-cert-upn.stage02.link/prospecto/test-vocacional/cierre-experiencia`
+- **Desarrollo:** `https://misionfuturo.upn.edu.pe/`
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el sitio de Prospección Colegios UPN. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
 
 ---
 
