@@ -1,6 +1,6 @@
 # Documento de marcación - IA Prospectora UPN
 Fecha de creación: 11 de Febrero 2026  
-Fecha última actualización: 16 de Junio 2026
+Fecha última actualización: Agosto 2026
 
 ## Tabla de contenido
 1. [🏠 Home](#-home)

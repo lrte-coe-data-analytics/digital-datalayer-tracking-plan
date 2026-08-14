@@ -1,6 +1,6 @@
 # Documento de Marcación: Checkout & Cursos Especializados (UPC)
-**Fecha de creación:** 29 Enero 2026  
-**Fecha última actualización:** 29 Enero 2026
+**Fecha de creación:** 29 Enero 2026
+**Fecha última actualización:** Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
@@ -11,6 +11,15 @@
 ---
 
 ## 🏗️ Arquitectura de Implementación
+
+### 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+- **Sitio web (Desarrollo / QA):** https://educacioncontinua.upc.edu.pe/
+- **CERTI (Validación de eventos):** https://educacioncontinua-cert-upc.stage01.link/
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el sitio de Educación Continua UPC. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
 
 Para asegurar la medición del rendimiento del sitio y la eficacia de las campañas, se deben seguir estas reglas:
 

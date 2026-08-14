@@ -1,6 +1,6 @@
 # Documento de Marcación: Portal del Estudiante - CIB (Cibertec)
 Fecha de creación: 27 Junio 2026  
-Fecha última actualización: 27 Junio 2026
+Fecha última actualización: Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
@@ -27,6 +27,17 @@ Fecha última actualización: 27 Junio 2026
 ---
 
 ## 🏗️ Arquitectura de Implementación
+
+### 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+- **CERTI:** `https://mi-cert-cib.stage01.link/inicio`
+- **Desarrollo:** ``
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el sitio de portal de estudiante de Cibertec. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
+
+---
 
 Para asegurar que todas las interacciones sean atribuidas al alumno correcto, se deben seguir estas reglas de **Sincronización y Persistencia**:
 
@@ -69,8 +80,8 @@ Eventos capturados en la sección de Cursos y Notas.
 
 ### Eventos detallados
 
-- 📘 `Click-Tabs`: [payload](./03-cursos/click_tabs.yaml) | [guía visual](./guias_visuales/03-cursos_click_tabs.md)
-    **Descripción:** Este evento mide los clics en los Tabs de la interna de la sección de Cursos y Notas.
+- ⚠️ `Click-Tabs` **(DEPRECADO)**: [payload](./03-cursos/click_tabs.yaml) | [guía visual](./guias_visuales/03-cursos_click_tabs.md)
+    **Descripción:** ~Este evento mide los clics en los Tabs de la interna de la sección de Cursos y Notas.~ **Deprecado:** La guía visual muestra las cabeceras de la sección de Pagos (no Cursos y Notas). Al revisar la sección de Cursos y Notas no existen tabs que medir. Este evento está obsoleto o fue un error de documentación inicial.
 
 - 📘 `Click/Modal-CursosyNotas`: [payload](./03-cursos/click_modal_cursosynotas.yaml) | [guía visual](./guias_visuales/03-cursos_click_modal_cursosynotas.md)
     **Descripción:** Este evento mide los clics en la lista de Cursos que se encuentra en la interna de la sección de Cursos y Notas.

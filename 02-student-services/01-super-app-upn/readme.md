@@ -1,23 +1,24 @@
 # Documento de Marcación: Super App UPN
 Fecha de creacion: 17 Enero 2026  
-Fecha ultima actualizacion: Julio 2026
+Fecha ultima actualizacion: Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
-2. [🔐 Login](#-login)  
-3. [🏠 Inicio](#-inicio)   
+2. [🌐 Entornos utilizados](#-entornos-utilizados)
+3. [🔐 Login](#-login)  
+4. [🏠 Inicio](#-inicio)   
     - [Mis servicios (inicio)](#mis-servicios-inicio)  
     - [Brilla con UPN](#brilla-con-upn)  
     - [Cachimbo UPN](#cachimbo-upn)  
     - [Mis cursos (inicio)](#mis-cursos-inicio)  
-4. [🧩 Mis servicios (detalle)](#-mis-servicios-detalle)  
-5. [👤 Perfil](#-perfil)  
-6. [📰 Informativo](#-informativo)
-7. [🛟 Ayuda](#-ayuda)  
-8. [🎓 Academico](#-academico)  
+5. [🧩 Mis servicios (detalle)](#-mis-servicios-detalle)  
+6. [👤 Perfil](#-perfil)  
+7. [📰 Informativo](#-informativo)
+8. [🛟 Ayuda](#-ayuda)  
+9. [🎓 Academico](#-academico)  
     - [Cursos](#cursos)  
     - [Horarios](#horarios)  
-9. [🪟 Modals](#-modals)  
+10. [🪟 Modals](#-modals)  
 
 ---
 
@@ -33,8 +34,35 @@ Para asegurar que todas las interacciones sean atribuidas al alumno correcto, se
 
 ---
 
+## 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos (adaptados para aplicación móvil - APK):
+
+- **Desarrollo:**
+  - Descargar la aplicación **"UPN Móvil"** desde la tienda de aplicaciones correspondiente:
+    - **Android:** Google Play Store
+    - **iOS (Apple):** App Store
+  - Instalar la versión más reciente disponible.
+
+- **CERTI (Validación de eventos):**
+  - Entorno de certificación mediante APK dedicada. Descargar la opción más actualizada del APK de CERTI.
+  - La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante este entorno.
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre la aplicación móvil UPN Móvil (entorno Desarrollo). La validación técnica de los eventos se realiza sobre el entorno CERTI.
+
+---
+
 ## 🔐 Login
 Eventos que capturan datos relacionados al login en el app (sign-in y sign-up).
+
+### Credenciales de prueba
+
+Para validar el flujo de login y los eventos asociados, utilizar las siguientes credenciales en los entornos de CERTI:
+
+| Campo | Valor |
+|-------|-------|
+| **Usuario** | `N00397938@LAUREATEPRUEBA440.onmicrosoft.com` |
+| **Contraseña** | `Prueba123` |
 
 ### Eventos generales
 
@@ -258,6 +286,8 @@ Sección **Ayuda** de la aplicación UPN.
 - 📘 `card_horarios`: [payload](./06-academico/card_horarios.yaml) | [guía visual](./guias_visuales/06-academico_card_horarios.md)  
 
 - 📘 `card_calendario`: [payload](./06-academico/card_calendario.yaml) | [guía visual](./guias_visuales/06-academico_card_calendario.md)  
+
+- 📘 `card_curso_historico`: [payload](./06-academico/card_curso_historico.yaml) | [guía visual](./guias_visuales/06-academico_card_curso_historico.md)  
 
 ### Cursos
 Sección de cursos dentro del menú **Académico**. Este apartado es distinto al acceso rápido del inicio.

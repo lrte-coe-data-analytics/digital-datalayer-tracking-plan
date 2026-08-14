@@ -1,6 +1,6 @@
 # Documento de Marcación: Portal del Estudiante - UPN
 Fecha de creación: 27 Junio 2026  
-Fecha última actualización: 27 Junio 2026
+Fecha última actualización: Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
@@ -29,6 +29,17 @@ Fecha última actualización: 27 Junio 2026
 ---
 
 ## 🏗️ Arquitectura de Implementación
+
+### 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+- **CERTI:** `https://mi-cert-upn.stage01.link/inicio`
+- **Desarrollo:** ``
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el sitio de CERTI. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
+
+---
 
 Para asegurar que todas las interacciones sean atribuidas al alumno correcto, se deben seguir estas reglas de **Sincronización y Persistencia**:
 

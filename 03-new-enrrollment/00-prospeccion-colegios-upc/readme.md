@@ -1,13 +1,27 @@
 # Documento de marcación - Prospección Colegios UPC
 Fecha de creación: 17 Enero 2026  
-Fecha última actualización: 13 Febrero 2026
+Fecha última actualización: Agosto 2026
 
 ## Tabla de contenido
-1. [📝 Registro](#-registro)
-2. [🎮 Nivel 1 (Preguntas de Autoconocimiento)](#-nivel-1-preguntas-de-autoconocimiento)
-3. [🧠 Test de Autoconocimiento](#-test-de-autoconocimiento)
-4. [🤖 5 Niveles (Explora, Visualiza, Imagina, Globalizate con Chatbot; Transforma con Video y Descarga)](#-5-niveles-explora-visualiza-imagina-globalizate-con-chatbot-transforma-con-video-y-descarga)
-5. [⭐ CSAT y Emociones](#-csat-y-emociones)
+1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
+2. [📝 Registro](#-registro)
+3. [🎮 Nivel 1 (Preguntas de Autoconocimiento)](#-nivel-1-preguntas-de-autoconocimiento)
+4. [🧠 Test de Autoconocimiento](#-test-de-autoconocimiento)
+5. [🤖 5 Niveles (Explora, Visualiza, Imagina, Globalizate con Chatbot; Transforma con Video y Descarga)](#-5-niveles-explora-visualiza-imagina-globalizate-con-chatbot-transforma-con-video-y-descarga)
+6. [⭐ CSAT y Emociones](#-csat-y-emociones)
+
+---
+
+## 🏗️ Arquitectura de Implementación
+
+### 🌐 Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+- **CERTI:** https://colegios-prospeccion-fe-cert-upc.stage02.link/
+- **Desarrollo:** https://decidetufuturo.upc.edu.pe/
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el sitio de Prospección Colegios UPC. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
 
 ---
 

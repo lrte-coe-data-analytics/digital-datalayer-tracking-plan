@@ -1,19 +1,20 @@
 # Documento de Marcación: Super App UPC
 Fecha de creacion: 17 Enero 2026  
-Fecha ultima actualizacion: Julio 2026
+Fecha ultima actualizacion: Agosto 2026
 
 ## Table of content
 1. [🏗️ Arquitectura de Implementación](#-arquitectura-de-implementación)
-2. [🔐 Login](#-login)  
-3. [🏠 Inicio](#-inicio)
+2. [🌐 Entornos y Credenciales de Prueba](#-entornos-y-credenciales-de-prueba)  
+3. [🔐 Login](#-login)  
+4. [🏠 Inicio](#-inicio)
     - [Explora y descubre](#explora-y-descubre)  
     - [Cachimbo](#cachimbo)  
     - [Dashboard](#dashboard)  
-4. [🛟 Ayuda](#-ayuda)  
-5. [👤 Perfil](#-perfil)  
-6. [📚 Cursos](#-cursos)  
-7. [💳 Finanzas](#-finanzas)  
-8. [🪟 Modals](#-modals)  
+5. [🛟 Ayuda](#-ayuda)  
+6. [👤 Perfil](#-perfil)  
+7. [📚 Cursos](#-cursos)  
+8. [💳 Finanzas](#-finanzas)  
+9. [🪟 Modals](#-modals)  
 
 ---
 
@@ -26,6 +27,33 @@ Para asegurar que todas las interacciones sean atribuidas al alumno correcto, se
 2.  **Prevención de Race Conditions:** Los eventos de `screen_view` o interacciones de UI **NO deben dispararse** hasta que la aplicación haya confirmado la sesión del usuario y enviado sus datos al DataLayer.  
     * *Incorrecto:* Disparar `screen_view` mientras la API de sesión sigue cargando.  
     * *Correcto:* Esperar la promesa de sesión -> Push User Data -> Push Screen View.
+
+---
+
+## 🌐 Entornos y Credenciales de Prueba
+
+### Credenciales de Acceso
+
+Para las pruebas de implementación y validación del tracking en el app Mi UPC, utilizar la siguiente cuenta de prueba:
+
+| Campo | Valor |
+|-------|-------|
+| **Usuario** | `U202422022@LAUREATEPRUEBA440.onmicrosoft.com` |
+| **Contraseña** | `Prueba123` |
+
+### Entornos utilizados
+
+Durante la implementación y validación del tracking se utilizan los siguientes entornos:
+
+> **Nota:** El desarrollo y las pruebas funcionales del tracking se realizan sobre el app Mi UPC. Debido a que se trata de una aplicación móvil (no una web), no existen URLs de acceso directo — se requiere la instalación del APK correspondiente en cada entorno. La validación técnica de los eventos enviados al `dataLayer` y/o herramientas de analítica se realiza mediante la plataforma CERTI.
+
+- **CERTI (Validación de eventos):**  
+  Instalar el APK de CERTI (versión más actualizada) en el dispositivo móvil. Este APK incluye la configuración de certificados necesaria para interceptar y visualizar los eventos enviados al DataLayer.
+
+- **Desarrollo / QA (App Mi UPC):**  
+  Descargar la versión de desarrollo desde las tiendas oficiales:
+  - **Android:** Ir a Google Play Store y buscar **"UPN Móvil"** (versión de desarrollo/QA) o instalar el APK correspondiente.
+  - **iOS:** Ir a App Store y buscar **"UPN Móvil"** o instalar mediante TestFlight según corresponda.
 
 ---
 
